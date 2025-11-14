@@ -1,0 +1,16 @@
+{
+  "id": "X8o19oeKg9FsduMB",
+  "name": "sandbox",
+  "icon": {
+    "type": "icon",
+    "value": "layer-group"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "X8o19oeKg9FsduMB",
+    "teamName": "sandbox"
+  },
+  "variableStubs": []
+}

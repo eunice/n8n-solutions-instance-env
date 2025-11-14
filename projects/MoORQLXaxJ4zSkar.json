@@ -1,0 +1,13 @@
+{
+  "id": "MoORQLXaxJ4zSkar",
+  "name": "Z_Benchmark",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "MoORQLXaxJ4zSkar",
+    "teamName": "Z_Benchmark"
+  },
+  "variableStubs": []
+}

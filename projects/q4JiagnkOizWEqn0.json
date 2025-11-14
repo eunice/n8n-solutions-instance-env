@@ -1,0 +1,16 @@
+{
+  "id": "q4JiagnkOizWEqn0",
+  "name": "Customer Demos",
+  "icon": {
+    "type": "icon",
+    "value": "play"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "variableStubs": []
+}

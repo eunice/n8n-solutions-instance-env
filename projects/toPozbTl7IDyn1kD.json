@@ -1,0 +1,13 @@
+{
+  "id": "toPozbTl7IDyn1kD",
+  "name": "General",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  },
+  "variableStubs": []
+}

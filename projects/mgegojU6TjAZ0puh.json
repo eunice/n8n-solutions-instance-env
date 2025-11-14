@@ -1,0 +1,16 @@
+{
+  "id": "mgegojU6TjAZ0puh",
+  "name": "🏆 Customer Success",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "mgegojU6TjAZ0puh",
+    "teamName": "🏆 Customer Success"
+  },
+  "variableStubs": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "0pb09zCYAFWMlV84",
+  "name": "Integrations",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  },
+  "variableStubs": []
+}

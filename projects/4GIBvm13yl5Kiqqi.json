@@ -1,0 +1,16 @@
+{
+  "id": "4GIBvm13yl5Kiqqi",
+  "name": "n8n build along",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "building workflows for leaning",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "4GIBvm13yl5Kiqqi",
+    "teamName": "n8n build along"
+  },
+  "variableStubs": []
+}

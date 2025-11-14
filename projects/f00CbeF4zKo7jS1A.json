@@ -1,0 +1,16 @@
+{
+  "id": "f00CbeF4zKo7jS1A",
+  "name": "Olympics Team M",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "f00CbeF4zKo7jS1A",
+    "teamName": "Olympics Team M"
+  },
+  "variableStubs": []
+}

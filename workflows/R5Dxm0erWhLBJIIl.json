@@ -1,0 +1,19 @@
+{
+  "id": "R5Dxm0erWhLBJIIl",
+  "name": "Test iterative post",
+  "nodes": [],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "3941df60-3132-4877-8eb1-62cc140e9290",
+  "owner": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

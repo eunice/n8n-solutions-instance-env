@@ -1,0 +1,16 @@
+{
+  "id": "ggy3XvYnQQC2qcHU",
+  "name": "Central Project",
+  "icon": {
+    "type": "icon",
+    "value": "layer-group"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "ggy3XvYnQQC2qcHU",
+    "teamName": "Central Project"
+  },
+  "variableStubs": []
+}

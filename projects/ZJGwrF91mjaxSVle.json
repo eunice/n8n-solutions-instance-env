@@ -1,0 +1,16 @@
+{
+  "id": "ZJGwrF91mjaxSVle",
+  "name": "AI",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  },
+  "variableStubs": []
+}

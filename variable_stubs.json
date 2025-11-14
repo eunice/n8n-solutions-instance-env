@@ -1,0 +1,74 @@
+[
+  {
+    "id": "CrzGPLK3LK8rfQVA",
+    "key": "TARGET_URL",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "vfckRpin5Gqpf2QV",
+    "key": "AIRTABLE_FILTER",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "ds9eNLD5px7b6eEw",
+    "key": "CERTIFICATE_EMAIL_INBOX",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "ynveA4zMxv3TSXRC",
+    "key": "JIRA_CUSTOM_FIELD_PARTNER_KEY",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "bjFhvgmhhQkdzWW3",
+    "key": "testobj",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "Jn3Df7HiovuxnQ6w",
+    "key": "TEST_VARIABLE",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "kwHRbF0y7a1nrYEx",
+    "key": "my_home_page",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "4esxMm39uCzBi0PS",
+    "key": "instance_url",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "eDtuzzQol7iXZBFD",
+    "key": "CAMPAIGN_FOLLOW_UP_DURATION",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "SzgmnbMIAUT1kkAN",
+    "key": "ENV",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "NcXSCRVfANs8DOJE",
+    "key": "GLOBAL_PROMPT",
+    "type": "string",
+    "value": ""
+  },
+  {
+    "id": "ql1MzT73D92RZobZ",
+    "key": "test_hs_var",
+    "type": "string",
+    "value": ""
+  }
+]

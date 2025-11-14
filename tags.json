@@ -1,0 +1,662 @@
+{
+  "tags": [
+    {
+      "id": "LSCRGpfGA91sZaQy",
+      "name": "n8n project 5-31-24"
+    },
+    {
+      "id": "8IjWnEHeiTjfOvVX",
+      "name": "Slack Security Notify"
+    },
+    {
+      "id": "Zje24muqY13H5kCj",
+      "name": "🔐 SecOPS"
+    },
+    {
+      "id": "fZB9DHKdOgm6V1Sf",
+      "name": "👨‍💻 IT OPS"
+    },
+    {
+      "id": "F8AGTNHaIda5PhuS",
+      "name": "🎬 DEMO"
+    },
+    {
+      "id": "UaM50lSHr2uX5N7I",
+      "name": "Feature"
+    },
+    {
+      "id": "3Hkr5UT3iDAWRBaM",
+      "name": "DEV OPS"
+    },
+    {
+      "id": "Yy0a0LT2yXy5Z8iU",
+      "name": "DataOPS"
+    },
+    {
+      "id": "L5SDCgnWLZQ1jSn2",
+      "name": "🧠 AI"
+    },
+    {
+      "id": "zuTDIQJDdxb6XmAC",
+      "name": "📈 Marketing"
+    },
+    {
+      "id": "JPbtagbBdLlUmsg4",
+      "name": "Product Management"
+    },
+    {
+      "id": "MpujNoUN23kxk4sI",
+      "name": "RAG"
+    },
+    {
+      "id": "OjENA51eYeIcZsvD",
+      "name": "main"
+    },
+    {
+      "id": "XGPJNCkv31xnlLw1",
+      "name": "SIEM"
+    },
+    {
+      "id": "HUiUDMlDeC91dgBG",
+      "name": "Tool 🛠️"
+    },
+    {
+      "id": "ycI3JkCk64NjJrCC",
+      "name": "Nice 💎"
+    },
+    {
+      "id": "vT1g2nzuBSZTHFik",
+      "name": "Gold Demo 🏆"
+    },
+    {
+      "id": "gCy0EXgIzl0i7vat",
+      "name": "🛟 Customer Support"
+    },
+    {
+      "id": "agqvjRZc3Att6E4I",
+      "name": "Telekom"
+    },
+    {
+      "id": "FS00IMHP3mydDGvl",
+      "name": "Revolut"
+    },
+    {
+      "id": "GuAdpDBQbp4i4eJN",
+      "name": "Make PG DB Query"
+    },
+    {
+      "id": "OTkUWeDu4S8ZxLeF",
+      "name": "Demo"
+    },
+    {
+      "id": "hdF3i59bZ7GYR1iy",
+      "name": "Security"
+    },
+    {
+      "id": "EfKDVcSCQn3zF0PJ",
+      "name": "Multi-Agent"
+    },
+    {
+      "id": "rDVlLHnDygv4CU2J",
+      "name": "LangChain"
+    },
+    {
+      "id": "kmNAguod4mrUnP1D",
+      "name": "Enterprise"
+    },
+    {
+      "id": "wkkwecPtNtOW5YPm",
+      "name": "3-Agent"
+    },
+    {
+      "id": "xdIrOp0rowoCuuR6",
+      "name": "Document Management"
+    },
+    {
+      "id": "SXgzzQQ9Eb97EjF2",
+      "name": "AI Classification"
+    },
+    {
+      "id": "Vo3CabEDzlqfTenp",
+      "name": "Compliance"
+    },
+    {
+      "id": "caYdt6mIXCdh078r",
+      "name": "NewYorkLife"
+    },
+    {
+      "id": "ewsqTiYsu0cTqAyI",
+      "name": "HealthStream"
+    },
+    {
+      "id": "WIOEIooDtxsCzQWx",
+      "name": "6sense"
+    },
+    {
+      "id": "kMB0xGjmPkpMAsfY",
+      "name": "Asana"
+    },
+    {
+      "id": "bh1XG6jHskiQnFEe",
+      "name": "Marketo"
+    },
+    {
+      "id": "CE6HIId0b829kpe6",
+      "name": "OpenAI"
+    },
+    {
+      "id": "Y0ALn0STdpkiSpd5",
+      "name": "OneDrive"
+    },
+    {
+      "id": "gxHylKn9Ec8Xmjl7",
+      "name": "ServiceNow"
+    },
+    {
+      "id": "MBNegPMl7B3mvwHv",
+      "name": "Teams"
+    },
+    {
+      "id": "AtpzmrLDKz0v5aSY",
+      "name": "Email"
+    },
+    {
+      "id": "5vcbOtd8oB3axq20",
+      "name": "Gmail"
+    },
+    {
+      "id": "GuPZS1uPlOj0qFDh",
+      "name": "Slack"
+    },
+    {
+      "id": "qAXkk4dlxpxQXaNh",
+      "name": "Sharepoint"
+    },
+    {
+      "id": "HVmMDg9OYcOpjzoZ",
+      "name": "SAP"
+    },
+    {
+      "id": "5q6mLjrp5RFUlx2j",
+      "name": "SFDC"
+    },
+    {
+      "id": "7Evtf2a2qUKuJeQo",
+      "name": "Salesforce"
+    },
+    {
+      "id": "XfBh9XBI0BtrQBNP",
+      "name": "HTTP"
+    },
+    {
+      "id": "Id68JT5Ef5VJg3Cl",
+      "name": "Snowflake"
+    },
+    {
+      "id": "2DueLrSU0VUVlQEx",
+      "name": "Postgres"
+    },
+    {
+      "id": "oz2qKLjd1Qf2pg7D",
+      "name": "Jira"
+    },
+    {
+      "id": "mMZzviMFUuMI8QG6",
+      "name": "AI Agent"
+    },
+    {
+      "id": "si3UEP5cBBSp4EFW",
+      "name": "Reviews"
+    },
+    {
+      "id": "Te7O13Qa6CPGCxtm",
+      "name": "Supabase"
+    },
+    {
+      "id": "veYkzNeiBRmJNpaa",
+      "name": "Vector Search"
+    },
+    {
+      "id": "wseH5bRl8GQGAiqZ",
+      "name": "Enrichment"
+    },
+    {
+      "id": "HFQbzReEJQn0Zc7s",
+      "name": "Human-in-the-loop"
+    }
+  ],
+  "mappings": [
+    {
+      "workflowId": "xMwmniRMeHPV66TV",
+      "tagId": "8IjWnEHeiTjfOvVX"
+    },
+    {
+      "workflowId": "xMwmniRMeHPV66TV",
+      "tagId": "LSCRGpfGA91sZaQy"
+    },
+    {
+      "workflowId": "xMwmniRMeHPV66TV",
+      "tagId": "Zje24muqY13H5kCj"
+    },
+    {
+      "workflowId": "PGDMYZrWwRqjcxyn",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "PGDMYZrWwRqjcxyn",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "8IjSS2HvJP62JBgz",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "8IjSS2HvJP62JBgz",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "fK0eGgK9AGyTrnp2",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "fK0eGgK9AGyTrnp2",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "RohWLFKidi188NHm",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "RohWLFKidi188NHm",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "TWM9oGfKDi8mOsuS",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "Edjh82GmeNctfAaj",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "Edjh82GmeNctfAaj",
+      "tagId": "Yy0a0LT2yXy5Z8iU"
+    },
+    {
+      "workflowId": "8e5qhVsZsEldj1Bz",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "8e5qhVsZsEldj1Bz",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "8e5qhVsZsEldj1Bz",
+      "tagId": "Zje24muqY13H5kCj"
+    },
+    {
+      "workflowId": "fyi19QTobptNQsry",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "fyi19QTobptNQsry",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "fyi19QTobptNQsry",
+      "tagId": "Zje24muqY13H5kCj"
+    },
+    {
+      "workflowId": "jYpQBR1adFLs3xSe",
+      "tagId": "3Hkr5UT3iDAWRBaM"
+    },
+    {
+      "workflowId": "uRRyhqEDdj65Us2Y",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "uRRyhqEDdj65Us2Y",
+      "tagId": "zuTDIQJDdxb6XmAC"
+    },
+    {
+      "workflowId": "B6ZnvArjBv6QXQ0G",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "B6ZnvArjBv6QXQ0G",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "bKWyBFqF1jtTvg31",
+      "tagId": "JPbtagbBdLlUmsg4"
+    },
+    {
+      "workflowId": "bKWyBFqF1jtTvg31",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "LKsmMZ0jR4TrcveQ",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "GzZSfVBo6JXjiV0Z",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "Iloe4UKYI3YHOluK",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "3MHrDePWSsNekpbq",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "5EAby8d5ClG4bxhO",
+      "tagId": "OjENA51eYeIcZsvD"
+    },
+    {
+      "workflowId": "nH10N8ZbtoN0yFwJ",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "nH10N8ZbtoN0yFwJ",
+      "tagId": "zuTDIQJDdxb6XmAC"
+    },
+    {
+      "workflowId": "Hml4OLRiqNI12TfB",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "Hml4OLRiqNI12TfB",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "RtuNwckwg4O5VSr1",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "RtuNwckwg4O5VSr1",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "RtuNwckwg4O5VSr1",
+      "tagId": "MpujNoUN23kxk4sI"
+    },
+    {
+      "workflowId": "RtuNwckwg4O5VSr1",
+      "tagId": "Zje24muqY13H5kCj"
+    },
+    {
+      "workflowId": "CTbdwwZ4V5Udl7aU",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "sVI3Ocxj6eQyZQeK",
+      "tagId": "gCy0EXgIzl0i7vat"
+    },
+    {
+      "workflowId": "7Wtgbva14yGMOQZg",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "4kItqUgBzCTkhceL",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "4kItqUgBzCTkhceL",
+      "tagId": "fZB9DHKdOgm6V1Sf"
+    },
+    {
+      "workflowId": "ZkRIY0qbyme55Na0",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "ZkRIY0qbyme55Na0",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "ZkRIY0qbyme55Na0",
+      "tagId": "fZB9DHKdOgm6V1Sf"
+    },
+    {
+      "workflowId": "Acq715L5eXP72MEf",
+      "tagId": "HUiUDMlDeC91dgBG"
+    },
+    {
+      "workflowId": "Acq715L5eXP72MEf",
+      "tagId": "ycI3JkCk64NjJrCC"
+    },
+    {
+      "workflowId": "aNBsuPQemMNlQS9h",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "29bocYrQsXTWzF0W",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "29bocYrQsXTWzF0W",
+      "tagId": "L5SDCgnWLZQ1jSn2"
+    },
+    {
+      "workflowId": "29bocYrQsXTWzF0W",
+      "tagId": "MpujNoUN23kxk4sI"
+    },
+    {
+      "workflowId": "29bocYrQsXTWzF0W",
+      "tagId": "Zje24muqY13H5kCj"
+    },
+    {
+      "workflowId": "iUeITxdHWe4Xht67",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "iUeITxdHWe4Xht67",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "QANGSA7xHezYPHPu",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "QANGSA7xHezYPHPu",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "ZORwNqjNyi3c9iAQ",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "ZORwNqjNyi3c9iAQ",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "1iY4EbrM6jPwLNmN",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "1iY4EbrM6jPwLNmN",
+      "tagId": "UaM50lSHr2uX5N7I"
+    },
+    {
+      "workflowId": "cf5dvcmUG7FzFqPf",
+      "tagId": "GuPZS1uPlOj0qFDh"
+    },
+    {
+      "workflowId": "cf5dvcmUG7FzFqPf",
+      "tagId": "bh1XG6jHskiQnFEe"
+    },
+    {
+      "workflowId": "cf5dvcmUG7FzFqPf",
+      "tagId": "kMB0xGjmPkpMAsfY"
+    },
+    {
+      "workflowId": "cf5dvcmUG7FzFqPf",
+      "tagId": "mMZzviMFUuMI8QG6"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "2DueLrSU0VUVlQEx"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "AtpzmrLDKz0v5aSY"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "GuPZS1uPlOj0qFDh"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "Id68JT5Ef5VJg3Cl"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "XfBh9XBI0BtrQBNP"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "oz2qKLjd1Qf2pg7D"
+    },
+    {
+      "workflowId": "YFwked8y1RWQ8Gpc",
+      "tagId": "EfKDVcSCQn3zF0PJ"
+    },
+    {
+      "workflowId": "PAme1MqwpAGviEPc",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "PAme1MqwpAGviEPc",
+      "tagId": "fZB9DHKdOgm6V1Sf"
+    },
+    {
+      "workflowId": "QsL6wjixKcwiLYhc",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "QsL6wjixKcwiLYhc",
+      "tagId": "gCy0EXgIzl0i7vat"
+    },
+    {
+      "workflowId": "nxePEQiw0xYisgqy",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "NMknNVLUJwskoTtW",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "OuD5EAdmkwpewhNP",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "ALHNH2OkTYWQYWwE",
+      "tagId": "2DueLrSU0VUVlQEx"
+    },
+    {
+      "workflowId": "ALHNH2OkTYWQYWwE",
+      "tagId": "5vcbOtd8oB3axq20"
+    },
+    {
+      "workflowId": "ALHNH2OkTYWQYWwE",
+      "tagId": "GuPZS1uPlOj0qFDh"
+    },
+    {
+      "workflowId": "ALHNH2OkTYWQYWwE",
+      "tagId": "XfBh9XBI0BtrQBNP"
+    },
+    {
+      "workflowId": "ALHNH2OkTYWQYWwE",
+      "tagId": "mMZzviMFUuMI8QG6"
+    },
+    {
+      "workflowId": "G3Bt1UYLfFP5l3a5",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "EfKDVcSCQn3zF0PJ"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "F8AGTNHaIda5PhuS"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "HFQbzReEJQn0Zc7s"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "MpujNoUN23kxk4sI"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "Te7O13Qa6CPGCxtm"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "gCy0EXgIzl0i7vat"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "si3UEP5cBBSp4EFW"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "veYkzNeiBRmJNpaa"
+    },
+    {
+      "workflowId": "CT3oYmId32Ph5Kdw",
+      "tagId": "wseH5bRl8GQGAiqZ"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "7Evtf2a2qUKuJeQo"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "EfKDVcSCQn3zF0PJ"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "HVmMDg9OYcOpjzoZ"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "MBNegPMl7B3mvwHv"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "Y0ALn0STdpkiSpd5"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "gxHylKn9Ec8Xmjl7"
+    },
+    {
+      "workflowId": "Whc6PKuSFAg0Y0eW",
+      "tagId": "qAXkk4dlxpxQXaNh"
+    },
+    {
+      "workflowId": "TF0SMC6YZjKKZ9vK",
+      "tagId": "5vcbOtd8oB3axq20"
+    },
+    {
+      "workflowId": "TF0SMC6YZjKKZ9vK",
+      "tagId": "AtpzmrLDKz0v5aSY"
+    },
+    {
+      "workflowId": "TF0SMC6YZjKKZ9vK",
+      "tagId": "GuPZS1uPlOj0qFDh"
+    },
+    {
+      "workflowId": "TF0SMC6YZjKKZ9vK",
+      "tagId": "Y0ALn0STdpkiSpd5"
+    },
+    {
+      "workflowId": "TF0SMC6YZjKKZ9vK",
+      "tagId": "mMZzviMFUuMI8QG6"
+    }
+  ]
+}

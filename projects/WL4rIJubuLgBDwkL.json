@@ -1,0 +1,16 @@
+{
+  "id": "WL4rIJubuLgBDwkL",
+  "name": "MCP",
+  "icon": {
+    "type": "icon",
+    "value": "layer-group"
+  },
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "WL4rIJubuLgBDwkL",
+    "teamName": "MCP"
+  },
+  "variableStubs": []
+}

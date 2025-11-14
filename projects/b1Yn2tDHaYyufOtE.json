@@ -1,0 +1,16 @@
+{
+  "id": "b1Yn2tDHaYyufOtE",
+  "name": "Agentic Frameworks",
+  "icon": {
+    "type": "emoji",
+    "value": "🧠"
+  },
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "b1Yn2tDHaYyufOtE",
+    "teamName": "Agentic Frameworks"
+  },
+  "variableStubs": []
+}

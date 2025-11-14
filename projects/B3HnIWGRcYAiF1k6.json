@@ -1,0 +1,13 @@
+{
+  "id": "B3HnIWGRcYAiF1k6",
+  "name": "Internal",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  },
+  "variableStubs": []
+}

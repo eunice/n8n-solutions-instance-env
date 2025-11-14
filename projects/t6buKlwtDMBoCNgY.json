@@ -1,0 +1,16 @@
+{
+  "id": "t6buKlwtDMBoCNgY",
+  "name": "Mews Demo Workflows",
+  "icon": {
+    "type": "icon",
+    "value": "layer-group"
+  },
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "t6buKlwtDMBoCNgY",
+    "teamName": "Mews Demo Workflows"
+  },
+  "variableStubs": []
+}

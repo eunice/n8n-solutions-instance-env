@@ -1,0 +1,13 @@
+{
+  "id": "V4nSFK9fIh6yD1HX",
+  "name": "test-project",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "V4nSFK9fIh6yD1HX",
+    "teamName": "test-project"
+  },
+  "variableStubs": []
+}

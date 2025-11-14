@@ -1,0 +1,13 @@
+{
+  "id": "2azW45Q8rotp5RML",
+  "name": "Failing / Investigate",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "2azW45Q8rotp5RML",
+    "teamName": "Failing / Investigate"
+  },
+  "variableStubs": []
+}

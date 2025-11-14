@@ -1,0 +1,13 @@
+{
+  "id": "IxTUvhl3mBSeWp5g",
+  "name": "Marketing - Certificate",
+  "icon": null,
+  "description": null,
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "IxTUvhl3mBSeWp5g",
+    "teamName": "Marketing - Certificate"
+  },
+  "variableStubs": []
+}
