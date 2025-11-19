@@ -1,0 +1,218 @@
+{
+  "id": "EAARFCFo3jYofdDZ",
+  "name": "RSS App Review Retreival",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "=https://itunes.apple.com/rss/customerreviews/id={{ $json.appid }}/json?cc=gb",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1104,
+        976
+      ],
+      "id": "20e23f9c-051d-4d8b-a85a-d609a699593c",
+      "name": "UK RSS Feed",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "url": "=https://itunes.apple.com/rss/customerreviews/id={{ $json.appid }}/json?cc=us",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1104,
+        800
+      ],
+      "id": "de815db8-8569-4989-9b2a-e644563c07f6",
+      "name": "US RSS Feed",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "32551b53-6fac-49aa-b24e-e0d2f0abfd4b",
+      "typeVersion": 1.1,
+      "name": "Start",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        -1696,
+        976
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// TODO parametrize\nconst countryCode = \"us\"\n\n// Parse the JSON string from the HTTP Request\nconst jsonData = JSON.parse($input.first().json.data);\n\n// Extract the reviews array from the feed\nconst reviews = jsonData.feed.entry || [];\n\n// Calculate cutoff time (n days ago)\nconst cutoffTime = new Date();\ncutoffTime.setDate(cutoffTime.getDate() - Number.parseInt($('Configure AppID, LookbackWindow').first().json.lookbackDays));\n\n// Map each review to extract key fields and filter\nconst parsedReviews = reviews\n  .map(review => {\n    return {\n      // Author information\n      author_name: review.author?.name?.label || '',\n      author_uri: review.author?.uri?.label || '',\n      \n      // Review metadata\n      review_id: review.id?.label || '',\n      title: review.title?.label || '',\n      rating: review['im:rating']?.label || '',\n      version: review['im:version']?.label || '',\n      \n      // Review content\n      content: review.content?.label || '',\n      \n      // Timestamps\n      updated: review.updated?.label || '',\n      \n      // Engagement metrics\n      vote_sum: review['im:voteSum']?.label || '0',\n      vote_count: review['im:voteCount']?.label || '0',\n      \n      // Additional info\n      content_type: review['im:contentType']?.attributes?.label || '',\n      review_link: review.link?.attributes?.href || '',\n      \n      // New: country code from Configure node\n      country_code: countryCode\n    };\n  })\n  // Filter reviews updated within last n days\n  .filter(review => {\n    if (!review.updated) return false;\n    const updatedDate = new Date(review.updated);\n    return updatedDate >= cutoffTime;\n  });\n\n// Return the parsed reviews as separate items for n8n\nreturn parsedReviews.map(review => ({\n  json: review\n}));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -912,
+        800
+      ],
+      "id": "b9f4ac13-9e05-4c87-bc0a-2d00a422c3ea",
+      "name": "ParseUS"
+    },
+    {
+      "parameters": {
+        "jsCode": "// TODO parametrize\nconst countryCode = \"uk\"\n\n// Parse the JSON string from the HTTP Request\nconst jsonData = JSON.parse($input.first().json.data);\n\n// Extract the reviews array from the feed\nconst reviews = jsonData.feed.entry || [];\n\n// Calculate cutoff time (n days ago)\nconst cutoffTime = new Date();\ncutoffTime.setDate(cutoffTime.getDate() - Number.parseInt($('Configure AppID, LookbackWindow').first().json.lookbackDays));\n\n// Map each review to extract key fields and filter\nconst parsedReviews = reviews\n  .map(review => {\n    return {\n      // Author information\n      author_name: review.author?.name?.label || '',\n      author_uri: review.author?.uri?.label || '',\n      \n      // Review metadata\n      review_id: review.id?.label || '',\n      title: review.title?.label || '',\n      rating: review['im:rating']?.label || '',\n      version: review['im:version']?.label || '',\n      \n      // Review content\n      content: review.content?.label || '',\n      \n      // Timestamps\n      updated: review.updated?.label || '',\n      \n      // Engagement metrics\n      vote_sum: review['im:voteSum']?.label || '0',\n      vote_count: review['im:voteCount']?.label || '0',\n      \n      // Additional info\n      content_type: review['im:contentType']?.attributes?.label || '',\n      review_link: review.link?.attributes?.href || '',\n      \n      // New: country code from Configure node\n      country_code: countryCode\n    };\n  })\n  // Filter reviews updated within last n days\n  .filter(review => {\n    if (!review.updated) return false;\n    const updatedDate = new Date(review.updated);\n    return updatedDate >= cutoffTime;\n  });\n\n// Return the parsed reviews as separate items for n8n\nreturn parsedReviews.map(review => ({\n  json: review\n}));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -912,
+        976
+      ],
+      "id": "ad71968a-0acb-4ffe-8336-d62e37cda641",
+      "name": "ParseUK"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -544,
+        960
+      ],
+      "id": "c77778c9-77a9-4a22-bb3a-0e305b4dd844",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "content": "   #    Retrieve App Reviews\n   ##    Target Markets: US, GB, CA\n\n   ![Apple App Store logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/150px-App_Store_%28iOS%29.svg.png)\n",
+        "height": 672,
+        "width": 1552,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1840,
+        672
+      ],
+      "id": "59c9718e-ce53-4e2d-8793-58c012e1dae2",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "405c75fe-baa7-4a87-accf-f1a41222713a",
+              "name": "appid",
+              "value": "493145008",
+              "type": "string"
+            },
+            {
+              "id": "37f69b24-9992-46fa-8032-40177b37b7c6",
+              "name": "lookbackDays",
+              "value": "7",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1488,
+        976
+      ],
+      "id": "5976bf97-142b-48e5-8f50-ef39b5189a9a",
+      "name": "Configure AppID, LookbackWindow"
+    }
+  ],
+  "connections": {
+    "US RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "ParseUS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "UK RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "ParseUK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Configure AppID, LookbackWindow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ParseUS": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ParseUK": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Configure AppID, LookbackWindow": {
+      "main": [
+        [
+          {
+            "node": "US RSS Feed",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "UK RSS Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "50d8a007-160d-4185-947a-1e8588a2ac5a",
+  "owner": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "parentFolderId": "fsSFB4w9eVjTS07F",
+  "isArchived": false
+}

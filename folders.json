@@ -439,6 +439,38 @@
       "homeProjectId": "q4JiagnkOizWEqn0",
       "createdAt": "2025-11-03T15:48:21.285Z",
       "updatedAt": "2025-11-03T15:48:21.285Z"
+    },
+    {
+      "id": "7V4jfvfq1H0DNQCE",
+      "name": "PFR Analysis",
+      "parentFolderId": null,
+      "homeProjectId": "B3HnIWGRcYAiF1k6",
+      "createdAt": "2025-11-14T21:44:09.938Z",
+      "updatedAt": "2025-11-14T21:44:09.938Z"
+    },
+    {
+      "id": "hkbSl91vNeTMzeny",
+      "name": "Generate Insights Near Close",
+      "parentFolderId": "7V4jfvfq1H0DNQCE",
+      "homeProjectId": "B3HnIWGRcYAiF1k6",
+      "createdAt": "2025-11-14T21:44:44.249Z",
+      "updatedAt": "2025-11-14T21:44:44.249Z"
+    },
+    {
+      "id": "Fz4Opvsy7g0Vyzzb",
+      "name": "Prep Cross Functional Insights",
+      "parentFolderId": "7V4jfvfq1H0DNQCE",
+      "homeProjectId": "B3HnIWGRcYAiF1k6",
+      "createdAt": "2025-11-14T21:45:10.621Z",
+      "updatedAt": "2025-11-14T21:45:10.621Z"
+    },
+    {
+      "id": "5blfddMS8L8wmMEm",
+      "name": "Creative Intake",
+      "parentFolderId": "KmZDiaRdx3XIIKRg",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2025-11-17T14:01:43.747Z",
+      "updatedAt": "2025-11-17T14:01:43.747Z"
     }
   ]
 }
