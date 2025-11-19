@@ -1,0 +1,321 @@
+{
+  "id": "pIyPkh1VzjxJKiyF",
+  "name": "Account Lookup MCP",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://n8n-solutions.app.n8n.cloud/webhook/3086f730-d9cc-48e5-8737-38d03351c6ba",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.3,
+      "position": [
+        -304,
+        288
+      ],
+      "id": "5d0b6225-736b-4f61-a268-afb4980d2695",
+      "name": "Search for Account ID By Name"
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "input"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        80,
+        592
+      ],
+      "id": "a2a2f4b0-5bb5-4db1-92b5-ca8070fa06db",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "path": "3086f730-d9cc-48e5-8737-38d03351c6ba",
+        "responseMode": "lastNode",
+        "responseData": "allEntries",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -432,
+        592
+      ],
+      "id": "0fd913ce-3990-4a32-b254-0a32d7a720c7",
+      "name": "Search For AccountID By Name",
+      "webhookId": "3086f730-d9cc-48e5-8737-38d03351c6ba"
+    },
+    {
+      "parameters": {
+        "description": "Call this tool to get account details",
+        "workflowId": {
+          "__rl": true,
+          "value": "pIyPkh1VzjxJKiyF",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/pIyPkh1VzjxJKiyF",
+          "cachedResultName": "Customer Demos — Account Lookup MCP"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "input",
+              "displayName": "input",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        304
+      ],
+      "id": "2916d3f7-797c-4ac9-a8a5-64029415f01b",
+      "name": "Get Account Detail"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2a0ef7ac-c8bf-48d8-a77d-16281e842339",
+              "name": "id",
+              "value": "1234",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -240,
+        592
+      ],
+      "id": "3c1eb642-650c-4c4f-8352-8e2aecdd6848",
+      "name": "Mock Response"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2a0ef7ac-c8bf-48d8-a77d-16281e842339",
+              "name": "output",
+              "value": "=context noise noise noise\ncontext noise noise noise\ncontext noise noise noise\ncontext noise noise noise\n\n\nbudget is 500,000 Mark talked with Stacy and this is ok even though lower than standards\n\nperson who wrote intake is targetstakeholder@target.com, and their name is Stacy Adams\n\ncontext noise noise noise\ncontext noise noise noise\ncontext noise noise noise\ncontext noise noise noise",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        272,
+        592
+      ],
+      "id": "ac3ee1da-68f0-4af1-897c-cbe115083f05",
+      "name": "Mock Metadata"
+    },
+    {
+      "parameters": {
+        "content": "## MCP Tool Call \n### HTTP REQUEST\n",
+        "height": 272,
+        "width": 464,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -512,
+        192
+      ],
+      "id": "c4c7c04d-868b-4e2b-841d-e0af95cd42d6",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Tool Implementation\n### Simulating External API",
+        "height": 272,
+        "width": 464,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -512,
+        496
+      ],
+      "id": "1ba7eee4-1652-44ea-bee5-ab7a3d8b0a7a",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## MCP Tool Call \n### N8n Subworkflow Trigger\n",
+        "height": 272,
+        "width": 464,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        192
+      ],
+      "id": "0ce1f5dd-1d73-4311-81dc-7c08d634d59d",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Tool Implementation\n### Simulating External n8n Workflow Call",
+        "height": 272,
+        "width": 464,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        496
+      ],
+      "id": "9a388117-b183-4f07-91c3-081fa40cb79d",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## MCP Tool Call \n### (Nested) MCP Client Connection\n",
+        "height": 272,
+        "width": 288,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        512,
+        192
+      ],
+      "id": "851b4e3e-4cd8-4e24-8021-c3c6d0b3260d",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        608,
+        304
+      ],
+      "id": "34440f3b-18ff-46b4-a8cc-2a61e61acd7e",
+      "name": "External Research"
+    },
+    {
+      "parameters": {
+        "content": "## [MCP Server] Account Lookup\n### Agent to agent interface for account lookup + context",
+        "height": 288,
+        "width": 976
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -512,
+        -128
+      ],
+      "id": "59444b20-205b-4060-851b-c87dbd9bb570",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "path": "19de82f2-3c41-40e7-926e-9895be3f8de5"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 2,
+      "position": [
+        -96,
+        -16
+      ],
+      "id": "21b4f64f-4e1e-4538-8d3d-2466286afc45",
+      "name": "Account Lookup MCP",
+      "webhookId": "19de82f2-3c41-40e7-926e-9895be3f8de5"
+    }
+  ],
+  "connections": {
+    "Search for Account ID By Name": {
+      "ai_tool": [
+        [
+          {
+            "node": "Account Lookup MCP",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Mock Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search For AccountID By Name": {
+      "main": [
+        [
+          {
+            "node": "Mock Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Account Detail": {
+      "ai_tool": [
+        [
+          {
+            "node": "Account Lookup MCP",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 2,
+  "versionId": "88855932-a8b3-484d-a122-5bfc12371a88",
+  "owner": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "parentFolderId": "5blfddMS8L8wmMEm",
+  "isArchived": false
+}
