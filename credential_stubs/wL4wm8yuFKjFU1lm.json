@@ -1,0 +1,14 @@
+{
+  "id": "wL4wm8yuFKjFU1lm",
+  "name": "Salesforce account",
+  "type": "salesforceOAuth2Api",
+  "data": {
+    "allowedHttpRequestDomains": "",
+    "allowedDomains": "={{ $secrets.awsSecretsManager$json.name }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

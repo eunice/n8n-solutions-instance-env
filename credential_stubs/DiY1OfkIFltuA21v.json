@@ -1,0 +1,14 @@
+{
+  "id": "DiY1OfkIFltuA21v",
+  "name": "Zammad Basic Auth account",
+  "type": "zammadTokenAuthApi",
+  "data": {
+    "baseUrl": "",
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

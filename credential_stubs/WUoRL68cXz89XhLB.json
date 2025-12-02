@@ -1,0 +1,14 @@
+{
+  "id": "WUoRL68cXz89XhLB",
+  "name": "Gmail (Eunice Test)",
+  "type": "gmailOAuth2",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xnl34CIbDYHj4AGJ",
+    "projectName": "Eunice Lee <eunice.lee@n8n.io>",
+    "personalEmail": "eunice.lee@n8n.io"
+  }
+}

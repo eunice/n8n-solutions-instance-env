@@ -1,0 +1,13 @@
+{
+  "id": "tyarLodDIxFvtkOA",
+  "name": "Mistral Cloud account",
+  "type": "mistralCloudApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

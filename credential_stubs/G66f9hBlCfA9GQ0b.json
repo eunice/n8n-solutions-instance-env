@@ -1,0 +1,14 @@
+{
+  "id": "G66f9hBlCfA9GQ0b",
+  "name": "n8n sales",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

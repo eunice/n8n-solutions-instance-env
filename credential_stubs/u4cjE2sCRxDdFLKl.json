@@ -1,0 +1,17 @@
+{
+  "id": "u4cjE2sCRxDdFLKl",
+  "name": "Amrita Postgres",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "user": "",
+    "password": "",
+    "allowUnauthorizedCerts": true,
+    "port": 6543
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

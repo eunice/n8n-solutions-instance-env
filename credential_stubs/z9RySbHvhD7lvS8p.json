@@ -1,0 +1,11 @@
+{
+  "id": "z9RySbHvhD7lvS8p",
+  "name": "hassan n8n google sheet",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

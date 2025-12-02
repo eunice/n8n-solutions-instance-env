@@ -1,0 +1,16 @@
+{
+  "id": "c5fI3TVU0bdbq13c",
+  "name": "Gmail account Marcus",
+  "type": "gmailOAuth2",
+  "data": {
+    "authUrl": "",
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

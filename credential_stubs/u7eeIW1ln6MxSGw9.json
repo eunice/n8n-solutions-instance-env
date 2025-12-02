@@ -1,0 +1,14 @@
+{
+  "id": "u7eeIW1ln6MxSGw9",
+  "name": "Dynamic AWS Secrets car_dealership selection",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "={{ $secrets.awsSecretsManager['AwsSecretKeyJson'].parseJson()[$json.car_dealership] }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "8UCiEp6VizXN7rro",
+  "name": "Crypto Panic",
+  "type": "httpQueryAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

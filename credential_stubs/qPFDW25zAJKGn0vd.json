@@ -1,0 +1,15 @@
+{
+  "id": "qPFDW25zAJKGn0vd",
+  "name": "OpenAi Dynamic Temp",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "={{ $('Fetch Fake API KEY').first().json.apikey }}",
+    "organizationId": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

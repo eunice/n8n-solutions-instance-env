@@ -1,0 +1,12 @@
+{
+  "id": "5Y2yluxbxSrQyRPp",
+  "name": "Amrita Google Sheets",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

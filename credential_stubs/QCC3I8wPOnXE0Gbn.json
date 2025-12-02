@@ -1,0 +1,11 @@
+{
+  "id": "QCC3I8wPOnXE0Gbn",
+  "name": "Google Calendar Marcus",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

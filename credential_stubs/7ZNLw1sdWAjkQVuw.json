@@ -1,0 +1,14 @@
+{
+  "id": "7ZNLw1sdWAjkQVuw",
+  "name": "Helicone Marcus",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

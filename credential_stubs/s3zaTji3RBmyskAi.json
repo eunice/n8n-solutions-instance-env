@@ -1,0 +1,12 @@
+{
+  "id": "s3zaTji3RBmyskAi",
+  "name": "Inser only credentials",
+  "type": "snowflake",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

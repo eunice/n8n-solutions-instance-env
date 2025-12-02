@@ -1,0 +1,14 @@
+{
+  "id": "2fFq96i1DpCJ1bdE",
+  "name": "n8n account",
+  "type": "n8nApi",
+  "data": {
+    "apiKey": "",
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

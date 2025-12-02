@@ -1,0 +1,14 @@
+{
+  "id": "nV2949U9ZeT7OPOl",
+  "name": "Calendly account",
+  "type": "calendlyApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "kYbJN1TfxzVve18Y",
+    "projectName": "Marcus Specht <marcus@n8n.io>",
+    "personalEmail": "marcus@n8n.io"
+  }
+}

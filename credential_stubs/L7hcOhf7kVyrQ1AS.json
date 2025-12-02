@@ -1,0 +1,16 @@
+{
+  "id": "L7hcOhf7kVyrQ1AS",
+  "name": "Elasticsearch account 2",
+  "type": "elasticsearchApi",
+  "data": {
+    "username": "",
+    "password": "",
+    "baseUrl": "",
+    "ignoreSSLIssues": true
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

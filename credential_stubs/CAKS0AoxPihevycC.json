@@ -1,0 +1,14 @@
+{
+  "id": "CAKS0AoxPihevycC",
+  "name": "Microsoft SharePoint account 3",
+  "type": "microsoftSharePointOAuth2Api",
+  "data": {
+    "subdomain": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

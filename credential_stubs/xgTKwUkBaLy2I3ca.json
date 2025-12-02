@@ -1,0 +1,17 @@
+{
+  "id": "xgTKwUkBaLy2I3ca",
+  "name": "MQTT account - ActiveMQ local",
+  "type": "mqtt",
+  "data": {
+    "host": "",
+    "port": 17513,
+    "username": "",
+    "password": "",
+    "clientId": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

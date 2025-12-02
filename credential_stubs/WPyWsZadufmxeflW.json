@@ -1,0 +1,14 @@
+{
+  "id": "WPyWsZadufmxeflW",
+  "name": "Postgres account 3",
+  "type": "postgres",
+  "data": {
+    "host": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

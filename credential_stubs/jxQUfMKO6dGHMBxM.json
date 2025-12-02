@@ -1,0 +1,15 @@
+{
+  "id": "jxQUfMKO6dGHMBxM",
+  "name": "Testing-idir",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "={{ $('Webhook').item.json.token }}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

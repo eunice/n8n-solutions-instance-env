@@ -1,0 +1,16 @@
+{
+  "id": "di63fq5xPNngQcRU",
+  "name": "ServiceNow Basic Auth account",
+  "type": "serviceNowBasicApi",
+  "data": {
+    "user": "",
+    "password": "",
+    "subdomain": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

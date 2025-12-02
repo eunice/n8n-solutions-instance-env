@@ -1,0 +1,14 @@
+{
+  "id": "XaR5wfRy522miocS",
+  "name": "WhatsApp OAuth account",
+  "type": "whatsAppTriggerApi",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

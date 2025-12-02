@@ -1,0 +1,14 @@
+{
+  "id": "6gv6grhrk65gpxul",
+  "name": "QdrantApi account - mandip@n8n.io",
+  "type": "qdrantApi",
+  "data": {
+    "apiKey": "",
+    "qdrantUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

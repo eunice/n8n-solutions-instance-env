@@ -1,0 +1,13 @@
+{
+  "id": "XW9V7T5OPaC1fvKB",
+  "name": "Splunk account",
+  "type": "splunkApi",
+  "data": {
+    "authToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

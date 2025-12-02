@@ -1,0 +1,13 @@
+{
+  "id": "sf0joPb65Wdq0s0O",
+  "name": "n8n sales",
+  "type": "anthropicApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "oL37YA6wWULsxmco",
+  "name": "Hassan personal reddit account",
+  "type": "redditOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

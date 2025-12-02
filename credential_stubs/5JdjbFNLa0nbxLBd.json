@@ -1,0 +1,16 @@
+{
+  "id": "5JdjbFNLa0nbxLBd",
+  "name": "Health Credentials",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "password": "",
+    "port": 14351
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

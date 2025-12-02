@@ -1,0 +1,14 @@
+{
+  "id": "I8di4dMh1BuFMn7b",
+  "name": "OpenAi Helicone Marcus",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "url": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

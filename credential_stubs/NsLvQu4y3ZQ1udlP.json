@@ -1,0 +1,14 @@
+{
+  "id": "NsLvQu4y3ZQ1udlP",
+  "name": "Resend Credentials",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

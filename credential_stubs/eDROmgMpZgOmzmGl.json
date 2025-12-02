@@ -1,0 +1,15 @@
+{
+  "id": "eDROmgMpZgOmzmGl",
+  "name": "Microsoft Outlook Marcus",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": "",
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

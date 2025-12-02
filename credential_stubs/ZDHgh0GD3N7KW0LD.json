@@ -1,0 +1,13 @@
+{
+  "id": "ZDHgh0GD3N7KW0LD",
+  "name": "Telekom API Marcus",
+  "type": "httpCustomAuth",
+  "data": {
+    "json": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

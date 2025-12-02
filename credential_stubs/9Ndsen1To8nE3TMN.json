@@ -1,0 +1,12 @@
+{
+  "id": "9Ndsen1To8nE3TMN",
+  "name": "Salesforce (Test Eunice)",
+  "type": "salesforceOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xnl34CIbDYHj4AGJ",
+    "projectName": "Eunice Lee <eunice.lee@n8n.io>",
+    "personalEmail": "eunice.lee@n8n.io"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "t7zZXooiKtjTwK9E",
+  "name": "Twilio account - Auth Token - nodega@n8n.io",
+  "type": "twilioApi",
+  "data": {
+    "accountSid": "",
+    "authToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

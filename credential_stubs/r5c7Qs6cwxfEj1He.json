@@ -1,0 +1,14 @@
+{
+  "id": "r5c7Qs6cwxfEj1He",
+  "name": "Twilio account - API Key - nodeqa@n8n.io",
+  "type": "twilioApi",
+  "data": {
+    "authType": "",
+    "accountSid": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

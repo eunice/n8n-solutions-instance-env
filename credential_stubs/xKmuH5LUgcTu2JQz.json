@@ -1,0 +1,14 @@
+{
+  "id": "xKmuH5LUgcTu2JQz",
+  "name": "Hassan Microsoft Account",
+  "type": "microsoftOAuth2Api",
+  "data": {
+    "scope": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

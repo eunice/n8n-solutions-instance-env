@@ -1,0 +1,13 @@
+{
+  "id": "FE3Q7NyRw1mKjnYu",
+  "name": "Notion - marcus@n8n.io",
+  "type": "notionApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

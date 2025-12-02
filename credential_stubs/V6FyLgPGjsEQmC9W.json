@@ -1,0 +1,11 @@
+{
+  "id": "V6FyLgPGjsEQmC9W",
+  "name": "amrita gmail n8n demo account",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "4GIBvm13yl5Kiqqi",
+    "teamName": "n8n build along"
+  }
+}

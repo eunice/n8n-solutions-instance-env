@@ -1,0 +1,21 @@
+{
+  "id": "mWFHQF3Vx6ZacSjs",
+  "name": "Google Sheets account Marcus",
+  "type": "googleSheetsOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": "",
+    "notice": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

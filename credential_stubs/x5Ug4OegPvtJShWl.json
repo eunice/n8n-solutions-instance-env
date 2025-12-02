@@ -1,0 +1,21 @@
+{
+  "id": "x5Ug4OegPvtJShWl",
+  "name": "Salesforce - nodeqa@n8n.io",
+  "type": "salesforceOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": "",
+    "environment": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

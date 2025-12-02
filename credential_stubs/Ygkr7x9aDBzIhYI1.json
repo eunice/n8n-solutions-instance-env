@@ -1,0 +1,13 @@
+{
+  "id": "Ygkr7x9aDBzIhYI1",
+  "name": "Followupboss Basic Auth API Key ",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

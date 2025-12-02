@@ -1,0 +1,14 @@
+{
+  "id": "nmqgTi4nt4azyuJg",
+  "name": "Unnamed credential 2",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

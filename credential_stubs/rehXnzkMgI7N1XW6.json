@@ -1,0 +1,13 @@
+{
+  "id": "rehXnzkMgI7N1XW6",
+  "name": "Notion account - enterprise lead calls",
+  "type": "notionApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

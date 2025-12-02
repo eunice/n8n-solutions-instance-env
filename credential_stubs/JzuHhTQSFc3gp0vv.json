@@ -1,0 +1,14 @@
+{
+  "id": "JzuHhTQSFc3gp0vv",
+  "name": "amrita airtable pat",
+  "type": "airtableTokenApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

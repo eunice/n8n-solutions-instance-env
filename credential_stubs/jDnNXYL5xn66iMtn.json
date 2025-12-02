@@ -1,0 +1,13 @@
+{
+  "id": "jDnNXYL5xn66iMtn",
+  "name": "PagerDuty account",
+  "type": "pagerDutyApi",
+  "data": {
+    "apiToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

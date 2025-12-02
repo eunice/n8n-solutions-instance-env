@@ -1,0 +1,15 @@
+{
+  "id": "7HNEdr7oFCC17vY0",
+  "name": "Elasticsearch account",
+  "type": "elasticsearchApi",
+  "data": {
+    "username": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

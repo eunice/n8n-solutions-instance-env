@@ -1,0 +1,15 @@
+{
+  "id": "RRniqxzp8GpnVkyW",
+  "name": "SSH Password account (Test)",
+  "type": "sshPassword",
+  "data": {
+    "host": "",
+    "username": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

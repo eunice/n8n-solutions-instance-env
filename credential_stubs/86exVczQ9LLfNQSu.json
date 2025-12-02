@@ -1,0 +1,13 @@
+{
+  "id": "86exVczQ9LLfNQSu",
+  "name": "Zoho account",
+  "type": "zohoOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

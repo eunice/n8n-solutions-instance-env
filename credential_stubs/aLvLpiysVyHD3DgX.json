@@ -1,0 +1,11 @@
+{
+  "id": "aLvLpiysVyHD3DgX",
+  "name": "Google Sheets account 4",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

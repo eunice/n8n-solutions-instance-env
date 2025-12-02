@@ -1,0 +1,16 @@
+{
+  "id": "9EOfUONBAO50Fd6C",
+  "name": "Bunny Farm",
+  "icon": {
+    "type": "emoji",
+    "value": "🐰"
+  },
+  "description": "Just a bunny farm... Or is it.....?",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "9EOfUONBAO50Fd6C",
+    "teamName": "Bunny Farm"
+  },
+  "variableStubs": []
+}

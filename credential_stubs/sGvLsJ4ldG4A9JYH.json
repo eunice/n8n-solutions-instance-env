@@ -1,0 +1,15 @@
+{
+  "id": "sGvLsJ4ldG4A9JYH",
+  "name": "Testing AWS",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": "={{ $secrets[\"awsSecretsManager\"].AwsSecretKeyJson }}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

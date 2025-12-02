@@ -1,0 +1,15 @@
+{
+  "id": "bTIng6pwIbPn74BQ",
+  "name": "Jira SW Cloud account n8n-solutions-2024",
+  "type": "jiraSoftwareCloudApi",
+  "data": {
+    "email": "",
+    "apiToken": "",
+    "domain": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

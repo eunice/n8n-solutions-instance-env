@@ -1,0 +1,13 @@
+{
+  "id": "XR2YAPtMt4VEKGxE",
+  "name": "JWT Auth account 3",
+  "type": "jwtAuth",
+  "data": {
+    "secret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "b1Yn2tDHaYyufOtE",
+    "teamName": "Agentic Frameworks"
+  }
+}

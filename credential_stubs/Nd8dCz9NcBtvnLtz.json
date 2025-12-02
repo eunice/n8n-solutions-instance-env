@@ -1,0 +1,20 @@
+{
+  "id": "Nd8dCz9NcBtvnLtz",
+  "name": "Microsoft Teams account Marcus",
+  "type": "microsoftTeamsOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  }
+}

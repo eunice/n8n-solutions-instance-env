@@ -1,0 +1,14 @@
+{
+  "id": "YD4CEvP5djKsobCC",
+  "name": "OpenAi account 6",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

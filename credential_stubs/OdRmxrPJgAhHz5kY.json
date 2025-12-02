@@ -1,0 +1,11 @@
+{
+  "id": "OdRmxrPJgAhHz5kY",
+  "name": "Google Calendar account 2",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

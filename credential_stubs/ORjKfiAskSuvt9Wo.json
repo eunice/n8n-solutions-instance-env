@@ -1,0 +1,12 @@
+{
+  "id": "ORjKfiAskSuvt9Wo",
+  "name": "Gmail stratos.tziallas@n8n.io",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  }
+}

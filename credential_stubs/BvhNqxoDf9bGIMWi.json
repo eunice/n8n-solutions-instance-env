@@ -1,0 +1,14 @@
+{
+  "id": "BvhNqxoDf9bGIMWi",
+  "name": "Ollama account 2",
+  "type": "ollamaApi",
+  "data": {
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

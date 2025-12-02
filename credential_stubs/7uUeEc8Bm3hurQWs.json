@@ -1,0 +1,17 @@
+{
+  "id": "7uUeEc8Bm3hurQWs",
+  "name": "Google Drive Marcus Service Account",
+  "type": "googleApi",
+  "data": {
+    "region": "",
+    "email": "",
+    "privateKey": "",
+    "httpNode": true,
+    "scopes": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "2azW45Q8rotp5RML",
+    "teamName": "Failing / Investigate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fDc7ZNDlWcF1NtwY",
+  "name": "SerpAPI account",
+  "type": "serpApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

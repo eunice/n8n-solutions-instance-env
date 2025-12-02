@@ -1,0 +1,15 @@
+{
+  "id": "vcqRxSVmZ6na3uYN",
+  "name": "Azure Open AI account 2",
+  "type": "azureOpenAiApi",
+  "data": {
+    "apiKey": "",
+    "resourceName": "",
+    "endpoint": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ggy3XvYnQQC2qcHU",
+    "teamName": "Central Project"
+  }
+}

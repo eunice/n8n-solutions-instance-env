@@ -1,0 +1,11 @@
+{
+  "id": "t5Ny71QQk4CehMrM",
+  "name": "Google Sheets (Eunice)",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

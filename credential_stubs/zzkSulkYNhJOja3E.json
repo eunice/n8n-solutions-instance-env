@@ -1,0 +1,13 @@
+{
+  "id": "zzkSulkYNhJOja3E",
+  "name": "Notion n8n solutions",
+  "type": "notionApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

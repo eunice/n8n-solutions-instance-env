@@ -1,0 +1,12 @@
+{
+  "id": "kNOycFCzE39bC5eQ",
+  "name": "Google Calendar(Eunice)",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xnl34CIbDYHj4AGJ",
+    "projectName": "Eunice Lee <eunice.lee@n8n.io>",
+    "personalEmail": "eunice.lee@n8n.io"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "FdarFGO0gOnrJrgc",
+  "name": "Postgres account AD",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "database": "",
+    "user": "",
+    "password": "",
+    "ssl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

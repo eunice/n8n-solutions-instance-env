@@ -1,0 +1,13 @@
+{
+  "id": "VOQKksJD2WEw3NDw",
+  "name": "HubSpot - App Token - marcus@n8n.io ",
+  "type": "hubspotAppToken",
+  "data": {
+    "appToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

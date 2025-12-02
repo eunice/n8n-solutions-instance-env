@@ -1,0 +1,13 @@
+{
+  "id": "iuL3Ebdb2I42LVzb",
+  "name": "Airtop account",
+  "type": "airtopApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  }
+}

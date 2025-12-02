@@ -1,0 +1,20 @@
+{
+  "id": "F13ivCGaJzNPJbfJ",
+  "name": "Microsoft Excel Marcus",
+  "type": "microsoftExcelOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "2azW45Q8rotp5RML",
+    "teamName": "Failing / Investigate"
+  }
+}

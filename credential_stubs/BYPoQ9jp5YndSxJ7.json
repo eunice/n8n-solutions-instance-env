@@ -1,0 +1,16 @@
+{
+  "id": "BYPoQ9jp5YndSxJ7",
+  "name": "FTP account 2",
+  "type": "ftp",
+  "data": {
+    "host": "",
+    "username": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

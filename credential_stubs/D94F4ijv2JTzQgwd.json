@@ -1,0 +1,15 @@
+{
+  "id": "D94F4ijv2JTzQgwd",
+  "name": "Solutions Demo Bot",
+  "type": "slackApi",
+  "data": {
+    "accessToken": "",
+    "signatureSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xynw2eAkoVuePKMm",
+    "projectName": "Kyle Rego <kyle.rego@n8n.io>",
+    "personalEmail": "kyle.rego@n8n.io"
+  }
+}

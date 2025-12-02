@@ -1,0 +1,17 @@
+{
+  "id": "0Mn6sUApkBocXj1O",
+  "name": "Okta API OAuth2",
+  "type": "oAuth2Api",
+  "data": {
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  }
+}

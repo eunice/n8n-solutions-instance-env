@@ -1,0 +1,15 @@
+{
+  "id": "6kDtjFDzhob9qMCE",
+  "name": "Header Auth account 7",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "=Bearer {{ $vars.test_hs_var }}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

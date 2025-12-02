@@ -1,0 +1,15 @@
+{
+  "id": "QaqqIjESkoJaOYfz",
+  "name": "AWS account (nodeqa@n8n.io)",
+  "type": "aws",
+  "data": {
+    "accessKeyId": "",
+    "secretAccessKey": "",
+    "customEndpoints": true
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

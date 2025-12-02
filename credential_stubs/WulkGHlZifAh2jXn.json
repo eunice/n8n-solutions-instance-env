@@ -1,0 +1,11 @@
+{
+  "id": "WulkGHlZifAh2jXn",
+  "name": "Test Credentials",
+  "type": "actionNetworkApi",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "b1Yn2tDHaYyufOtE",
+    "teamName": "Agentic Frameworks"
+  }
+}

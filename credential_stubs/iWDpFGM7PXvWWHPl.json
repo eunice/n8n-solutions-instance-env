@@ -1,0 +1,12 @@
+{
+  "id": "iWDpFGM7PXvWWHPl",
+  "name": "Microsoft Outlook (Eunice)",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xnl34CIbDYHj4AGJ",
+    "projectName": "Eunice Lee <eunice.lee@n8n.io>",
+    "personalEmail": "eunice.lee@n8n.io"
+  }
+}

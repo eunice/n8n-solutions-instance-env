@@ -1,0 +1,14 @@
+{
+  "id": "lDfNXhckt2tvKgkR",
+  "name": "WhatsApp account",
+  "type": "whatsAppApi",
+  "data": {
+    "accessToken": "",
+    "businessAccountId": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

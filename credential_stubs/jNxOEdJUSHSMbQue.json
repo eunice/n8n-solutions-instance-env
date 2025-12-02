@@ -1,0 +1,18 @@
+{
+  "id": "jNxOEdJUSHSMbQue",
+  "name": "Azure API Credentials",
+  "type": "oAuth2Api",
+  "data": {
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  }
+}

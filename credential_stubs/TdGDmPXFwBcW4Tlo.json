@@ -1,0 +1,11 @@
+{
+  "id": "TdGDmPXFwBcW4Tlo",
+  "name": "amrita gmail",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

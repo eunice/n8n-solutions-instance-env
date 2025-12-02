@@ -1,0 +1,12 @@
+{
+  "id": "B0jsCA3cxrQPjgA5",
+  "name": "Gmail account 4",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "fxNWDXEGEdrJgj97",
+    "projectName": "Hope McMullen <hope.mcmullen@n8n.io>",
+    "personalEmail": "hope.mcmullen@n8n.io"
+  }
+}

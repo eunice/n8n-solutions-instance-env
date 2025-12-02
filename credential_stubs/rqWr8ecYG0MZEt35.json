@@ -1,0 +1,13 @@
+{
+  "id": "rqWr8ecYG0MZEt35",
+  "name": "Microsoft Teams account 3",
+  "type": "microsoftTeamsOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

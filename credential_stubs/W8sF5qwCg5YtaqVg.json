@@ -1,0 +1,13 @@
+{
+  "id": "W8sF5qwCg5YtaqVg",
+  "name": "JWT Auth account 4",
+  "type": "jwtAuth",
+  "data": {
+    "secret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

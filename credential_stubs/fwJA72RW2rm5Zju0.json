@@ -1,0 +1,14 @@
+{
+  "id": "fwJA72RW2rm5Zju0",
+  "name": "Google Gemini(PaLM) Api marcus@n8n.io",
+  "type": "googlePalmApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

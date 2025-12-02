@@ -1,0 +1,14 @@
+{
+  "id": "SuuumnPFKQSPZWrw",
+  "name": "n8n account 3",
+  "type": "n8nApi",
+  "data": {
+    "apiKey": "",
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "V4nSFK9fIh6yD1HX",
+    "teamName": "test-project"
+  }
+}

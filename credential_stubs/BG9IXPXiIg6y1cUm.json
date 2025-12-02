@@ -1,0 +1,15 @@
+{
+  "id": "BG9IXPXiIg6y1cUm",
+  "name": "Marcus ngrok local tunnel",
+  "type": "kafka",
+  "data": {
+    "clientId": "",
+    "brokers": "",
+    "ssl": false
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "CtcjAMnQblsQ7ua4",
+  "name": "Resend Credentials",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Qza1M8DyefDF6HtA",
+  "name": "n8n account solutions",
+  "type": "n8nApi",
+  "data": {
+    "apiKey": "",
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

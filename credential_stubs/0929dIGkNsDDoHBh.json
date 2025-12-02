@@ -1,0 +1,14 @@
+{
+  "id": "0929dIGkNsDDoHBh",
+  "name": "PineconeApi account solutions@n8n.io",
+  "type": "pineconeApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

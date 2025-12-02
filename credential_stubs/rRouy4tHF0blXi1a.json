@@ -1,0 +1,11 @@
+{
+  "id": "rRouy4tHF0blXi1a",
+  "name": "Ollama account",
+  "type": "ollamaApi",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

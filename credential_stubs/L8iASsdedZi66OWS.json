@@ -1,0 +1,14 @@
+{
+  "id": "L8iASsdedZi66OWS",
+  "name": "OpenAi account",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "organizationId": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

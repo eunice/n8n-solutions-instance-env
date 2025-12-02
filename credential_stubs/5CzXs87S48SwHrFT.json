@@ -1,0 +1,11 @@
+{
+  "id": "5CzXs87S48SwHrFT",
+  "name": "Telegram account",
+  "type": "telegramApi",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

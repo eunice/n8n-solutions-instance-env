@@ -1,0 +1,16 @@
+{
+  "id": "KUNF5XYQa3ATuYWL",
+  "name": "Elastic Security account",
+  "type": "elasticSecurityApi",
+  "data": {
+    "baseUrl": "",
+    "username": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "QWUOVRqz1Yz13YYM",
+  "name": "Microsoft Outlook account 3",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

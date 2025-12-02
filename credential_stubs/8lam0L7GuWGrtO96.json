@@ -1,0 +1,16 @@
+{
+  "id": "8lam0L7GuWGrtO96",
+  "name": "Azure Open AI from Oleg",
+  "type": "azureOpenAiApi",
+  "data": {
+    "apiKey": "",
+    "resourceName": "",
+    "apiVersion": "",
+    "endpoint": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

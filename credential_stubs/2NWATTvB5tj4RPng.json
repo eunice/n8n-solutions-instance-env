@@ -1,0 +1,12 @@
+{
+  "id": "2NWATTvB5tj4RPng",
+  "name": "Microsoft To Do account",
+  "type": "microsoftToDoOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  }
+}

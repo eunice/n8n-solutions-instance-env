@@ -1,0 +1,14 @@
+{
+  "id": "Vs4dBTCHxKSrdpVw",
+  "name": "Gmail account 3",
+  "type": "gmailOAuth2",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "jUb1c0mZ0DPmxUte",
+    "projectName": "Tanya Koleva <tanya@n8n.io>",
+    "personalEmail": "tanya@n8n.io"
+  }
+}

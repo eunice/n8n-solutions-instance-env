@@ -1,0 +1,20 @@
+{
+  "id": "kWZX4jzMwDCQC3RR",
+  "name": "Microsoft Drive account",
+  "type": "microsoftOneDriveOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

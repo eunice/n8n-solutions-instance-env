@@ -1,0 +1,21 @@
+{
+  "id": "8Skis9DjwAGI02Cd",
+  "name": "Google Sheets account Mandip",
+  "type": "googleSheetsOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": "",
+    "notice": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

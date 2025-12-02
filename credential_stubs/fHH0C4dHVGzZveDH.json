@@ -1,0 +1,16 @@
+{
+  "id": "fHH0C4dHVGzZveDH",
+  "name": "Kafka account",
+  "type": "kafka",
+  "data": {
+    "clientId": "",
+    "brokers": "",
+    "ssl": false
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

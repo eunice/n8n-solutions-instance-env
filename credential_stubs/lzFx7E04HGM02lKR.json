@@ -1,0 +1,12 @@
+{
+  "id": "lzFx7E04HGM02lKR",
+  "name": "Kyle Slack",
+  "type": "slackOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xynw2eAkoVuePKMm",
+    "projectName": "Kyle Rego <kyle.rego@n8n.io>",
+    "personalEmail": "kyle.rego@n8n.io"
+  }
+}

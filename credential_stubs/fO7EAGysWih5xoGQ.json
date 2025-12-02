@@ -1,0 +1,14 @@
+{
+  "id": "fO7EAGysWih5xoGQ",
+  "name": "Microsoft Graph Security account",
+  "type": "microsoftGraphSecurityOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xynw2eAkoVuePKMm",
+    "projectName": "Kyle Rego <kyle.rego@n8n.io>",
+    "personalEmail": "kyle.rego@n8n.io"
+  }
+}

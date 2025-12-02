@@ -1,0 +1,13 @@
+{
+  "id": "mkZiXLojUBCK07Ld",
+  "name": "Microsoft SQL account",
+  "type": "microsoftSql",
+  "data": {
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

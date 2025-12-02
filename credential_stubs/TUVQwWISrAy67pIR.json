@@ -1,0 +1,14 @@
+{
+  "id": "TUVQwWISrAy67pIR",
+  "name": "HuggingFaceApi account",
+  "type": "huggingFaceApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

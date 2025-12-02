@@ -1,0 +1,21 @@
+{
+  "id": "wJJAsEcVIudbK6ki",
+  "name": "Microsoft Teams account Marcus",
+  "type": "microsoftTeamsOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": "",
+    "notice": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

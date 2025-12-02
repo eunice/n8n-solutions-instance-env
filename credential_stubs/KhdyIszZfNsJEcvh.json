@@ -1,0 +1,11 @@
+{
+  "id": "KhdyIszZfNsJEcvh",
+  "name": "Zendesk account 2",
+  "type": "zendeskApi",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

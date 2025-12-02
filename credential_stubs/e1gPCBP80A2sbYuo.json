@@ -1,0 +1,14 @@
+{
+  "id": "e1gPCBP80A2sbYuo",
+  "name": "Google Gemini(PaLM) Api account-mandip@n8n.io",
+  "type": "googlePalmApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

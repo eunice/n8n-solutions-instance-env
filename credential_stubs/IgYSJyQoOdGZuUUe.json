@@ -1,0 +1,14 @@
+{
+  "id": "IgYSJyQoOdGZuUUe",
+  "name": "Header Auth N8n License Server Readonly",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  }
+}

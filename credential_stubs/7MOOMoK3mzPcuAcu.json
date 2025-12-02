@@ -1,0 +1,13 @@
+{
+  "id": "7MOOMoK3mzPcuAcu",
+  "name": "Airtable Personal Access Token account",
+  "type": "airtableTokenApi",
+  "data": {
+    "accessToken": "={{ $secrets.infisical.AIRTABLE_ACCESS_TOKEN }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

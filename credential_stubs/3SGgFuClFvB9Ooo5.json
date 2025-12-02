@@ -1,0 +1,14 @@
+{
+  "id": "3SGgFuClFvB9Ooo5",
+  "name": "Discord Webhook account",
+  "type": "discordWebhookApi",
+  "data": {
+    "webhookUri": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

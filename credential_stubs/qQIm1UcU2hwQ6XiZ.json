@@ -1,0 +1,13 @@
+{
+  "id": "qQIm1UcU2hwQ6XiZ",
+  "name": "sentinel bot",
+  "type": "slackApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

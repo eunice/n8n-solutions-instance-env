@@ -1,0 +1,12 @@
+{
+  "id": "w2aWf5vCbHGDmKZk",
+  "name": "Twilio account 4",
+  "type": "twilioApi",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

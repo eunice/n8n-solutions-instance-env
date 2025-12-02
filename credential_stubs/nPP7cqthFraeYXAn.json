@@ -1,0 +1,16 @@
+{
+  "id": "nPP7cqthFraeYXAn",
+  "name": "Airtable Personal Access Token account 3",
+  "type": "airtableOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": "",
+    "csrfSecret": "",
+    "codeVerifier": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

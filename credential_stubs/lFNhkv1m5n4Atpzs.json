@@ -1,0 +1,14 @@
+{
+  "id": "lFNhkv1m5n4Atpzs",
+  "name": "hassan n8n drive",
+  "type": "googleDriveOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

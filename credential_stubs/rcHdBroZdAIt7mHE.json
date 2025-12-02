@@ -1,0 +1,12 @@
+{
+  "id": "rcHdBroZdAIt7mHE",
+  "name": "hassan onedrive",
+  "type": "microsoftOneDriveOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

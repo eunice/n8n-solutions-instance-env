@@ -1,0 +1,17 @@
+{
+  "id": "f4gbcMDPfVWBJBMz",
+  "name": "Generic OAuth 2",
+  "type": "oAuth2Api",
+  "data": {
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

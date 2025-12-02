@@ -1,0 +1,11 @@
+{
+  "id": "Hq8UbQhaZGgPfp5e",
+  "name": "Slack account 6",
+  "type": "slackOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "OLS3KnmffsbW3FDC",
+  "name": "danny github olympics classic token",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "i5EI19BamS5DD5sG",
+    "projectName": "Danny Martini <danny@n8n.io>",
+    "personalEmail": "danny@n8n.io"
+  }
+}

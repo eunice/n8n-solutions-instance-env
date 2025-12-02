@@ -1,0 +1,11 @@
+{
+  "id": "6dSBF7VSTIqyYNaB",
+  "name": "Microsoft Excel account 2",
+  "type": "microsoftExcelOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

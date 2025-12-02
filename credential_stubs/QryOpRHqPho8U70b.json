@@ -1,0 +1,15 @@
+{
+  "id": "QryOpRHqPho8U70b",
+  "name": "Unnamed credential 4",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "Hzi6PsTu2udD2CG0",
+  "name": "Test Credential",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": "={{ JSON.parse($secrets.awsSecretsManager['AwsSecretKeyJson'])[\"AWS_SECRET_KEY\"] }}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

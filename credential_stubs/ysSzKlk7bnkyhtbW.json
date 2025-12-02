@@ -1,0 +1,14 @@
+{
+  "id": "ysSzKlk7bnkyhtbW",
+  "name": "SerpAPI account 2",
+  "type": "serpApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

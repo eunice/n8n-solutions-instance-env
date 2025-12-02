@@ -1,0 +1,13 @@
+{
+  "id": "QfPatv5ISMQzmx2a",
+  "name": "Monday.com account 2",
+  "type": "mondayComApi",
+  "data": {
+    "apiToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

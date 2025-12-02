@@ -1,0 +1,14 @@
+{
+  "id": "w0BrWjYQFORaSvKx",
+  "name": "The Hive 5 account",
+  "type": "theHiveProjectApi",
+  "data": {
+    "ApiKey": "",
+    "url": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  }
+}

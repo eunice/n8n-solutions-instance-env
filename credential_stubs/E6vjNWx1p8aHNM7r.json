@@ -1,0 +1,12 @@
+{
+  "id": "E6vjNWx1p8aHNM7r",
+  "name": "Gong (Test Eunice)",
+  "type": "gongApi",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "xnl34CIbDYHj4AGJ",
+    "projectName": "Eunice Lee <eunice.lee@n8n.io>",
+    "personalEmail": "eunice.lee@n8n.io"
+  }
+}

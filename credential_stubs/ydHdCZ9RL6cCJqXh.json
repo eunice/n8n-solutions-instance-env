@@ -1,0 +1,13 @@
+{
+  "id": "ydHdCZ9RL6cCJqXh",
+  "name": "JWT Auth account",
+  "type": "jwtAuth",
+  "data": {
+    "secret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}
