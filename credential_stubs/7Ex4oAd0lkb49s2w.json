@@ -1,0 +1,15 @@
+{
+  "id": "7Ex4oAd0lkb49s2w",
+  "name": "seo_token",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

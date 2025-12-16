@@ -479,6 +479,14 @@
       "homeProjectId": "ovnGbppBuiOQlf7m",
       "createdAt": "2025-12-02T16:09:15.783Z",
       "updatedAt": "2025-12-02T16:09:15.783Z"
+    },
+    {
+      "id": "edW7f98z8lQZrWoL",
+      "name": "Template library example",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2025-12-05T16:10:13.733Z",
+      "updatedAt": "2025-12-05T16:10:13.733Z"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "id": "YvvGivdnbkB5RAsz",
+  "name": "n8n-internal",
+  "type": "postgres",
+  "data": {
+    "database": "",
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "cU7dDlW6tPo2y4d9",
+  "name": "Weaviate Credentials Stratos",
+  "type": "weaviateApi",
+  "data": {
+    "weaviate_cloud_endpoint": "",
+    "weaviate_api_key": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "isGlobal": false
+}

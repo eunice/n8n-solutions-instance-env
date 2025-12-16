@@ -1,0 +1,12 @@
+{
+  "id": "HVIVSfrADtT5BXnN",
+  "name": "Microsoft Excel Marcus",
+  "type": "microsoftExcelOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

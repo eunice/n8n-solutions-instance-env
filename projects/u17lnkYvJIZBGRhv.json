@@ -1,0 +1,16 @@
+{
+  "id": "u17lnkYvJIZBGRhv",
+  "name": "Enterprise Template Library",
+  "icon": {
+    "type": "icon",
+    "value": "graduation-cap"
+  },
+  "description": "This is an example for enterprise template library. In this example the templates are stored at data tables and the creation of new templates is done through an n8n form.",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "u17lnkYvJIZBGRhv",
+    "teamName": "Enterprise Template Library"
+  },
+  "variableStubs": []
+}

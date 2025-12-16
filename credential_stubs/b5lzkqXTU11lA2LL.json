@@ -1,0 +1,13 @@
+{
+  "id": "b5lzkqXTU11lA2LL",
+  "name": "Google Sheets Kendall",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "jC5lGsQAuIfvVh53",
+  "name": "Bearer Auth account",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": "={{$secrets.gcpSecretsManager.seo_token}}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

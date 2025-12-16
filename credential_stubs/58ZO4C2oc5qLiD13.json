@@ -1,0 +1,12 @@
+{
+  "id": "58ZO4C2oc5qLiD13",
+  "name": "GitHub Idir",
+  "type": "githubOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}
