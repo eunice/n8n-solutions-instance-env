@@ -1,0 +1,15 @@
+{
+  "id": "wiv18tTRZMzzn1AN",
+  "name": "X account",
+  "type": "twitterOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

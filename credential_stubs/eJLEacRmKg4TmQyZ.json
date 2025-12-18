@@ -1,0 +1,15 @@
+{
+  "id": "eJLEacRmKg4TmQyZ",
+  "name": "Azure Open AI account 3",
+  "type": "azureOpenAiApi",
+  "data": {
+    "apiKey": "",
+    "resourceName": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "mgegojU6TjAZ0puh",
+    "teamName": "🏆 Customer Success"
+  },
+  "isGlobal": false
+}

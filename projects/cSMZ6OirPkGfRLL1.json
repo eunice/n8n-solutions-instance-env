@@ -1,0 +1,16 @@
+{
+  "id": "cSMZ6OirPkGfRLL1",
+  "name": "Customer Workshop",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "cSMZ6OirPkGfRLL1",
+    "teamName": "Customer Workshop"
+  },
+  "variableStubs": []
+}

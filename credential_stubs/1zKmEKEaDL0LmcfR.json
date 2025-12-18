@@ -1,0 +1,14 @@
+{
+  "id": "1zKmEKEaDL0LmcfR",
+  "name": "Facebook Graph account",
+  "type": "facebookGraphApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}
