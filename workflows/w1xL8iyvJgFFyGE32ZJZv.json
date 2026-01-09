@@ -1,0 +1,229 @@
+{
+  "id": "w1xL8iyvJgFFyGE32ZJZv",
+  "name": "Kendall Error Handler",
+  "nodes": [
+    {
+      "parameters": {
+        "select": "user",
+        "user": {
+          "__rl": true,
+          "value": "U09UCV1PB7W",
+          "mode": "list",
+          "cachedResultName": "kendall.garey"
+        },
+        "text": "=❌{{ $json.workflow.name }} is failing: {{ $vars.instance_url }}workflow/{{ $json.workflow.id }}\n\n",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        208,
+        0
+      ],
+      "id": "ed85982b-15e4-46e8-b226-56cb189792f3",
+      "name": "Slack2",
+      "webhookId": "81addfb0-167c-4e38-a286-8e9bf61c7401",
+      "credentials": {
+        "slackApi": {
+          "id": "LCu5K0q1IDq2MKrL",
+          "name": "Slack - Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "06b5187a-1e2d-4f7e-9f4a-5dcd457c3272",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "select": "user",
+        "user": {
+          "__rl": true,
+          "value": "U09UCV1PB7W",
+          "mode": "list",
+          "cachedResultName": "kendall.garey"
+        },
+        "text": "={{ $('Error Trigger').item.json.toJsonString()}}",
+        "otherOptions": {
+          "includeLinkToWorkflow": false,
+          "thread_ts": {
+            "replyValues": {
+              "thread_ts": "={{ $json.message.ts }}"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        464,
+        0
+      ],
+      "id": "0909fd65-a1ae-423c-ae2b-c03cebbb106d",
+      "name": "Send a message",
+      "webhookId": "562a34b8-2b32-4fed-ae9d-229432289830",
+      "credentials": {
+        "slackApi": {
+          "id": "LCu5K0q1IDq2MKrL",
+          "name": "Slack - Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Error Trigger').item.json.toJsonString()}}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "you will receive error messages in the user prompt. they will be errors from a failing n8n workflow. your task is to provide a human readable message that will assist the developer in finding the root cause"
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        560,
+        176
+      ],
+      "id": "7f9b843d-7f36-4c67-8494-24eca20d4121",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        496,
+        384
+      ],
+      "id": "5bec29b7-e30c-4147-a9f3-ef9c52b8e2d8",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "G66f9hBlCfA9GQ0b",
+          "name": "n8n sales"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "select": "user",
+        "user": {
+          "__rl": true,
+          "value": "U09UCV1PB7W",
+          "mode": "list",
+          "cachedResultName": "kendall.garey"
+        },
+        "text": "={{ $json.text }}",
+        "otherOptions": {
+          "includeLinkToWorkflow": false,
+          "thread_ts": {
+            "replyValues": {
+              "thread_ts": "={{ $('Slack2').item.json.message.ts }}"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        960,
+        176
+      ],
+      "id": "2665b321-ad1e-402f-878d-2a3c33a47fc0",
+      "name": "Send a message1",
+      "webhookId": "562a34b8-2b32-4fed-ae9d-229432289830",
+      "credentials": {
+        "slackApi": {
+          "id": "LCu5K0q1IDq2MKrL",
+          "name": "Slack - Kendall"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Slack2": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Slack2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Send a message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "saveExecutionProgress": true,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "triggerCount": 0,
+  "versionId": "dcdbae3f-58c0-411f-b18d-f30b3662a1b0",
+  "owner": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
