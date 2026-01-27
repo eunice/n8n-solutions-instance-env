@@ -535,6 +535,38 @@
       "homeProjectId": "mgegojU6TjAZ0puh",
       "createdAt": "2025-12-27T00:39:59.671Z",
       "updatedAt": "2025-12-27T00:39:59.671Z"
+    },
+    {
+      "id": "bkZ5rMIQS85PctyV",
+      "name": "n8n docs",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-01-12T09:38:31.488Z",
+      "updatedAt": "2026-01-12T09:38:31.488Z"
+    },
+    {
+      "id": "EJMGrVCyBQc4vTks",
+      "name": "Credentials",
+      "parentFolderId": null,
+      "homeProjectId": "toPozbTl7IDyn1kD",
+      "createdAt": "2026-01-14T19:43:13.632Z",
+      "updatedAt": "2026-01-14T19:43:13.632Z"
+    },
+    {
+      "id": "0oeXSdzWEI2Tl5Xk",
+      "name": "jackl",
+      "parentFolderId": null,
+      "homeProjectId": "mgegojU6TjAZ0puh",
+      "createdAt": "2026-01-21T10:14:11.661Z",
+      "updatedAt": "2026-01-21T10:14:11.661Z"
+    },
+    {
+      "id": "iZZxgAdzG5ehWtXm",
+      "name": "Sandbox",
+      "parentFolderId": null,
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-01-23T22:16:10.327Z",
+      "updatedAt": "2026-01-23T22:16:10.327Z"
     }
   ]
 }

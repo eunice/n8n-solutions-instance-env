@@ -1,0 +1,601 @@
+{
+  "id": "loQ2oW6ybvEJW9TDkpGQM",
+  "name": "MSA Insurance Data Extraction and Analysis Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "1aoYR8ebrvh28qMhmU18V18PHKqO-61Ta",
+            "mode": "list",
+            "cachedResultName": "MSAs",
+            "cachedResultUrl": "https://drive.google.com/drive/folders/1aoYR8ebrvh28qMhmU18V18PHKqO-61Ta"
+          }
+        },
+        "options": {}
+      },
+      "id": "d68acaaa-7172-471c-86d8-6292c9b99dd6",
+      "name": "List PDFs from Drive Folder",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -3824,
+        720
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "DDyvwzKcWWbvI9jd",
+          "name": "[solutions-team@n8n.io]Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "id-1",
+              "name": "mcpEndpoint",
+              "value": "https://n8n-solutions.app.n8n.cloud/mcp/insurance-analysis-mcp",
+              "type": "string"
+            },
+            {
+              "id": "id-2",
+              "name": "reportRecipientEmail",
+              "value": "kyle.rego@n8n.io",
+              "type": "string"
+            },
+            {
+              "id": "id-3",
+              "name": "reportFolderId",
+              "value": "19xvVMaUJdWWdRVq9I7d2UzkS_FOQaX55",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "c0e89dd2-82ce-4924-a2fa-39deb2a486ef",
+      "name": "Workflow Configuration",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4064,
+        768
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $json.id }}"
+        },
+        "options": {}
+      },
+      "id": "77dc1407-ced4-4013-9d25-19eee056c712",
+      "name": "Download PDF",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -3664,
+        720
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "DDyvwzKcWWbvI9jd",
+          "name": "[solutions-team@n8n.io]Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "id": "ea7cb995-df3e-44f7-964c-f9b4f0fae93d",
+      "name": "Extract Text from PDF",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -3504,
+        720
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.text }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You are an expert insurance document analyst specializing in Master Service Agreements (MSAs).\n\nYour task is to extract exactly 5 insurance key-value pairs from the provided MSA document text.\n\nFor each PDF, extract:\n1. Company Name - The name of the company/entity in the MSA\n2-6. Five insurance categories with their coverage amounts:\n   - Insurance Category (e.g., General Liability, Professional Liability, Workers Compensation, Auto Insurance, Umbrella Policy)\n   - Coverage Amount (the monetary value/limit for that category)\n\nReturn the data in the exact JSON schema format specified by the output parser.",
+          "batching": {
+            "batchSize": 2
+          }
+        }
+      },
+      "id": "e4e050a5-ff94-4dbf-a41b-dd13e4e78a21",
+      "name": "Extract Insurance Data",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -3200,
+        640
+      ]
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"companyName\": {\n      \"type\": \"string\",\n      \"description\": \"Name of the company in the MSA\"\n    },\n    \"generalLiability\": {\n      \"type\": \"string\",\n      \"description\": \"General Liability insurance coverage amount\"\n    },\n    \"professionalLiability\": {\n      \"type\": \"string\",\n      \"description\": \"Professional Liability insurance coverage amount\"\n    },\n    \"workersCompensation\": {\n      \"type\": \"string\",\n      \"description\": \"Workers Compensation insurance coverage amount\"\n    },\n    \"autoInsurance\": {\n      \"type\": \"string\",\n      \"description\": \"Auto Insurance coverage amount\"\n    },\n    \"umbrellaPolicy\": {\n      \"type\": \"string\",\n      \"description\": \"Umbrella Policy coverage amount\"\n    }\n  },\n  \"required\": [\"companyName\", \"generalLiability\", \"professionalLiability\", \"workersCompensation\", \"autoInsurance\", \"umbrellaPolicy\"]\n}"
+      },
+      "id": "38226ac5-9f91-46e0-bdfe-68cba7da2841",
+      "name": "Insurance Data Schema",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        -2976,
+        832
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ JSON.stringify($json) }}",
+        "options": {
+          "systemMessage": "=Today's date {{ $now }}\n\nYou are an expert insurance analyst and report writer. Use the insurance analyzer mcp client to derive insights. You can use the analyzer to answer questions like:\n\n- \"Which companies have Professional Liability below $3 million?\"\n- \"Calculate total exposure for Tech Solutions Inc.\"\n- \"Compare all companies on Professional Liability coverage\"\n- \"What's the average Professional Liability coverage?\"\n- \"Assess risk profile for Data Analytics Pro LLC\"\n- \"Show compliance check against $2M minimum Professional Liability\"\n- \"Generate executive summary of all coverage\"\n\nYour task is to create a comprehensive, professional report based on the insurance data extracted from multiple MSA documents and the mathematical calculations performed by the MCP server.\n\nThe report should include:\n\n1. Executive Summary - Brief overview of the analysis\n2. Data Overview - Summary of all companies and policies analyzed\n3. Key Metrics - Present the calculations from the MCP server\n4. Risk Assessment - Identify any coverage gaps or concerns\n5. Recommendations - Actionable insights based on the data\n\nThe report should then be created as a draft in the gmail drafter tool to send to {{$('Workflow Configuration').last().json.reportRecipientEmail}}. Ensure the text is friendly for gmail email drafts. \n\nMake the report suitable for executive review and decision-making. The output of the agent should also be the same analysis that can be stored and uploaded elsewhere."
+        }
+      },
+      "id": "060e2fd9-321b-4b06-9dae-0c6b06bc1425",
+      "name": "Generate Report",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -2160,
+        640
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "createFromText",
+        "content": "={{ $json.output }}",
+        "name": "=MSA_Insurance_Report_{{ $now.format('yyyy-MM-dd_HHmmss') }}.md",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $('Workflow Configuration').first().json.reportFolderId }}"
+        },
+        "options": {}
+      },
+      "id": "659700d3-6e99-468a-8eea-ab20dd3bb495",
+      "name": "Upload Report to Drive",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -1840,
+        640
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "DDyvwzKcWWbvI9jd",
+          "name": "[solutions-team@n8n.io]Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks"
+            }
+          ]
+        }
+      },
+      "id": "20df5cad-f7be-496a-9e3c-aa31a88d291b",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -4272,
+        672
+      ]
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -4272,
+        864
+      ],
+      "id": "8580a45e-5ba3-4883-8cf2-32767c4a45ed",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Explode insurance data into rows: company, insurance category, value\nconst allData = $input.all();\nconst rows = [];\nconsole.log('allData', allData)\n\n// Process each item from the loop\nfor (const item of allData) {\n  const data = item.json.output;\n  const company = data.companyName;\n  \n  // Create a row for each insurance category\n  const categories = [\n    { category: \"General Liability\", value: data.generalLiability },\n    { category: \"Professional Liability\", value: data.professionalLiability },\n    { category: \"Workers Compensation\", value: data.workersCompensation },\n    { category: \"Auto Insurance\", value: data.autoInsurance },\n    { category: \"Umbrella Policy\", value: data.umbrellaPolicy }\n  ];\n  \n  // Add each category as a separate row\n  for (const cat of categories) {\n    rows.push({\n      json: {\n        company: company,\n        insuranceCategory: cat.category,\n        value: cat.value\n      }\n    });\n  }\n}\n\nreturn rows;"
+      },
+      "id": "a2bb8796-2b55-44cb-8ea0-4f78ca0902ed",
+      "name": "Explode Rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -2720,
+        720
+      ]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "1c4dec92-4663-481f-b787-dd70700135b5",
+      "name": "Aggregate Extracted Data",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -2528,
+        720
+      ]
+    },
+    {
+      "parameters": {
+        "endpointUrl": "={{ $('Workflow Configuration').last().json.mcpEndpoint }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        -2064,
+        880
+      ],
+      "id": "7ea62bf7-ce9a-4cad-a7a8-db5d18781a82",
+      "name": "Insurance Analyzer Assistant"
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', ``, 'string') }}",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {
+          "sendTo": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('To_Email', ``, 'string') }}"
+        }
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.2,
+      "position": [
+        -1904,
+        880
+      ],
+      "id": "b982f8bf-0f0b-49bb-868a-cf43d24426f1",
+      "name": "Gmail Drafter",
+      "webhookId": "987f3dd6-c707-4900-a386-17a78eb29c53",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "a4O60YJDSpjZLvMZ",
+          "name": "[solutions-team@n8n.io]Gmail"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Trigger and Initialize:\n* Once a week or manually\n* Prepare mcp endpoint and output paths\n",
+        "height": 576,
+        "width": 416,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -4320,
+        480
+      ],
+      "id": "fae638db-b8e9-4e30-8709-1fbb62abcb19",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Search and Download\n* Scan for new MSA PDFs\n* Download PDFs found\n",
+        "height": 576,
+        "width": 544,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -3888,
+        480
+      ],
+      "id": "c56c5b81-6711-4d9a-9df8-9b0ce34f64cf",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Scan documents for target data\n* Define and extract insurance metadata\n",
+        "height": 576,
+        "width": 496,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -3328,
+        480
+      ],
+      "id": "0c9dcd99-402e-4bef-9384-0c28800c51b8",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## Prepare for MCP analysis\n* Create tabular output\n* Optionally backup to table\n",
+        "height": 576,
+        "width": 528,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -2816,
+        480
+      ],
+      "id": "3cf59ba1-00fe-416b-873d-f7ebf040fa58",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## Perform Analysis and generate output\n* Call Insurance Analysis MCP\n* Summarize findings\n* Draft in Gmail\n* Output to Google Drive\n",
+        "height": 576,
+        "width": 688,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        480
+      ],
+      "id": "a83bdf04-a172-4a2b-9559-47b6e932d604",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "claude-opus-4-5-20251101",
+          "mode": "list",
+          "cachedResultName": "Claude Opus 4.5"
+        },
+        "options": {}
+      },
+      "id": "12a07003-de28-4f34-b9dd-00a661d3ca3e",
+      "name": "Parse Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.3,
+      "position": [
+        -3264,
+        832
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "sf0joPb65Wdq0s0O",
+          "name": "n8n sales"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "claude-sonnet-4-5-20250929",
+          "cachedResultName": "Claude Sonnet 4.5"
+        },
+        "options": {}
+      },
+      "id": "8344e079-07ad-496e-b107-3ed3db560633",
+      "name": "Analysis Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.3,
+      "position": [
+        -2224,
+        864
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "1WmrrzJahomV41rJ",
+          "name": "Anthropic-claude-solutions-mandip"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "List PDFs from Drive Folder": {
+      "main": [
+        [
+          {
+            "node": "Download PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Workflow Configuration": {
+      "main": [
+        [
+          {
+            "node": "List PDFs from Drive Folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download PDF": {
+      "main": [
+        [
+          {
+            "node": "Extract Text from PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Text from PDF": {
+      "main": [
+        [
+          {
+            "node": "Extract Insurance Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insurance Data Schema": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Extract Insurance Data",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Insurance Data": {
+      "main": [
+        [
+          {
+            "node": "Explode Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Report": {
+      "main": [
+        [
+          {
+            "node": "Upload Report to Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Workflow Configuration",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Workflow Configuration",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Explode Rows": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Extracted Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Extracted Data": {
+      "main": [
+        [
+          {
+            "node": "Generate Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insurance Analyzer Assistant": {
+      "ai_tool": [
+        [
+          {
+            "node": "Generate Report",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gmail Drafter": {
+      "ai_tool": [
+        [
+          {
+            "node": "Generate Report",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Extract Insurance Data",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analysis Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Generate Report",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 1,
+  "versionId": "8a83b9f1-e886-421e-bb97-d1703f1e4f3c",
+  "owner": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "parentFolderId": "iZZxgAdzG5ehWtXm",
+  "isArchived": false
+}

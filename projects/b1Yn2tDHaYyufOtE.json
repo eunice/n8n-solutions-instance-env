@@ -12,5 +12,12 @@
     "teamId": "b1Yn2tDHaYyufOtE",
     "teamName": "Agentic Frameworks"
   },
-  "variableStubs": []
+  "variableStubs": [
+    {
+      "id": "pT3D4KK8aTQJMMj9",
+      "key": "sys_url",
+      "type": "string",
+      "value": ""
+    }
+  ]
 }
