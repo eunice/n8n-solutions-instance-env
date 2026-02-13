@@ -1,11 +1,8 @@
 {
-  "id": "cU7dDlW6tPo2y4d9",
-  "name": "Weaviate Credentials Stratos",
-  "type": "weaviateApi",
-  "data": {
-    "weaviate_cloud_endpoint": "",
-    "weaviate_api_key": ""
-  },
+  "id": "w1LDy47te0QvoIJp",
+  "name": "Slack Stratos",
+  "type": "slackOAuth2Api",
+  "data": {},
   "ownedBy": {
     "type": "personal",
     "projectId": "ovnGbppBuiOQlf7m",

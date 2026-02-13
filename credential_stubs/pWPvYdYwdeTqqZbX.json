@@ -1,0 +1,15 @@
+{
+  "id": "pWPvYdYwdeTqqZbX",
+  "name": "Google Gemini(PaLM) Api account 2",
+  "type": "googlePalmApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "UAh2vcPpPlh6aHrd",
+    "projectName": "Florian Schaefer <florian.schaefer@n8n.io>",
+    "personalEmail": "florian.schaefer@n8n.io"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "G2BlBcnRyrcfVAe3",
+  "name": "Bearer Auth Aikido Readonly",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  },
+  "isGlobal": false
+}

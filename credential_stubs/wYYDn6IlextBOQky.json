@@ -1,0 +1,17 @@
+{
+  "id": "wYYDn6IlextBOQky",
+  "name": "Postgres - Kendall SupaBase",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "isGlobal": false
+}

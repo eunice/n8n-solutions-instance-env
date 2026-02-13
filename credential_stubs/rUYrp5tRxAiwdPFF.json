@@ -1,0 +1,15 @@
+{
+  "id": "rUYrp5tRxAiwdPFF",
+  "name": "GitHub Stratos API Key",
+  "type": "githubApi",
+  "data": {
+    "user": "",
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZGvTsbcHEOKmij7h",
+    "teamName": "n8n Docs Demo"
+  },
+  "isGlobal": false
+}

@@ -1,7 +1,7 @@
 {
-  "id": "OdRmxrPJgAhHz5kY",
-  "name": "Google Calendar account Marcus",
-  "type": "googleCalendarOAuth2Api",
+  "id": "QNMvZQOr76On2qLK",
+  "name": "Gmail Kendall",
+  "type": "gmailOAuth2",
   "data": {},
   "ownedBy": {
     "type": "team",

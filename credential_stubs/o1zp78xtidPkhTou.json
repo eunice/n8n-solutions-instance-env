@@ -1,0 +1,16 @@
+{
+  "id": "o1zp78xtidPkhTou",
+  "name": "Supabase Vector - Kendall",
+  "type": "supabaseApi",
+  "data": {
+    "host": "",
+    "serviceRole": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "isGlobal": false
+}

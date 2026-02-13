@@ -1,0 +1,13 @@
+{
+  "id": "GQHg1JQfJKPUTi5i",
+  "name": "Google Calendar Florian",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "UAh2vcPpPlh6aHrd",
+    "projectName": "Florian Schaefer <florian.schaefer@n8n.io>",
+    "personalEmail": "florian.schaefer@n8n.io"
+  },
+  "isGlobal": false
+}
