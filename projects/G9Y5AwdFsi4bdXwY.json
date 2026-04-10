@@ -1,0 +1,16 @@
+{
+  "id": "G9Y5AwdFsi4bdXwY",
+  "name": "BR - Red Team & Pentest",
+  "icon": {
+    "type": "emoji",
+    "value": "🔴"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "G9Y5AwdFsi4bdXwY",
+    "teamName": "BR - Red Team & Pentest"
+  },
+  "variableStubs": []
+}

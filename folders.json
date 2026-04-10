@@ -591,6 +591,86 @@
       "homeProjectId": "ovnGbppBuiOQlf7m",
       "createdAt": "2026-02-10T13:13:22.602Z",
       "updatedAt": "2026-02-10T13:13:22.602Z"
+    },
+    {
+      "id": "dIfh9lTZatH0sv1d",
+      "name": "Intellect",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-17T13:10:05.311Z",
+      "updatedAt": "2026-02-17T13:10:23.000Z"
+    },
+    {
+      "id": "Pz1Soz5WgwI7GFhF",
+      "name": "Workshop Loom Content",
+      "parentFolderId": null,
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-02-25T19:48:32.566Z",
+      "updatedAt": "2026-02-25T19:48:32.566Z"
+    },
+    {
+      "id": "g1xIBhGSmoPRY0B6",
+      "name": "DT",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-27T14:54:32.901Z",
+      "updatedAt": "2026-02-27T14:54:32.901Z"
+    },
+    {
+      "id": "LY3ALwhVcRbjJ0Wx",
+      "name": "DB",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-03T14:22:26.460Z",
+      "updatedAt": "2026-03-03T14:22:26.460Z"
+    },
+    {
+      "id": "skh8mDPrbyeASpvZ",
+      "name": "Miele",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-05T14:27:05.322Z",
+      "updatedAt": "2026-03-05T14:27:05.322Z"
+    },
+    {
+      "id": "bFii7w6Nxz3lzWaw",
+      "name": "Airbus",
+      "parentFolderId": null,
+      "homeProjectId": "hNkhHp80l2W3TDQS",
+      "createdAt": "2026-03-13T14:15:11.332Z",
+      "updatedAt": "2026-03-13T14:15:11.332Z"
+    },
+    {
+      "id": "HfYRE49a11cAuDHE",
+      "name": "Flix",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-17T10:37:13.597Z",
+      "updatedAt": "2026-03-17T10:37:13.597Z"
+    },
+    {
+      "id": "O9ZeuUwp1OQerV4Z",
+      "name": "KFW",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-27T08:40:07.485Z",
+      "updatedAt": "2026-03-27T08:40:07.485Z"
+    },
+    {
+      "id": "oVBUa2xhPqBzvRn3",
+      "name": "📈 Finance & Banking",
+      "parentFolderId": "KmZDiaRdx3XIIKRg",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-03-31T10:20:23.838Z",
+      "updatedAt": "2026-03-31T10:20:23.838Z"
+    },
+    {
+      "id": "WXAs0wNN2dd3epox",
+      "name": "Generali",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-08T08:14:02.367Z",
+      "updatedAt": "2026-04-08T08:14:02.367Z"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "fZZFxHI03LbZwPnG",
+  "name": "BR - Blue Team (SOC/DFIR)",
+  "icon": {
+    "type": "emoji",
+    "value": "🔵"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "fZZFxHI03LbZwPnG",
+    "teamName": "BR - Blue Team (SOC/DFIR)"
+  },
+  "variableStubs": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "jImFHQNVd8o7Tc0g",
+  "name": "BR - Application Security / DevSecOps ",
+  "icon": {
+    "type": "emoji",
+    "value": "👀"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "jImFHQNVd8o7Tc0g",
+    "teamName": "BR - Application Security / DevSecOps "
+  },
+  "variableStubs": []
+}
