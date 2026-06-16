@@ -1,0 +1,14 @@
+{
+  "id": "5qdy2U0BOAFHWL5Q",
+  "name": "Slack account 7",
+  "type": "slackApi",
+  "data": {
+    "accessToken": "",
+    "signatureSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "f00CbeF4zKo7jS1A",
+    "teamName": "Olympics Team M"
+  }
+}

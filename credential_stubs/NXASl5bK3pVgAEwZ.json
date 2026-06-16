@@ -1,0 +1,15 @@
+{
+  "id": "NXASl5bK3pVgAEwZ",
+  "name": "Microsoft Teams account 5",
+  "type": "microsoftTeamsOAuth2Api",
+  "data": {
+    "allowedHttpRequestDomains": "",
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "mgegojU6TjAZ0puh",
+    "teamName": "🏆 Customer Success"
+  },
+  "isGlobal": false
+}

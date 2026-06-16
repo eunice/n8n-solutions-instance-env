@@ -1,0 +1,15 @@
+{
+  "id": "18NTxjhnxK4Sg2XO",
+  "name": "Header Auth account",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "={{ $secrets.awsSecretsManager.openai_token}}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

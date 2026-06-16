@@ -1,0 +1,19 @@
+{
+  "id": "v4Ptnx9l2yJAOh0Q",
+  "name": "Idir-DB",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "database": "",
+    "user": "",
+    "password": "",
+    "ssl": "",
+    "port": 25060
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

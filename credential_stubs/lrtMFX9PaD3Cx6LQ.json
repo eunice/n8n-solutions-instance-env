@@ -1,0 +1,11 @@
+{
+  "id": "lrtMFX9PaD3Cx6LQ",
+  "name": "Microsoft Outlook account",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  }
+}

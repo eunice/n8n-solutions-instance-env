@@ -1,0 +1,14 @@
+{
+  "id": "HDDcMJJGWKU6KZPH",
+  "name": "Unnamed credential 3",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "b1Yn2tDHaYyufOtE",
+    "teamName": "Agentic Frameworks"
+  }
+}

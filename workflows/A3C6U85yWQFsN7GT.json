@@ -1,0 +1,706 @@
+{
+  "id": "A3C6U85yWQFsN7GT",
+  "name": "Automate email for Invoices and Licensing",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "spreadsheet",
+        "title": "=invoice-{{ $('Invoice AI Agent').item.json.output.company_name }}-{{$now.format('MMM-dd-yyyy')}}",
+        "sheetsUi": {
+          "sheetValues": [
+            {
+              "title": "=invoice_details"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "30100139-897d-4a8f-9c67-e6772bb88f6f",
+      "name": "Create blank spreadsheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        272,
+        336
+      ],
+      "executeOnce": false,
+      "typeVersion": 4.5,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b5lzkqXTU11lA2LL",
+          "name": "Google Sheets Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {
+          "responseFormat": "json_object"
+        }
+      },
+      "id": "f56a03af-0613-4944-a03e-b8354fd124c8",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "position": [
+        -592,
+        368
+      ],
+      "typeVersion": 1.2,
+      "credentials": {
+        "openAiApi": {
+          "id": "G66f9hBlCfA9GQ0b",
+          "name": "n8n sales"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "version": 2,
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "efd974d9-aa20-461a-86ae-6e0a16d1527d",
+              "operator": {
+                "type": "object",
+                "operation": "exists",
+                "singleValue": true
+              },
+              "leftValue": "={{ $('Get many messages').item.binary }}",
+              "rightValue": ""
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {
+          "ignoreCase": false
+        }
+      },
+      "id": "28d9935f-4c4c-4351-a5f2-9cc65cb857f3",
+      "name": "Attachment Verification",
+      "type": "n8n-nodes-base.filter",
+      "position": [
+        -960,
+        112
+      ],
+      "typeVersion": 2.2
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "binaryPropertyName": "={{ $('Attachment Verification').item.binary.keys()[0] }}",
+        "options": {}
+      },
+      "id": "e6246ecf-e5e0-4f83-bf85-476cca74f47b",
+      "name": "Extract Invoice data",
+      "type": "n8n-nodes-base.extractFromFile",
+      "position": [
+        -752,
+        112
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "={{ $('Create blank spreadsheet').item.json.spreadsheetId }}"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "invoice_details"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "11b11170-5b89-4abf-b192-7b4941b5092e",
+      "name": "Final Spreadsheet with Invoice data",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        672,
+        320
+      ],
+      "typeVersion": 4.5,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b5lzkqXTU11lA2LL",
+          "name": "Google Sheets Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.text }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "you are an financial advisor, who reads the array of data to identify certain elements of an Invoice, from the input data and provide a json response. use only following specified keys \nfor example:\n{\n\"billed_to\": \"John\",\n\"invoice_number\": \"569871234\",\n\"date_of_issue\": \"2025-05-21\",\n\"due_date\": \"2025-05-25\",\n\"item_0_description\": \"Computer CPU\",\n\"item_0_quantity\": 6,\n\"item_0_rate\": 15,\n\"item_0_amount\": 90,\n\"item_1_description\": \"Chair Wooden\",\n\"item_1_quantity\": 8,\n\"item_1_rate\": 10,\n\"item_1_amount\": 80,\n\"subtotal\": 170.00,\n\"discount\": 20.00,\n\"total\": 150.00,\n\"terms\": \"Sold items not be acceptable\",\n\"conditions_instructions\": \"xyaABC\",\n\"company_name\": \"Digital Electronics\",\n\"company_mobile\": \"987654321\",\n\"company_email\": \"ayz@gmail.com\",\n\"company_website\": \"www.abc.com\"\n}"
+        }
+      },
+      "id": "18ddc96b-c5b8-45cb-b4c9-601600d8e8c8",
+      "name": "Invoice AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "position": [
+        -560,
+        96
+      ],
+      "typeVersion": 1.9,
+      "alwaysOutputData": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\"billed_to\": \"John\",\n\"invoice_number\": \"569871234\",\n\"date_of_issue\": \"2025-05-21\",\n\"due_date\": \"2025-05-25\",\n\"item_0_description\": \"Computer CPU\",\n\"item_0_quantity\": 6,\n\"item_0_rate\": 15,\n\"item_0_amount\": 90,\n\"item_1_description\": \"Chair Wooden\",\n\"item_1_quantity\": 8,\n\"item_1_rate\": 10,\n\"item_1_amount\": 80,\n\"subtotal\": 170.00,\n\"discount\": 20.00,\n\"total\": 150.00,\n\"terms\": \"Sold items not be acceptable\",\n\"conditions_instructions\": \"xyaABC\",\n\"company_name\": \"Digital Electronics\",\n\"company_mobile\": \"987654321\",\n\"company_email\": \"ayz@gmail.com\",\n\"company_website\": \"www.abc.com\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        -416,
+        336
+      ],
+      "id": "d2407a77-e212-4695-b5ff-c7c26de8e493",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Grab output from the node 2 steps back\nconst output = $('Invoice AI Agent').item.json.output;\n\nconst results = [];\nlet index = 0;\n\n// Loop through all item_* fields dynamically\nwhile (typeof output[`item_${index}_description`] === 'string') {\n  results.push({\n    json: {\n      invoice_number: output.invoice_number,\n      company: output.company_name,\n      date_of_issue: output.date_of_issue,\n      due_date: output.due_date,\n      item_description: output[`item_${index}_description`],\n      quantity: output[`item_${index}_quantity`],\n      rate: output[`item_${index}_rate`],\n      amount: output[`item_${index}_amount`],\n      invoice_total: output.total\n    }\n  });\n  index++;\n}\n\nreturn results;\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        464,
+        336
+      ],
+      "id": "833cff06-6551-4e79-99e0-dbefa8528567",
+      "name": "Code in JavaScript",
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "inputText": "=Email - {{ $json.subject }}: {{ $json.text }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "invoice",
+              "description": "the email relates to an invoice that needs to be paid"
+            },
+            {
+              "category": "licensing",
+              "description": "email is regarding license questions"
+            }
+          ]
+        },
+        "options": {
+          "fallback": "other",
+          "systemPromptTemplate": "You are a precise email classifier. You must respond with ONLY valid JSON - no markdown, no code blocks, no explanation text.\n\nClassify the email into exactly ONE of these categories:\n- \"invoice\" (true) - Email relates to an invoice that needs to be paid\n- \"licensing\" (true) - Email is about license questions \n\n\nCRITICAL RULES:\n1. Return ONLY the JSON object, nothing else\n2. Do NOT wrap in ```json``` code blocks\n\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.textClassifier",
+      "typeVersion": 1.1,
+      "position": [
+        -1328,
+        208
+      ],
+      "id": "70ca8f12-4f9f-4561-9538-05489d41c4ed",
+      "name": "Text Classifier",
+      "alwaysOutputData": false,
+      "notesInFlow": true,
+      "notes": "Tag emails for invoices and licensing questions"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "responsesApiEnabled": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -1328,
+        432
+      ],
+      "id": "f0a1743e-40be-478d-865e-265834a5655b",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "G66f9hBlCfA9GQ0b",
+          "name": "n8n sales"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        -960,
+        560
+      ],
+      "id": "2f2aa74a-17b5-46a9-9ee8-80fd72446122",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "Yezu6qToJUpVTi9VciJpm",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/Yezu6qToJUpVTi9VciJpm",
+          "cachedResultName": "Licensing questions"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        -960,
+        320
+      ],
+      "id": "0bd3c5aa-b784-4fb8-a2c8-900f161630f8",
+      "name": "Call 'Licensing questions'"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1744,
+        96
+      ],
+      "id": "cdb7293e-e37e-48e4-90d9-41f1f1dd07f7",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1744,
+        288
+      ],
+      "id": "e2390d34-8374-4c60-b141-c208eda034f1",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "973b5ea3-d767-4e93-bf04-128207690a18",
+              "leftValue": "={{ $json.output.total }}",
+              "rightValue": 5000,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -224,
+        32
+      ],
+      "id": "c537a22b-d164-4a36-9a9b-21e3d7bf0c11",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "simple": false,
+        "filters": {
+          "labelIds": [
+            "Label_9010071109674134955"
+          ]
+        },
+        "options": {
+          "downloadAttachments": true
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        -1504,
+        224
+      ],
+      "id": "9ada58d7-313d-45ff-ab26-0a4dbf9e78eb",
+      "name": "Get many messages",
+      "webhookId": "dc0052a1-4a85-4e0f-9740-14c28c67c2b7",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "VUVfIcrMZnckz8xZ",
+          "name": "Gmail Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "user": {
+          "__rl": true,
+          "value": "U09UCV1PB7W",
+          "mode": "list",
+          "cachedResultName": "kendall.garey"
+        },
+        "message": "=We received an invoice from  {{ $json.output.company_name }} for ${{ $json.output.total }}.  Please Approve or Decline this invoice.",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "5e2bcac6-fee7-40b4-b81f-05c2f2d3b03a",
+      "name": "Send a message",
+      "webhookId": "b08eba79-a364-45c6-a887-bf5cb8c0ef20",
+      "credentials": {
+        "slackApi": {
+          "id": "LCu5K0q1IDq2MKrL",
+          "name": "Slack - Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "e9e0b249-fbf2-4261-84b1-c4219423d8b8",
+              "leftValue": "={{ $json.data.approved }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        -48
+      ],
+      "id": "e77aabe0-4136-4aba-a731-4350a0ef7810",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "sendTo": "kendall.garey@n9n.io",
+        "subject": "The attached invoice was not approved.  Please follow up",
+        "message": "The attached invoice was not approved.  Please follow up with the vendor.",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "={{ $('Get many messages').item.binary }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        448,
+        -80
+      ],
+      "id": "ff2b8ef9-4acf-4184-aa93-4667f3600d0e",
+      "name": "Send a message1",
+      "webhookId": "3b584291-662d-4918-b415-a0785df79e4f",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "VUVfIcrMZnckz8xZ",
+          "name": "Gmail Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "errorMessage": "error"
+      },
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        -224,
+        256
+      ],
+      "id": "d0288081-ceb1-41b6-9d6b-a431c8f3790d",
+      "name": "Stop and Error"
+    }
+  ],
+  "connections": {
+    "Create blank spreadsheet": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Invoice AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attachment Verification": {
+      "main": [
+        [
+          {
+            "node": "Extract Invoice data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Invoice data": {
+      "main": [
+        [
+          {
+            "node": "Invoice AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Invoice AI Agent": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Stop and Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Invoice AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Final Spreadsheet with Invoice data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text Classifier": {
+      "main": [
+        [
+          {
+            "node": "Attachment Verification",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call 'Licensing questions'",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get many messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many messages": {
+      "main": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create blank spreadsheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Send a message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false,
+    "errorWorkflow": "w1xL8iyvJgFFyGE32ZJZv"
+  },
+  "triggerCount": 1,
+  "versionId": "dc7561d5-d686-46bb-a27c-962970c9a496",
+  "owner": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

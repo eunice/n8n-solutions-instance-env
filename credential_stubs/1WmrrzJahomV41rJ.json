@@ -1,0 +1,14 @@
+{
+  "id": "1WmrrzJahomV41rJ",
+  "name": "Anthropic-claude-solutions-mandip",
+  "type": "anthropicApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

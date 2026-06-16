@@ -1,0 +1,17 @@
+{
+  "id": "ht2REqXDEjiiMWfj",
+  "name": "Twilio Stratos key",
+  "type": "twilioApi",
+  "data": {
+    "authType": "",
+    "accountSid": "",
+    "apiKeySid": "",
+    "apiKeySecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  }
+}

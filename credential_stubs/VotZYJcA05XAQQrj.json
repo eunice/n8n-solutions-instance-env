@@ -1,0 +1,14 @@
+{
+  "id": "VotZYJcA05XAQQrj",
+  "name": "Custom Auth account 2",
+  "type": "httpCustomAuth",
+  "data": {
+    "json": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

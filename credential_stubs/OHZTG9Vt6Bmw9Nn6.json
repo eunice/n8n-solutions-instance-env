@@ -1,0 +1,14 @@
+{
+  "id": "OHZTG9Vt6Bmw9Nn6",
+  "name": "JWT Auth account 2",
+  "type": "jwtAuth",
+  "data": {
+    "secret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

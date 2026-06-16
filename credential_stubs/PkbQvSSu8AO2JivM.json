@@ -1,0 +1,14 @@
+{
+  "id": "PkbQvSSu8AO2JivM",
+  "name": "Twilio account 3",
+  "type": "twilioApi",
+  "data": {
+    "accountSid": "",
+    "authToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tsqgnzUSHajXg4tz",
+  "name": "Supabase - User Reviews",
+  "type": "supabaseApi",
+  "data": {
+    "host": "",
+    "serviceRole": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

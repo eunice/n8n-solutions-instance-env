@@ -1,0 +1,370 @@
+{
+  "id": "cPU4pvoCgJyLi1-8E4gDn",
+  "name": "[MCP Server]Insurance Analyzer",
+  "nodes": [
+    {
+      "parameters": {
+        "text": "={{ $json.query }}",
+        "options": {
+          "systemMessage": "=You are an insurance coverage analysis expert with access to  insurance data for companies.\n\n\n## Your Capabilities:\n- Parse and extract dollar amounts from coverage descriptions\n- Compare coverage across companies\n- Calculate statistics (min, max, average, median)\n- Identify gaps against thresholds\n- Assess risk levels based on peer comparison\n- Calculate total exposure per company\n- Rank companies by coverage in any category\n- Check compliance against requirements\n- Provide executive summaries\n\n## Response Guidelines:\n- If the user requested format=json, return structured JSON with relevant fields\n- If the user requested format=text, return clear prose suitable for executive reports\n- Always include specific dollar amounts\n- Show calculations/reasoning when relevant\n- For comparisons, rank from highest to lowest coverage\n- For risk assessment, compare to peer median\n- For gaps, show current vs required and shortfall\n\n## Example Queries You Handle:\n- \"Which companies have Professional Liability below $3 million?\"\n- \"Calculate total exposure for Tech Solutions Inc.\"\n- \"Compare all companies on Professional Liability coverage\"\n- \"What's the average Professional Liability coverage?\"\n- \"Assess risk profile for Data Analytics Pro LLC\"\n- \"Show compliance check against $2M minimum Professional Liability\"\n- \"Generate executive summary of all coverage\"\n\nAnswer the user's query directly with precise data and clear analysis."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agentTool",
+      "typeVersion": 3,
+      "position": [
+        -608,
+        1280
+      ],
+      "id": "3a3e2c62-4bcf-4272-82dd-e41b89db7039",
+      "name": "Analyze Insurance Tool"
+    },
+    {
+      "parameters": {
+        "content": "## Insurance Analysis MCP Server:\n* Connect to powerful external agent as an MCP tool\n* Optionally expose other tools for further analysis\n",
+        "height": 656,
+        "width": 848,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -704,
+        928
+      ],
+      "id": "def8f821-56b8-465e-8873-707cdf485e54",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Future Tool Inclusion\n* HTTP request to external service\n* Nested MCP client service\n* Access to separate n8n subworkflow\n",
+        "height": 416,
+        "width": 1008,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        1280
+      ],
+      "id": "0f05ad6e-13f2-468d-a5bf-939f864b9b4b",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "endpointUrl": "test",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.2,
+      "position": [
+        80,
+        1472
+      ],
+      "id": "c7a5586f-8a8a-4438-9ed8-3c75880b1f07",
+      "name": "MCP Client"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "typeVersion": 1.3,
+      "position": [
+        -208,
+        1472
+      ],
+      "id": "f9a05598-860b-4af5-97db-5b83da55d709",
+      "name": "External Service"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "HMuO8QsKKD4Zl063"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "lookback_days": 0
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "brand",
+              "displayName": "brand",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string"
+            },
+            {
+              "id": "campaign",
+              "displayName": "campaign",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string"
+            },
+            {
+              "id": "lookback_days",
+              "displayName": "lookback_days",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "number"
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        -64,
+        1472
+      ],
+      "id": "3b47e58d-9fc3-405c-9804-b1ce89a977d4",
+      "name": "n8n subworkflow"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "typeVersion": 1.3,
+      "position": [
+        224,
+        1472
+      ],
+      "id": "c95e5f95-a0d9-4e62-a81c-fd13ca530922",
+      "name": "Scripting"
+    },
+    {
+      "parameters": {
+        "table": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Table', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.microsoftSqlTool",
+      "typeVersion": 1.1,
+      "position": [
+        560,
+        1504
+      ],
+      "id": "703bdec8-d89a-4313-a2f3-0a82e0db200e",
+      "name": "Access SQL DB",
+      "credentials": {
+        "microsoftSql": {
+          "id": "mkZiXLojUBCK07Ld",
+          "name": "Microsoft SQL account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "site": {
+          "__rl": true,
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Site', ``, 'string') }}",
+          "mode": "id"
+        },
+        "folder": {
+          "__rl": true,
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Parent_Folder', ``, 'string') }}",
+          "mode": "id"
+        },
+        "file": {
+          "__rl": true,
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('File', ``, 'string') }}",
+          "mode": "id"
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.microsoftSharePointTool",
+      "typeVersion": 1,
+      "position": [
+        384,
+        1504
+      ],
+      "id": "2fe1872a-e3e6-41de-a36e-9850cbf5c5de",
+      "name": "Load files from SharePoint",
+      "credentials": {
+        "microsoftSharePointOAuth2Api": {
+          "id": "Vzq9FXVftrES8EGe",
+          "name": "Microsoft SharePoint account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toRecipients": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('To', ``, 'string') }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlookTool",
+      "typeVersion": 2,
+      "position": [
+        384,
+        1328
+      ],
+      "id": "83747516-29c5-4f05-9c14-9d961c8eba47",
+      "name": "Read messagers in Outlook",
+      "webhookId": "427be77e-8696-4a87-9586-9b8c400fef7a",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "q4lax9GObZ2fngua",
+          "name": "Microsoft Outlook Marcus New"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "channelMessage",
+        "teamId": {
+          "__rl": true,
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Team', ``, 'string') }}",
+          "mode": "id",
+          "__regex": "^([0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})"
+        },
+        "channelId": {
+          "__rl": true,
+          "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Channel', ``, 'string') }}",
+          "mode": "id"
+        },
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftTeamsTool",
+      "typeVersion": 2,
+      "position": [
+        560,
+        1328
+      ],
+      "id": "b6b8a81a-c171-43c3-ae04-bc886e4fc638",
+      "name": "Read messages from Teams",
+      "webhookId": "2367dc13-8674-4c1a-ace6-decbe6875443",
+      "credentials": {
+        "microsoftTeamsOAuth2Api": {
+          "id": "wJJAsEcVIudbK6ki",
+          "name": "Microsoft Teams account Marcus"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "insurance-analysis-mcp"
+      },
+      "id": "ee7abff6-ebf6-49dd-98bf-927d060661ab",
+      "name": "Insurance Analyzer Entry",
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 2,
+      "position": [
+        -448,
+        1056
+      ],
+      "webhookId": "b52d0aaf-e0da-4bd0-9679-9e20db6e95ac"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "id",
+          "value": "claude-opus-4-20250514"
+        },
+        "options": {
+          "maxTokensToSample": 4000,
+          "temperature": 0.1
+        }
+      },
+      "id": "ff9e4b0a-0cec-492f-81dd-2d117691b70f",
+      "name": "Claude Opus 4.5",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.3,
+      "position": [
+        -624,
+        1424
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "1WmrrzJahomV41rJ",
+          "name": "Anthropic-claude-solutions-mandip"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Analyze Insurance Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "Insurance Analyzer Entry",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "External Service": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "n8n subworkflow": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Scripting": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Access SQL DB": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Load files from SharePoint": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Read messagers in Outlook": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Read messages from Teams": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Claude Opus 4.5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Analyze Insurance Tool",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "triggerCount": 1,
+  "versionId": "93af7bb8-dae5-4244-bd02-888e360d69db",
+  "owner": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "parentFolderId": "iZZxgAdzG5ehWtXm",
+  "isArchived": false
+}

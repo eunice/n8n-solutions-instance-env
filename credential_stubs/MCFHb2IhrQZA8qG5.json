@@ -1,0 +1,12 @@
+{
+  "id": "MCFHb2IhrQZA8qG5",
+  "name": "Gmail account Marcus",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "UI5X51UB9I38qAOw",
+  "name": "Slack account 5",
+  "type": "slackOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

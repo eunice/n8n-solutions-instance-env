@@ -1,0 +1,15 @@
+{
+  "id": "IhEFo8BrcfKWFSY1",
+  "name": "n8n-solutions-service-pgvector",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "password": "",
+    "allowUnauthorizedCerts": true
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "9lxgbxjBeAn3lBsx",
+  "name": "Slack account 4",
+  "type": "slackApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "37TQllDzdJxIJDQb",
+    "projectName": "Amrita Gupta <amrita.gupta@n8n.io>",
+    "personalEmail": "amrita.gupta@n8n.io"
+  }
+}

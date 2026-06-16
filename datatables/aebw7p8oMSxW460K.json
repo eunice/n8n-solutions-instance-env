@@ -1,0 +1,104 @@
+{
+  "id": "aebw7p8oMSxW460K",
+  "name": "Claims",
+  "columns": [
+    {
+      "id": "NdJ3poE4zB2MSe8l",
+      "name": "claimant_name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "Llk2KlAL4PtRQoYO",
+      "name": "contract_id",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "eCyWjMN83uEBSEmh",
+      "name": "accident_description",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "8DYcBNMOpxubb3Yl",
+      "name": "date_time",
+      "type": "date",
+      "index": 3
+    },
+    {
+      "id": "eEnHV5uFrL0P78qA",
+      "name": "location",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "vTR2uOcEH00zeTbh",
+      "name": "other_party_vehicle_brand",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "JyIzuxrggy0PBrFy",
+      "name": "other_party_vehicle_model",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "ITNVtfDArXwqK4yo",
+      "name": "other_party_license_plate",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "YzEpZCd1pAFturNP",
+      "name": "other_party_owner",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "T9tIqW1GRA1ckTRp",
+      "name": "damage_description",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "id": "5wtCllJAEhpyxBQc",
+      "name": "claim_status",
+      "type": "string",
+      "index": 10
+    },
+    {
+      "id": "jscJfBNzCJNopLgO",
+      "name": "next_steps",
+      "type": "string",
+      "index": 11
+    },
+    {
+      "id": "UlmuXPzRZmAuKjCj",
+      "name": "photos_available",
+      "type": "string",
+      "index": 12
+    },
+    {
+      "id": "GoZYwpn4UL7XSJP0",
+      "name": "coverage_type",
+      "type": "string",
+      "index": 13
+    },
+    {
+      "id": "ldFSRUibuqfL1Plm",
+      "name": "action",
+      "type": "string",
+      "index": 14
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-08T08:28:03.461Z",
+  "updatedAt": "2026-04-14T13:27:10.359Z"
+}

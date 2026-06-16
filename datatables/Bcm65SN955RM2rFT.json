@@ -1,0 +1,62 @@
+{
+  "id": "Bcm65SN955RM2rFT",
+  "name": "WGV_vertrag_daten",
+  "columns": [
+    {
+      "id": "JOxJHeALpHDmewJ5",
+      "name": "Versicherungsnummer",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "hOdRCYh2EkzfsDEt",
+      "name": "Produkt",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "27MIhZhTapVAKxH3",
+      "name": "Versicherungssumme_EUR",
+      "type": "number",
+      "index": 2
+    },
+    {
+      "id": "imzAcdejxleg8bKa",
+      "name": "Wohnflaeche_m2",
+      "type": "number",
+      "index": 3
+    },
+    {
+      "id": "RbCWEQ53Beq2k0EF",
+      "name": "Stockwerk",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "7Eq3wBwlnqjkOpkz",
+      "name": "Adresse",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "BvtEDDFvfmBfcyQL",
+      "name": "Vertragsstatus",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "7qOFTIsiptBdXmSo",
+      "name": "Beitrag",
+      "type": "string",
+      "index": 7
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-13T14:49:44.843Z",
+  "updatedAt": "2026-04-13T14:49:44.931Z"
+}

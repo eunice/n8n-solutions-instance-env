@@ -1,0 +1,14 @@
+{
+  "id": "7nFPG9NvV6ztZfpK",
+  "name": "Microsoft Outlook - Marcus Admin",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

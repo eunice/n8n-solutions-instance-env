@@ -1,0 +1,14 @@
+{
+  "id": "2GfF7udguNv6gLqg",
+  "name": "n8n account - Telekom Fiber Factory Workshop Instance",
+  "type": "n8nApi",
+  "data": {
+    "apiKey": "",
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

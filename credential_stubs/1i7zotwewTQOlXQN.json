@@ -1,0 +1,15 @@
+{
+  "id": "1i7zotwewTQOlXQN",
+  "name": "Idir BigQuery ",
+  "type": "googleBigQueryOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fyyTRtJcjUDkoxGF",
+  "name": "test OAuth2",
+  "type": "oAuth2Api",
+  "data": {
+    "grantType": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "isGlobal": false
+}

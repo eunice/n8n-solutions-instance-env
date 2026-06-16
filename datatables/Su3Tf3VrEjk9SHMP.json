@@ -1,0 +1,73 @@
+{
+  "id": "Su3Tf3VrEjk9SHMP",
+  "name": "Bunnies",
+  "columns": [
+    {
+      "id": "qYd5P8t36ydNvz1j",
+      "name": "farmId",
+      "type": "number",
+      "index": 0
+    },
+    {
+      "id": "3SXlwyiRljfMeDGI",
+      "name": "name",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "HOHmBzNgkFoxBeXJ",
+      "name": "gender",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "Qf3Ap93a3BNQTV7o",
+      "name": "isMutant",
+      "type": "boolean",
+      "index": 3
+    },
+    {
+      "id": "UX1N7Rsy4MzWsbzA",
+      "name": "colour",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "D4QbxNoUdCkHIG14",
+      "name": "age",
+      "type": "number",
+      "index": 5
+    },
+    {
+      "id": "B21aJWaqTcEevf9h",
+      "name": "isAlive",
+      "type": "boolean",
+      "index": 6
+    },
+    {
+      "id": "DtAkjUWx6XovfrFE",
+      "name": "isExpecting",
+      "type": "boolean",
+      "index": 7
+    },
+    {
+      "id": "k9dFCEsJ3dGljfGy",
+      "name": "motherId",
+      "type": "number",
+      "index": 8
+    },
+    {
+      "id": "0cT8WlDNy86x13RS",
+      "name": "FatherId",
+      "type": "number",
+      "index": 9
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9EOfUONBAO50Fd6C",
+    "teamName": "Bunny Farm"
+  },
+  "createdAt": "2025-11-26T16:26:52.887Z",
+  "updatedAt": "2026-01-20T14:41:58.955Z"
+}

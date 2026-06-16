@@ -1,0 +1,12 @@
+{
+  "id": "QNMvZQOr76On2qLK",
+  "name": "Gmail Kendall",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "cZD57WLXPK6x8Aqi",
+  "name": "agent_test_abc",
+  "columns": [
+    {
+      "id": "QieoctjzpaP7NsIm",
+      "name": "question",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "oeHrDwRv4YWSGQnq",
+      "name": "answer",
+      "type": "string",
+      "index": 1
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  },
+  "createdAt": "2025-12-17T16:37:57.030Z",
+  "updatedAt": "2025-12-17T16:37:57.030Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "SXQECSaXRWols14c",
+  "name": "Microsoft Outlook account 4",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {
+    "useShared": true,
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

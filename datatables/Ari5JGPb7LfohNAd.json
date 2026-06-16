@@ -1,0 +1,98 @@
+{
+  "id": "Ari5JGPb7LfohNAd",
+  "name": "kfz_vertrag_daten",
+  "columns": [
+    {
+      "id": "pAoI56T8YFR5TQUN",
+      "name": "Versicherungsnummer",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "v08u6teoGRciWf6H",
+      "name": "Hersteller",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "9qfDyyqcEUKXDalT",
+      "name": "Modell",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "PQlaCDfJY05ksv7T",
+      "name": "Baujahr",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "E2Wruh2NIi8FixGS",
+      "name": "Kennzeichen",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "c0yfvcTUjDJdFssm",
+      "name": "FIN_VIN",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "gxrIOvsycxnd252l",
+      "name": "Kilometerstand",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "RSAuEXealuLZ3hgz",
+      "name": "Produkt",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "9Kyd4Ojd5RNVVDUp",
+      "name": "Werkstattbindung",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "2Qb2cPxcvdcyvXeF",
+      "name": "SB",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "id": "mp75Za76zlL6OsMh",
+      "name": "contract_status",
+      "type": "string",
+      "index": 10
+    },
+    {
+      "id": "0MVM6I8QM5GJqcfa",
+      "name": "Halter",
+      "type": "string",
+      "index": 11
+    },
+    {
+      "id": "Cgb1f39UY56f8YZq",
+      "name": "email",
+      "type": "string",
+      "index": 12
+    },
+    {
+      "id": "T23Diid1DHXiPvHH",
+      "name": "date_of_birth",
+      "type": "date",
+      "index": 13
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-08T08:47:42.353Z",
+  "updatedAt": "2026-04-09T07:58:41.923Z"
+}

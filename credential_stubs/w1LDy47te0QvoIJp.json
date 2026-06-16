@@ -1,0 +1,13 @@
+{
+  "id": "w1LDy47te0QvoIJp",
+  "name": "Slack Stratos",
+  "type": "slackOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "isGlobal": false
+}

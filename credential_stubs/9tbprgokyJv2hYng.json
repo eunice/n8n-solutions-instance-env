@@ -1,0 +1,13 @@
+{
+  "id": "9tbprgokyJv2hYng",
+  "name": "SMTP account",
+  "type": "smtp",
+  "data": {
+    "user": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

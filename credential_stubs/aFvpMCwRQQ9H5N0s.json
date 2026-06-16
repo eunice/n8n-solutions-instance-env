@@ -1,0 +1,13 @@
+{
+  "id": "aFvpMCwRQQ9H5N0s",
+  "name": "Gmail Florian",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "UAh2vcPpPlh6aHrd",
+    "projectName": "Florian Schaefer <florian.schaefer@n8n.io>",
+    "personalEmail": "florian.schaefer@n8n.io"
+  },
+  "isGlobal": false
+}

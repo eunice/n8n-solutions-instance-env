@@ -1,0 +1,16 @@
+{
+  "id": "zx9osLtIHZM8zU95",
+  "name": "HighLevel account",
+  "type": "highLevelOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

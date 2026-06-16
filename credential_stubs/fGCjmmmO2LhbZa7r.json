@@ -1,0 +1,17 @@
+{
+  "id": "fGCjmmmO2LhbZa7r",
+  "name": "Amrita Google Service Account account",
+  "type": "googleApi",
+  "data": {
+    "email": "",
+    "privateKey": "",
+    "httpNode": true,
+    "scopes": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "7N5vIJWTg07km9Ee",
+  "name": "OpenRouter account - n8n credit mandip",
+  "type": "openRouterApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

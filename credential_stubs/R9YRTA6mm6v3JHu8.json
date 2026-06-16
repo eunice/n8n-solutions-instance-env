@@ -1,0 +1,14 @@
+{
+  "id": "R9YRTA6mm6v3JHu8",
+  "name": "Header Auth account 2",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

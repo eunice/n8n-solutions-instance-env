@@ -1,0 +1,14 @@
+{
+  "id": "DLoSSm7JWju6XtqW",
+  "name": "MySQL Readonly",
+  "type": "mySql",
+  "data": {
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "kYbJN1TfxzVve18Y",
+    "projectName": "Marcus Specht <marcus@n8n.io>",
+    "personalEmail": "marcus@n8n.io"
+  }
+}

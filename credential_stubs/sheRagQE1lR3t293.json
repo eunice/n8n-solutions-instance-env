@@ -1,0 +1,13 @@
+{
+  "id": "sheRagQE1lR3t293",
+  "name": "AWS account 2",
+  "type": "aws",
+  "data": {
+    "secretAccessKey": "={{ $secrets.awsSecretsManager.secret_aws }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

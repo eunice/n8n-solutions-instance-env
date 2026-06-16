@@ -1,0 +1,12 @@
+{
+  "id": "8HjKSzgzDMEb8oyq",
+  "name": "Hassan Slack App",
+  "type": "slackOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  }
+}

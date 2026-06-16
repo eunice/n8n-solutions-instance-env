@@ -1,0 +1,14 @@
+{
+  "id": "TwXULeE3AMrbjIjn",
+  "name": "Google Slides account",
+  "type": "googleSlidesOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "Tyj48T7FEgjgNmFj",
+  "name": "NewAPI",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

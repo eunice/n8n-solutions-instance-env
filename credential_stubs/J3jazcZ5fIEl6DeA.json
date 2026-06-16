@@ -1,0 +1,14 @@
+{
+  "id": "J3jazcZ5fIEl6DeA",
+  "name": "Header Auth emnify",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

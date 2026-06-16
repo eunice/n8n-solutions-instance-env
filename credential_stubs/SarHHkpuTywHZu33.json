@@ -1,0 +1,14 @@
+{
+  "id": "SarHHkpuTywHZu33",
+  "name": "danny's github token",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "i5EI19BamS5DD5sG",
+    "projectName": "Danny Martini <danny@n8n.io>",
+    "personalEmail": "danny@n8n.io"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "BbCc1P3fOHscsWNU",
+  "name": "Aikido OAuth2 client credentials",
+  "type": "oAuth2Api",
+  "data": {
+    "grantType": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  },
+  "isGlobal": false
+}

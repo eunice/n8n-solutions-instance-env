@@ -1,0 +1,17 @@
+{
+  "id": "UoAqKALk13yXSygN",
+  "name": "Postgres account",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "database": "",
+    "user": "",
+    "password": "",
+    "allowUnauthorizedCerts": true
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

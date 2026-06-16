@@ -1,0 +1,13 @@
+{
+  "id": "jqC3o2xM7oYGtChp",
+  "name": "Slack account",
+  "type": "slackOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

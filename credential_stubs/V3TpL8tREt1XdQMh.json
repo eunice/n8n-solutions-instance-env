@@ -1,0 +1,14 @@
+{
+  "id": "V3TpL8tREt1XdQMh",
+  "name": "Anthropic account",
+  "type": "anthropicApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "S6ZwX9xx7fjssGFm",
+    "projectName": "Mandip Gosal <mandip@n8n.io>",
+    "personalEmail": "mandip@n8n.io"
+  }
+}

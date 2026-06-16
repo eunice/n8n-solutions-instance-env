@@ -1,0 +1,15 @@
+{
+  "id": "2cLuWOze5gXybBvg",
+  "name": "n8n solutions workshop user",
+  "type": "aws",
+  "data": {
+    "accessKeyId": "",
+    "secretAccessKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "cSMZ6OirPkGfRLL1",
+    "teamName": "Customer Workshop"
+  },
+  "isGlobal": false
+}

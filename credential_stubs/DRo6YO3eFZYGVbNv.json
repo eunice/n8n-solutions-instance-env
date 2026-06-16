@@ -1,0 +1,17 @@
+{
+  "id": "DRo6YO3eFZYGVbNv",
+  "name": "Postgres account 4",
+  "type": "postgres",
+  "data": {
+    "host": "",
+    "database": "",
+    "password": "",
+    "port": 17034
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

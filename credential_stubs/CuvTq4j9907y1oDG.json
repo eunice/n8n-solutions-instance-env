@@ -1,0 +1,14 @@
+{
+  "id": "CuvTq4j9907y1oDG",
+  "name": "Microsoft Entra ID (Azure Active Directory) account 2",
+  "type": "microsoftEntraOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

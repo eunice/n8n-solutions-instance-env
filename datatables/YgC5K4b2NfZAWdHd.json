@@ -1,0 +1,37 @@
+{
+  "id": "YgC5K4b2NfZAWdHd",
+  "name": "bank_accounts",
+  "columns": [
+    {
+      "id": "uXQvcg2r1OrbxsQp",
+      "name": "account_number",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "KaIHKvDYKTcYhARw",
+      "name": "account_holder",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "RQo2NTpDFefc2hiN",
+      "name": "account_type",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "OX8jjUukQdl2HRbE",
+      "name": "balance",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "createdAt": "2026-03-31T10:39:45.874Z",
+  "updatedAt": "2026-03-31T10:45:22.412Z"
+}

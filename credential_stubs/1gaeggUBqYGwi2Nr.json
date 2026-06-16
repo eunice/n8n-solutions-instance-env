@@ -1,0 +1,14 @@
+{
+  "id": "1gaeggUBqYGwi2Nr",
+  "name": "Zammad Trigger Basic Auth",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

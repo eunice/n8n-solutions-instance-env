@@ -1,0 +1,50 @@
+{
+  "id": "5aqwQ2irfDukR3Jz",
+  "name": "evaluation support data",
+  "columns": [
+    {
+      "id": "FuGrvRRgt1aVtsMq",
+      "name": "subject",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "b9EBvwd7djvY4Qnb",
+      "name": "body",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "PiJ8yGHL7f1Hp1L8",
+      "name": "queue",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "QKO89Y5mGgeKhgev",
+      "name": "priority",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "ZFzVifWdXeIsqyRZ",
+      "name": "actual_queue",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "6DpUy7yWkcBL6lL7",
+      "name": "actual_priority",
+      "type": "string",
+      "index": 5
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "createdAt": "2026-01-02T16:41:19.673Z",
+  "updatedAt": "2026-01-02T16:41:19.673Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "LCu5K0q1IDq2MKrL",
+  "name": "Slack - Kendall",
+  "type": "slackApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "isGlobal": false
+}

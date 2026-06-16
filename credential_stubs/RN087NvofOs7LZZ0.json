@@ -1,0 +1,14 @@
+{
+  "id": "RN087NvofOs7LZZ0",
+  "name": "Microsoft Outlook account Mandip",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "A3t3hjXKWKaDK9WH",
+  "name": "Events Timeline",
+  "columns": [
+    {
+      "id": "1Bbdc3twRW8ndZwM",
+      "name": "time",
+      "type": "date",
+      "index": 0
+    },
+    {
+      "id": "LZrHmZRMSc6RA3G3",
+      "name": "eventDescription",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "UImAMfjCAXxI16bY",
+      "name": "teamInvolved",
+      "type": "string",
+      "index": 2
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  },
+  "createdAt": "2026-01-15T11:36:21.989Z",
+  "updatedAt": "2026-01-15T11:45:23.426Z"
+}

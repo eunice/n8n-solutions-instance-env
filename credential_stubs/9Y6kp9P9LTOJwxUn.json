@@ -1,0 +1,14 @@
+{
+  "id": "9Y6kp9P9LTOJwxUn",
+  "name": "AWS Secret Json",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "={{ JSON.parse($secrets.awsSecretsManager.AwsSecretKeyJson).AWS_SECRET_KEY }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

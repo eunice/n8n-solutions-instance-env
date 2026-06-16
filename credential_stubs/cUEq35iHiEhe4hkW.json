@@ -1,0 +1,16 @@
+{
+  "id": "cUEq35iHiEhe4hkW",
+  "name": "Zendesk account",
+  "type": "zendeskApi",
+  "data": {
+    "subdomain": "",
+    "email": "",
+    "apiToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  }
+}

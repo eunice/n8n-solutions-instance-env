@@ -1,0 +1,15 @@
+{
+  "id": "77OxGfEZYow6zbrc",
+  "name": "test",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": "={{ $json.test }}"
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

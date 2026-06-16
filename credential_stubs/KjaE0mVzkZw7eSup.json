@@ -1,0 +1,13 @@
+{
+  "id": "KjaE0mVzkZw7eSup",
+  "name": "n8n labs - Slack account ",
+  "type": "slackApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

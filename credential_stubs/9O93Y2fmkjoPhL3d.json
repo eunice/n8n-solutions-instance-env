@@ -1,0 +1,16 @@
+{
+  "id": "9O93Y2fmkjoPhL3d",
+  "name": "Twilio account Kendall",
+  "type": "twilioApi",
+  "data": {
+    "accountSid": "",
+    "authToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "q4lax9GObZ2fngua",
+  "name": "Microsoft Outlook Marcus New",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

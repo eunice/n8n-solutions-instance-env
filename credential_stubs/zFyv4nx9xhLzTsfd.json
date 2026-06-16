@@ -1,0 +1,15 @@
+{
+  "id": "zFyv4nx9xhLzTsfd",
+  "name": "ServiceNow Basic - Sample Test",
+  "type": "serviceNowBasicApi",
+  "data": {
+    "user": "",
+    "password": "",
+    "subdomain": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

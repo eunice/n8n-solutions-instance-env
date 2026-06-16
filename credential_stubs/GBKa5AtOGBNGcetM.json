@@ -1,0 +1,13 @@
+{
+  "id": "GBKa5AtOGBNGcetM",
+  "name": "Stripe account",
+  "type": "stripeApi",
+  "data": {
+    "secretKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

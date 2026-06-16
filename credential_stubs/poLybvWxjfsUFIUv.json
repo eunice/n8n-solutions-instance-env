@@ -1,0 +1,14 @@
+{
+  "id": "poLybvWxjfsUFIUv",
+  "name": "OpenRouter account - mlupton",
+  "type": "openRouterApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  }
+}

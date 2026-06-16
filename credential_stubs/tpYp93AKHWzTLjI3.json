@@ -1,0 +1,14 @@
+{
+  "id": "tpYp93AKHWzTLjI3",
+  "name": "Header Auth - Sample API Key",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "ZjSCLKYB8lrYEjoT",
+  "name": "MockTrades",
+  "columns": [
+    {
+      "id": "Vy7htwQzZUPHYrgd",
+      "name": "trade_id",
+      "type": "number",
+      "index": 0
+    },
+    {
+      "id": "BCL9P0s2ZcQbe3VC",
+      "name": "stock_symbol",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "LWhME64rrz1PR8xB",
+      "name": "quantity",
+      "type": "number",
+      "index": 2
+    },
+    {
+      "id": "NAZo9S8tpiE46L0E",
+      "name": "purchase_price",
+      "type": "number",
+      "index": 3
+    },
+    {
+      "id": "lEcR4VtyM5vAvAlq",
+      "name": "sale_price",
+      "type": "number",
+      "index": 4
+    },
+    {
+      "id": "gooowpaNOAYS8yaf",
+      "name": "purchase_date",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "DJiDjIg2kr9ASZMx",
+      "name": "sale_date",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "fVTk3nlyoWkOVhbd",
+      "name": "profit_loss",
+      "type": "number",
+      "index": 7
+    },
+    {
+      "id": "WaCL4t0GYaBArxBM",
+      "name": "transaction_fee",
+      "type": "number",
+      "index": 8
+    },
+    {
+      "id": "Jb82daaLLJ8UqVhX",
+      "name": "brokerage_firm",
+      "type": "string",
+      "index": 9
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  },
+  "createdAt": "2026-03-26T13:29:30.749Z",
+  "updatedAt": "2026-03-26T13:29:31.040Z"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "vTyFe4B8gYBGhFT5",
+  "name": "Microsoft Teams account 4",
+  "type": "microsoftTeamsOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

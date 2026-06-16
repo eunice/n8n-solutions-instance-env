@@ -1,0 +1,38 @@
+{
+  "id": "FcrDBB4iBvgCXivG",
+  "name": "N8n docs",
+  "columns": [
+    {
+      "id": "EbOzXO89XYJpW1XE",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "eBwGKlMcTk2PoXE7",
+      "name": "type",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "x9Nv5QPZmeVXTGHz",
+      "name": "url",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "Vwp0V1tO9akjLk0b",
+      "name": "content",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2025-11-28T09:14:20.127Z",
+  "updatedAt": "2026-01-12T12:39:55.385Z"
+}

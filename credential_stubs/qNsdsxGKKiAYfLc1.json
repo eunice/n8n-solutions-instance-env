@@ -1,0 +1,13 @@
+{
+  "id": "qNsdsxGKKiAYfLc1",
+  "name": "Typeform account",
+  "type": "typeformApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "oB9KbXUBCDH2vWqh",
+  "name": "ConvertAPI account",
+  "type": "convertApi",
+  "data": {
+    "apiToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

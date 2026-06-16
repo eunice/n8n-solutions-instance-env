@@ -1,0 +1,16 @@
+{
+  "id": "RHqYMVKxgKpYQKZi",
+  "name": "BR - Platform & General Security",
+  "icon": {
+    "type": "icon",
+    "value": "status-completed"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "RHqYMVKxgKpYQKZi",
+    "teamName": "BR - Platform & General Security"
+  },
+  "variableStubs": []
+}

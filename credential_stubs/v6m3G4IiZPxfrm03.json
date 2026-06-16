@@ -1,0 +1,14 @@
+{
+  "id": "v6m3G4IiZPxfrm03",
+  "name": "Qdrant Viraj Solutions Cluster",
+  "type": "qdrantApi",
+  "data": {
+    "apiKey": "",
+    "qdrantUrl": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "2azW45Q8rotp5RML",
+    "teamName": "Failing / Investigate"
+  }
+}

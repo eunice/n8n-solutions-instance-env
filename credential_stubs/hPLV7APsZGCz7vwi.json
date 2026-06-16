@@ -1,0 +1,12 @@
+{
+  "id": "hPLV7APsZGCz7vwi",
+  "name": "[solutions-team@n8n.io]Sheets",
+  "type": "googleSheetsOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": true
+}

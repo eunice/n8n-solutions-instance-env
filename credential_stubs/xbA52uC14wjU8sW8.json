@@ -1,0 +1,14 @@
+{
+  "id": "xbA52uC14wjU8sW8",
+  "name": "Form.io account",
+  "type": "formIoApi",
+  "data": {
+    "email": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "0pb09zCYAFWMlV84",
+    "teamName": "Integrations"
+  }
+}

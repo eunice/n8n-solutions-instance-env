@@ -1,6 +1,6 @@
 {
-  "id": "dwB1wEjPXL76S9ff",
-  "name": "My project",
+  "id": "cSMZ6OirPkGfRLL1",
+  "name": "Customer Workshop",
   "icon": {
     "type": "icon",
     "value": "layers"
@@ -9,8 +9,8 @@
   "type": "team",
   "owner": {
     "type": "team",
-    "teamId": "dwB1wEjPXL76S9ff",
-    "teamName": "My project"
+    "teamId": "cSMZ6OirPkGfRLL1",
+    "teamName": "Customer Workshop"
   },
   "variableStubs": []
 }

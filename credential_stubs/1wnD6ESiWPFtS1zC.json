@@ -1,0 +1,15 @@
+{
+  "id": "1wnD6ESiWPFtS1zC",
+  "name": "Chat account 2",
+  "type": "googleApi",
+  "data": {
+    "region": "",
+    "email": "",
+    "privateKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

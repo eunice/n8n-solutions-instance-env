@@ -1,0 +1,15 @@
+{
+  "id": "ZCCGn4VrV8y3wf9O",
+  "name": "AWS account 3",
+  "type": "aws",
+  "data": {
+    "accessKeyId": "",
+    "secretAccessKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

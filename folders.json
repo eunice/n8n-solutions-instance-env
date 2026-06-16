@@ -470,7 +470,343 @@
       "parentFolderId": "KmZDiaRdx3XIIKRg",
       "homeProjectId": "q4JiagnkOizWEqn0",
       "createdAt": "2025-11-17T14:01:43.747Z",
-      "updatedAt": "2025-11-17T14:01:43.747Z"
+      "updatedAt": "2025-12-01T18:37:14.000Z"
+    },
+    {
+      "id": "PjYT9VbPvZiBx21q",
+      "name": "Tutorials",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2025-12-02T16:09:15.783Z",
+      "updatedAt": "2025-12-02T16:09:15.783Z"
+    },
+    {
+      "id": "edW7f98z8lQZrWoL",
+      "name": "Template library example",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2025-12-05T16:10:13.733Z",
+      "updatedAt": "2025-12-05T16:10:13.733Z"
+    },
+    {
+      "id": "E90nBaVrCEIVidZD",
+      "name": "Utilities",
+      "parentFolderId": "3g1S0g3RqEKlmm9U",
+      "homeProjectId": "cSMZ6OirPkGfRLL1",
+      "createdAt": "2025-12-16T18:37:34.927Z",
+      "updatedAt": "2025-12-16T22:45:07.000Z"
+    },
+    {
+      "id": "EuLsbCdqxJNvEK9M",
+      "name": "Templates",
+      "parentFolderId": "3g1S0g3RqEKlmm9U",
+      "homeProjectId": "cSMZ6OirPkGfRLL1",
+      "createdAt": "2025-12-16T18:37:39.970Z",
+      "updatedAt": "2025-12-16T22:45:06.000Z"
+    },
+    {
+      "id": "4w4G6QNk1RBu38tS",
+      "name": "Participants",
+      "parentFolderId": "3g1S0g3RqEKlmm9U",
+      "homeProjectId": "cSMZ6OirPkGfRLL1",
+      "createdAt": "2025-12-16T18:37:52.082Z",
+      "updatedAt": "2025-12-16T22:45:04.000Z"
+    },
+    {
+      "id": "3g1S0g3RqEKlmm9U",
+      "name": "devops",
+      "parentFolderId": null,
+      "homeProjectId": "cSMZ6OirPkGfRLL1",
+      "createdAt": "2025-12-16T22:45:02.585Z",
+      "updatedAt": "2025-12-16T22:45:02.585Z"
+    },
+    {
+      "id": "RUzCxyU7QFz2cXFf",
+      "name": "Admin",
+      "parentFolderId": "E90nBaVrCEIVidZD",
+      "homeProjectId": "cSMZ6OirPkGfRLL1",
+      "createdAt": "2025-12-17T18:21:16.621Z",
+      "updatedAt": "2025-12-17T18:21:16.621Z"
+    },
+    {
+      "id": "qlrHrmMRfsZYcwXL",
+      "name": "Wolters",
+      "parentFolderId": null,
+      "homeProjectId": "mgegojU6TjAZ0puh",
+      "createdAt": "2025-12-27T00:39:59.671Z",
+      "updatedAt": "2025-12-27T00:39:59.671Z"
+    },
+    {
+      "id": "bkZ5rMIQS85PctyV",
+      "name": "n8n docs",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-01-12T09:38:31.488Z",
+      "updatedAt": "2026-01-12T09:38:31.488Z"
+    },
+    {
+      "id": "EJMGrVCyBQc4vTks",
+      "name": "Credentials",
+      "parentFolderId": null,
+      "homeProjectId": "toPozbTl7IDyn1kD",
+      "createdAt": "2026-01-14T19:43:13.632Z",
+      "updatedAt": "2026-01-14T19:43:13.632Z"
+    },
+    {
+      "id": "0oeXSdzWEI2Tl5Xk",
+      "name": "jackl",
+      "parentFolderId": null,
+      "homeProjectId": "mgegojU6TjAZ0puh",
+      "createdAt": "2026-01-21T10:14:11.661Z",
+      "updatedAt": "2026-01-21T10:14:11.661Z"
+    },
+    {
+      "id": "iZZxgAdzG5ehWtXm",
+      "name": "Sandbox",
+      "parentFolderId": null,
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-01-23T22:16:10.327Z",
+      "updatedAt": "2026-01-23T22:16:10.327Z"
+    },
+    {
+      "id": "ZuIrEC6eiW8XY6Wo",
+      "name": "Customers",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-09T09:06:08.208Z",
+      "updatedAt": "2026-02-09T09:06:08.208Z"
+    },
+    {
+      "id": "RLlfRJzPVumArBJ5",
+      "name": "Virtuos",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-09T09:06:18.485Z",
+      "updatedAt": "2026-02-09T09:06:18.485Z"
+    },
+    {
+      "id": "hUquSNoaSXwnle79",
+      "name": "VW",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-10T13:13:22.602Z",
+      "updatedAt": "2026-02-10T13:13:22.602Z"
+    },
+    {
+      "id": "dIfh9lTZatH0sv1d",
+      "name": "Intellect",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-17T13:10:05.311Z",
+      "updatedAt": "2026-02-17T13:10:23.000Z"
+    },
+    {
+      "id": "Pz1Soz5WgwI7GFhF",
+      "name": "Workshop Loom Content",
+      "parentFolderId": null,
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-02-25T19:48:32.566Z",
+      "updatedAt": "2026-02-25T19:48:32.566Z"
+    },
+    {
+      "id": "g1xIBhGSmoPRY0B6",
+      "name": "DT",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-02-27T14:54:32.901Z",
+      "updatedAt": "2026-02-27T14:54:32.901Z"
+    },
+    {
+      "id": "LY3ALwhVcRbjJ0Wx",
+      "name": "DB",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-03T14:22:26.460Z",
+      "updatedAt": "2026-03-03T14:22:26.460Z"
+    },
+    {
+      "id": "skh8mDPrbyeASpvZ",
+      "name": "Miele",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-05T14:27:05.322Z",
+      "updatedAt": "2026-03-05T14:27:05.322Z"
+    },
+    {
+      "id": "bFii7w6Nxz3lzWaw",
+      "name": "Airbus",
+      "parentFolderId": null,
+      "homeProjectId": "hNkhHp80l2W3TDQS",
+      "createdAt": "2026-03-13T14:15:11.332Z",
+      "updatedAt": "2026-03-13T14:15:11.332Z"
+    },
+    {
+      "id": "HfYRE49a11cAuDHE",
+      "name": "Flix",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-17T10:37:13.597Z",
+      "updatedAt": "2026-03-17T10:37:13.597Z"
+    },
+    {
+      "id": "O9ZeuUwp1OQerV4Z",
+      "name": "KFW",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-03-27T08:40:07.485Z",
+      "updatedAt": "2026-03-27T08:40:07.485Z"
+    },
+    {
+      "id": "oVBUa2xhPqBzvRn3",
+      "name": "📈 Finance & Banking",
+      "parentFolderId": "KmZDiaRdx3XIIKRg",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-03-31T10:20:23.838Z",
+      "updatedAt": "2026-03-31T10:20:23.838Z"
+    },
+    {
+      "id": "WXAs0wNN2dd3epox",
+      "name": "Generali",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-08T08:14:02.367Z",
+      "updatedAt": "2026-04-08T08:14:02.367Z"
+    },
+    {
+      "id": "XPkLgYr6JU1pCjUx",
+      "name": "atruvia",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-20T06:52:53.402Z",
+      "updatedAt": "2026-04-20T06:52:53.402Z"
+    },
+    {
+      "id": "LVITbFMcQM2CydO0",
+      "name": "Stroeer",
+      "parentFolderId": null,
+      "homeProjectId": "9IZnqAATAFu0xs6j",
+      "createdAt": "2026-04-21T11:35:21.708Z",
+      "updatedAt": "2026-04-21T13:46:49.000Z"
+    },
+    {
+      "id": "1dXLh7qMb8qds77B",
+      "name": "Events",
+      "parentFolderId": null,
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-22T08:10:41.361Z",
+      "updatedAt": "2026-04-22T08:10:41.361Z"
+    },
+    {
+      "id": "JrmfQqofWbRHKx4r",
+      "name": "AI Summit 29.04.2026",
+      "parentFolderId": "1dXLh7qMb8qds77B",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-22T08:11:02.858Z",
+      "updatedAt": "2026-04-22T08:11:02.858Z"
+    },
+    {
+      "id": "UzPI0dvzPSJv70AT",
+      "name": "space adventure",
+      "parentFolderId": "JrmfQqofWbRHKx4r",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-04-23T19:50:12.137Z",
+      "updatedAt": "2026-04-23T19:50:12.137Z"
+    },
+    {
+      "id": "IECOdiYYPg0Jyxee",
+      "name": "rldatix",
+      "parentFolderId": "TM0TBg6x8gNu1TFT",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-04-29T00:58:30.533Z",
+      "updatedAt": "2026-04-29T00:58:30.533Z"
+    },
+    {
+      "id": "ttGliTkKaXSjXApt",
+      "name": "triage",
+      "parentFolderId": "IECOdiYYPg0Jyxee",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-04-29T01:08:19.351Z",
+      "updatedAt": "2026-04-29T01:08:19.351Z"
+    },
+    {
+      "id": "lLcq88VTBdarqTTK",
+      "name": "policy",
+      "parentFolderId": "IECOdiYYPg0Jyxee",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-04-29T01:08:23.504Z",
+      "updatedAt": "2026-04-29T01:08:23.504Z"
+    },
+    {
+      "id": "PMNj3zoqKp0vcr2l",
+      "name": "risk-loop",
+      "parentFolderId": "IECOdiYYPg0Jyxee",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-04-29T01:08:28.043Z",
+      "updatedAt": "2026-04-29T01:08:28.043Z"
+    },
+    {
+      "id": "2bpBggB0CV2j35jH",
+      "name": "Accenture",
+      "parentFolderId": "TM0TBg6x8gNu1TFT",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-04-30T18:59:05.970Z",
+      "updatedAt": "2026-04-30T18:59:05.970Z"
+    },
+    {
+      "id": "ND54tvQMsksXFSqD",
+      "name": "comcast",
+      "parentFolderId": "TM0TBg6x8gNu1TFT",
+      "homeProjectId": "q4JiagnkOizWEqn0",
+      "createdAt": "2026-05-04T15:15:02.911Z",
+      "updatedAt": "2026-05-04T15:15:02.911Z"
+    },
+    {
+      "id": "KPCgCMbOzOhBdQzF",
+      "name": "William",
+      "parentFolderId": null,
+      "homeProjectId": "BV53nZqdBE8LXX6O",
+      "createdAt": "2026-05-11T14:44:59.347Z",
+      "updatedAt": "2026-05-11T14:44:59.347Z"
+    },
+    {
+      "id": "AcVgel80I8VTB9yv",
+      "name": "Zeiss",
+      "parentFolderId": "ZuIrEC6eiW8XY6Wo",
+      "homeProjectId": "ovnGbppBuiOQlf7m",
+      "createdAt": "2026-05-12T12:10:32.714Z",
+      "updatedAt": "2026-05-12T12:10:32.714Z"
+    },
+    {
+      "id": "5Qpbk8hKa1zJ730D",
+      "name": "supply chain",
+      "parentFolderId": null,
+      "homeProjectId": "sVTtWdhGfnkKFr0U",
+      "createdAt": "2026-05-12T17:13:08.398Z",
+      "updatedAt": "2026-05-12T17:13:08.398Z"
+    },
+    {
+      "id": "Er8Tqr1mj8hsYPLw",
+      "name": "Accenture AI Summit (04.2026)",
+      "parentFolderId": null,
+      "homeProjectId": "oROHMeNFiAOAXd95",
+      "createdAt": "2026-05-18T08:36:10.214Z",
+      "updatedAt": "2026-05-18T08:36:10.214Z"
+    },
+    {
+      "id": "USHQLCf93eEsiRq1",
+      "name": "Eunice Real WF",
+      "parentFolderId": null,
+      "homeProjectId": "xnl34CIbDYHj4AGJ",
+      "createdAt": "2026-05-20T03:33:52.222Z",
+      "updatedAt": "2026-05-20T03:33:52.222Z"
+    },
+    {
+      "id": "XwpH7Qsvk3mz76Wb",
+      "name": "demos",
+      "parentFolderId": null,
+      "homeProjectId": "sVTtWdhGfnkKFr0U",
+      "createdAt": "2026-05-20T20:21:01.767Z",
+      "updatedAt": "2026-05-20T20:21:01.767Z"
     }
   ]
 }

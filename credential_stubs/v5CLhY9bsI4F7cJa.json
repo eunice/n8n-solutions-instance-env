@@ -1,0 +1,12 @@
+{
+  "id": "v5CLhY9bsI4F7cJa",
+  "name": "Gmail account 5",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "oZrIpWBluGIjbesd",
+    "projectName": "Idir Ouhab Meskine <idir@n8n.io>",
+    "personalEmail": "idir@n8n.io"
+  }
+}

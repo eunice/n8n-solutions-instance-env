@@ -1,0 +1,62 @@
+{
+  "id": "j2BA6eILvPfx68iz",
+  "name": "Inventory",
+  "columns": [
+    {
+      "id": "r7cUPTJ44NJFD13g",
+      "name": "workflowId",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "avmfJlwIJLAwy3ts",
+      "name": "workflowName",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "Vne9tRuaP48pHeJx",
+      "name": "active",
+      "type": "boolean",
+      "index": 2
+    },
+    {
+      "id": "Olo9GHpKAH5YOBYj",
+      "name": "projectName",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "D3TqM2hMb8T5XZDR",
+      "name": "credentialId",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "3lYvmPtwUaNeX1dU",
+      "name": "credentialName",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "zquUyYEG9zNT95H3",
+      "name": "credentialType",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "6YLJgmLS9Du98jP8",
+      "name": "nodetypes",
+      "type": "string",
+      "index": 7
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "createdAt": "2026-03-09T17:28:37.432Z",
+  "updatedAt": "2026-03-09T17:41:34.571Z"
+}

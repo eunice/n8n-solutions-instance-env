@@ -1,0 +1,14 @@
+{
+  "id": "uNFBCLM1V0aloqwm",
+  "name": "Google Drive Marcus",
+  "type": "googleDriveOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

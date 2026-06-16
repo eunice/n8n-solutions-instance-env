@@ -1,0 +1,13 @@
+{
+  "id": "zE5T0euCyRhvK6lm",
+  "name": "GitLab account",
+  "type": "gitlabApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

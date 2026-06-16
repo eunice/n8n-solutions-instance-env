@@ -1,0 +1,15 @@
+{
+  "id": "BXv1mdXoLXJrcmkG",
+  "name": "OpenAi helicone",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "organizationId": "",
+    "url": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "NuOE0546MBln3nrq",
+  "name": "n8n anthropic account",
+  "type": "anthropicApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "cSMZ6OirPkGfRLL1",
+    "teamName": "Customer Workshop"
+  },
+  "isGlobal": false
+}

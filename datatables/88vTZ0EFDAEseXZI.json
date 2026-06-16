@@ -1,0 +1,62 @@
+{
+  "id": "88vTZ0EFDAEseXZI",
+  "name": "Tickets",
+  "columns": [
+    {
+      "id": "Hlp9oUlDiwe7B2AE",
+      "name": "Title",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "VDnzMpZjWqdi86mV",
+      "name": "Description",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "5RnFtHFoSb1IEzAo",
+      "name": "Category",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "oVeccNrjj42a6J1D",
+      "name": "Priority",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "bh94MucRWrKjtkZX",
+      "name": "Issue_Type",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "iMwPnUcLALtkzjFv",
+      "name": "Is_Blocker",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "m5iS3PjTyROPNxPl",
+      "name": "Status",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "Ij71d24g5Ht2mIXO",
+      "name": "Email",
+      "type": "string",
+      "index": 7
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-29T08:59:20.749Z",
+  "updatedAt": "2026-04-29T09:07:35.344Z"
+}

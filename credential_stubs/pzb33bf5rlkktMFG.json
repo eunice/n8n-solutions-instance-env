@@ -1,0 +1,13 @@
+{
+  "id": "pzb33bf5rlkktMFG",
+  "name": "Google Calendar Stratos",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ee5JUIocfmryZwvH",
+  "name": "GitHub account mgosal",
+  "type": "githubApi",
+  "data": {
+    "user": "",
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

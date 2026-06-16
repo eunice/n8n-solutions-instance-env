@@ -1,0 +1,13 @@
+{
+  "id": "JScWMRHSt85u6lvB",
+  "name": "Mews Demo Platform Auth",
+  "type": "httpCustomAuth",
+  "data": {
+    "json": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "t6buKlwtDMBoCNgY",
+    "teamName": "Mews Demo Workflows"
+  }
+}

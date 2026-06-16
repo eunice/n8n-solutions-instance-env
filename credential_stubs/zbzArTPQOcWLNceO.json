@@ -1,0 +1,15 @@
+{
+  "id": "zbzArTPQOcWLNceO",
+  "name": "Supabase account - Kendall",
+  "type": "supabaseApi",
+  "data": {
+    "host": "",
+    "serviceRole": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": false
+}

@@ -1,0 +1,80 @@
+{
+  "id": "EDbomAxHjvB6p2d0",
+  "name": "templates",
+  "columns": [
+    {
+      "id": "XTZ4OUQbqwWlg8cV",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "3m7TyR9Q5YAzLcEs",
+      "name": "active",
+      "type": "boolean",
+      "index": 1
+    },
+    {
+      "id": "f60OpgKVa8wW1p1o",
+      "name": "versionId",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "qw6iPXRX78tWYS2g",
+      "name": "template_id",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "2hv3t01JKDb12AHg",
+      "name": "nodes",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "pPK5HENxdCVu151s",
+      "name": "pinData",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "d1XOqBKsSagHglsH",
+      "name": "connections",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "FpAVQwTjcJPP2d4v",
+      "name": "settings",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "L6AmKzXoRSSefgrF",
+      "name": "meta",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "SxSAwnQOuUeeXNKJ",
+      "name": "description",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "id": "yfXl8zkJhdLGtxc7",
+      "name": "categories",
+      "type": "string",
+      "index": 10
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2025-12-05T16:05:47.914Z",
+  "updatedAt": "2025-12-05T16:05:47.914Z"
+}

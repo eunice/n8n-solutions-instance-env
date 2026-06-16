@@ -1,0 +1,12 @@
+{
+  "id": "7Eqjssw6TbG1kCCF",
+  "name": "Morgan Gmail",
+  "type": "gmailOAuth2",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "hNkhHp80l2W3TDQS",
+    "projectName": "Morgan Lupton <morgan.lupton@n8n.io>",
+    "personalEmail": "morgan.lupton@n8n.io"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "U2K5bAIbg24tzMBE",
+  "name": "Salesforce account 3",
+  "type": "salesforceOAuth2Api",
+  "data": {
+    "csrfSecret": "",
+    "codeVerifier": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "6jpC6vloxIOBUlK6",
+    "projectName": "Hassan Saab <hassan.saab@n8n.io>",
+    "personalEmail": "hassan.saab@n8n.io"
+  },
+  "isGlobal": false
+}

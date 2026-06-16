@@ -1,0 +1,15 @@
+{
+  "id": "QY2pFqeu47OYjPIg",
+  "name": "Okta account",
+  "type": "oktaApi",
+  "data": {
+    "url": "",
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

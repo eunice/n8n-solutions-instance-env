@@ -1,0 +1,14 @@
+{
+  "id": "Tl9MLkvd5yhYWddy",
+  "name": "jsreport basic auth",
+  "type": "httpBasicAuth",
+  "data": {
+    "user": "",
+    "password": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "B3HnIWGRcYAiF1k6",
+    "teamName": "Internal"
+  }
+}

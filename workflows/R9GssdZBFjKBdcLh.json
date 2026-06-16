@@ -1,0 +1,346 @@
+{
+  "id": "R9GssdZBFjKBdcLh",
+  "name": "Complete Work Order",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Work Order",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Work Order Number ",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Status",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Complete"
+                  },
+                  {
+                    "option": "Needs Additional Work"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -400,
+        -176
+      ],
+      "id": "ee0f21c5-8490-43f0-b40c-3d0612d57789",
+      "name": "On form submission",
+      "webhookId": "513cbd09-0785-45f0-b6e1-7d03b4e288d7"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns",
+          "mode": "list",
+          "cachedResultName": "Work Order",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Status": "={{ $json.Status }}",
+            "CompletedDate": "={{ DateTime.fromISO($('On form submission').item.json.submittedAt).toFormat('MM-dd-yyyy') }}",
+            "ID": "={{ $('On form submission').item.json['Work Order Number '] }}"
+          },
+          "matchingColumns": [
+            "ID"
+          ],
+          "schema": [
+            {
+              "id": "ID",
+              "displayName": "ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "FirstName",
+              "displayName": "FirstName",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LastName",
+              "displayName": "LastName",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "SubmittedDate",
+              "displayName": "SubmittedDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "CompletedDate",
+              "displayName": "CompletedDate",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Survey",
+              "displayName": "Survey",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        0,
+        -192
+      ],
+      "id": "e934a5b6-0465-4383-b880-520878417fdf",
+      "name": "Append or update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b5lzkqXTU11lA2LL",
+          "name": "Google Sheets Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "d55fe6d4-5ff0-467a-982a-34cfedb34fca",
+              "leftValue": "={{ $json.Status }}",
+              "rightValue": "Complete",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -240,
+        -176
+      ],
+      "id": "99f081b6-f13a-4333-a78b-b18a93c5632f",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "from": "+18335571060",
+        "to": "={{ $json.Phone }}",
+        "message": "=Hello {{ $json.FirstName }}.  We have completed your work order and want to ensure satisfaction.  Please respond with:\n1 - If the work order was completed to your satisafaction  or\n2 - If you are unsatisfied ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [
+        336,
+        -192
+      ],
+      "id": "ca74069a-17e9-4884-8684-e6977330dc10",
+      "name": "Send an SMS/MMS/WhatsApp message",
+      "credentials": {
+        "twilioApi": {
+          "id": "9O93Y2fmkjoPhL3d",
+          "name": "Twilio account Kendall"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns",
+          "mode": "list",
+          "cachedResultName": "Work Order",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18ftKVloIJw-lOFcy8fDTUGO3lBBWZEIVBBLHCakBvns/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "ID",
+              "lookupValue": "={{ $('On form submission').item.json['Work Order Number '] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        176,
+        -192
+      ],
+      "id": "e1c246d5-1a44-4e05-876f-862db36a02de",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "b5lzkqXTU11lA2LL",
+          "name": "Google Sheets Kendall"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append or update row in sheet": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Send an SMS/MMS/WhatsApp message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "93f70e53-ce34-4eca-9b32-a18a78cdc326",
+  "owner": {
+    "type": "personal",
+    "projectId": "sVTtWdhGfnkKFr0U",
+    "projectName": "Kendall Garey <kendall.garey@n8n.io>",
+    "personalEmail": "kendall.garey@n8n.io"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

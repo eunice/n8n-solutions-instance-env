@@ -1,0 +1,62 @@
+{
+  "id": "7UyVCXyXzziZn9Ax",
+  "name": "api_health_checks",
+  "columns": [
+    {
+      "id": "u7b4MvG3haQI76AN",
+      "name": "checked_at",
+      "type": "date",
+      "index": 0
+    },
+    {
+      "id": "rfuPZo2LDoviOqTV",
+      "name": "service_name",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "MGq8yXoWUG988WeY",
+      "name": "url",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "Xjq8wHqqYHxZPK6S",
+      "name": "status_code",
+      "type": "number",
+      "index": 3
+    },
+    {
+      "id": "ZCCFLQ0uRKHF7tvJ",
+      "name": "status",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "Q0hAn9Qtc4lLH5WH",
+      "name": "latency_ms",
+      "type": "number",
+      "index": 5
+    },
+    {
+      "id": "NLvBK1Un9ESwScnr",
+      "name": "run_id",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "PMjn90aOHcv8KEqB",
+      "name": "message",
+      "type": "string",
+      "index": 7
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "XsMKpKkoByiirDZ7",
+    "projectName": "Bryan McSpadden <bryan.mcspadden@n8n.io>",
+    "personalEmail": "bryan.mcspadden@n8n.io"
+  },
+  "createdAt": "2026-05-14T16:25:29.255Z",
+  "updatedAt": "2026-05-15T10:11:58.225Z"
+}

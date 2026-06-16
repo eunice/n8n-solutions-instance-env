@@ -1,0 +1,20 @@
+{
+  "id": "C7hBQUlyGA1vq4Dj",
+  "name": "Google Calendar Marcus",
+  "type": "googleCalendarOAuth2Api",
+  "data": {
+    "grantType": "",
+    "authUrl": "",
+    "accessTokenUrl": "",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "",
+    "authQueryParameters": "",
+    "authentication": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  }
+}

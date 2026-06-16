@@ -1,0 +1,13 @@
+{
+  "id": "Edwe8rlNrIk1ke0x",
+  "name": "Perplexity account",
+  "type": "perplexityApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "b1Yn2tDHaYyufOtE",
+    "teamName": "Agentic Frameworks"
+  }
+}

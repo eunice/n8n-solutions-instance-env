@@ -1,0 +1,13 @@
+{
+  "id": "fykT014TVFwDPbuP",
+  "name": "Zep Api account",
+  "type": "zepApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

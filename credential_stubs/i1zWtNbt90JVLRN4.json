@@ -1,0 +1,13 @@
+{
+  "id": "i1zWtNbt90JVLRN4",
+  "name": "PDF.co account",
+  "type": "pdfcoApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  }
+}

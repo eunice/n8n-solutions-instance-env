@@ -1,0 +1,15 @@
+{
+  "id": "M50vSi8FJIe8zaHR",
+  "name": "OpenAi account Marcus",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "organizationId": "",
+    "url": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "IpZf2fm1Iru3nDNE",
+    "teamName": "Marcus "
+  }
+}

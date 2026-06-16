@@ -1,0 +1,13 @@
+{
+  "id": "GQ33eU33GK6KZzbl",
+  "name": "Custom Auth account",
+  "type": "httpCustomAuth",
+  "data": {
+    "json": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

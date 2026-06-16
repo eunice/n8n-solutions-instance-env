@@ -1,0 +1,15 @@
+{
+  "id": "otDOkIM6qfVkjqBw",
+  "name": "Jira SW Cloud account",
+  "type": "jiraSoftwareCloudApi",
+  "data": {
+    "email": "",
+    "apiToken": "",
+    "domain": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

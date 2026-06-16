@@ -1,0 +1,13 @@
+{
+  "id": "pitypd1mNsfrbxIf",
+  "name": "Postgres account 2",
+  "type": "postgres",
+  "data": {
+    "password": "={{ $json.id }}"
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "toPozbTl7IDyn1kD",
+    "teamName": "General"
+  }
+}

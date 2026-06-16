@@ -1,0 +1,14 @@
+{
+  "id": "hS5AoKXXSPmQ4tw2",
+  "name": "Google Drive account",
+  "type": "googleDriveOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

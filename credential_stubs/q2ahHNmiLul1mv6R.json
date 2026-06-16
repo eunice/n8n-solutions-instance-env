@@ -1,0 +1,13 @@
+{
+  "id": "q2ahHNmiLul1mv6R",
+  "name": "Microsoft SharePoint account",
+  "type": "microsoftSharePointOAuth2Api",
+  "data": {
+    "subdomain": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

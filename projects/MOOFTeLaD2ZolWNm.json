@@ -1,0 +1,16 @@
+{
+  "id": "MOOFTeLaD2ZolWNm",
+  "name": "OnboardingHackmation",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "MOOFTeLaD2ZolWNm",
+    "teamName": "OnboardingHackmation"
+  },
+  "variableStubs": []
+}

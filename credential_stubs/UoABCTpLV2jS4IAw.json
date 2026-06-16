@@ -1,0 +1,14 @@
+{
+  "id": "UoABCTpLV2jS4IAw",
+  "name": "Microsoft Outlook account 5",
+  "type": "microsoftOutlookOAuth2Api",
+  "data": {
+    "csrfSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

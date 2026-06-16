@@ -1,0 +1,16 @@
+{
+  "id": "BV53nZqdBE8LXX6O",
+  "name": "Candidates",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "BV53nZqdBE8LXX6O",
+    "teamName": "Candidates"
+  },
+  "variableStubs": []
+}

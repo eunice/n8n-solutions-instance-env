@@ -1,0 +1,14 @@
+{
+  "id": "X03gUTqpR5vORG1n",
+  "name": "Monday.com account",
+  "type": "mondayComApi",
+  "data": {
+    "apiToken": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

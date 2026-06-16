@@ -1,0 +1,15 @@
+{
+  "id": "o6zEqHj7NJp10AQa",
+  "name": "Salesforce account 2",
+  "type": "salesforceOAuth2Api",
+  "data": {
+    "environment": "",
+    "csrfSecret": "",
+    "codeVerifier": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

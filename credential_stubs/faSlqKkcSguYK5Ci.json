@@ -1,0 +1,15 @@
+{
+  "id": "faSlqKkcSguYK5Ci",
+  "name": "SerAPI",
+  "type": "httpQueryAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "emnFbxczkRm4ceN1",
+  "name": "OpenAi account 7",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "fxNWDXEGEdrJgj97",
+    "projectName": "Hope McMullen <hope.mcmullen@n8n.io>",
+    "personalEmail": "hope.mcmullen@n8n.io"
+  }
+}

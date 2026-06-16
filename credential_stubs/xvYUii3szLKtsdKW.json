@@ -1,0 +1,14 @@
+{
+  "id": "xvYUii3szLKtsdKW",
+  "name": "OLYMPIC agent",
+  "type": "slackApi",
+  "data": {
+    "accessToken": "",
+    "signatureSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "f00CbeF4zKo7jS1A",
+    "teamName": "Olympics Team M"
+  }
+}

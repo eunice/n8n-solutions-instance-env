@@ -1,0 +1,478 @@
+{
+  "id": "vmK2WnYcDXKIZPxt",
+  "name": "Template uploader",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Template Uploader",
+        "formDescription": "Use this tool to upload your workflow to your template library. ",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Title",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Description",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldType": "html",
+              "html": "<!-- Your custom HTML here --->\n<div style=\"float: right;\">Page 1 / 2</div>\n\n"
+            }
+          ]
+        },
+        "options": {
+          "buttonLabel": "Next"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        0,
+        192
+      ],
+      "id": "8c3e1099-3f4c-48bd-b085-86815a3a2722",
+      "name": "On form submission",
+      "webhookId": "cac612e0-a32a-4325-8d91-fa8c8037d8de"
+    },
+    {
+      "parameters": {
+        "defineForm": "json",
+        "jsonOutput": "=[\n  {\n    \"fieldLabel\": \"Categories\",\n    \"fieldType\": \"dropdown\",\n    \"fieldOptions\": {\n      \"values\":  {{ JSON.stringify($json.values) }}\n    },\n    \"requiredField\": true,\n    \"multiselect\": true\n  },\n  {\n    \"fieldType\": \"html\",\n    \"html\": \"</br><div>Please provide your JSON file that contains the workflow that you want to convert to a template</div></br>\"\n  },\n  {\n    \"fieldLabel\": \"Workflow Json\",\n    \"fieldType\": \"file\",\n    \"multipleFiles\": false,\n    \"acceptFileTypes\": \".json\",\n    \"requiredField\": true\n  },\n  {\n    \"fieldType\": \"html\",\n    \"html\": \"</br><div>Page 1 / 2</div></br>\"  \n  }\n]\n",
+        "options": {
+          "buttonLabel": "Submit"
+        }
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 2.3,
+      "position": [
+        672,
+        96
+      ],
+      "id": "101a1e77-4145-4c74-9110-2ae9425372a6",
+      "name": "Form",
+      "webhookId": "5cc21cd4-ffe4-45a8-9e86-e77105b314da"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "085503ad-e7ef-411b-b98d-a2bdfa70ae6a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "id"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1344,
+        0
+      ],
+      "id": "21395974-38f0-4d1a-b75f-599c29d073bd",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1568,
+        96
+      ],
+      "id": "aed460e3-a9a3-4255-ae1c-85084048eb2d",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "HDu4pYpH3dPWdr5P",
+          "mode": "list",
+          "cachedResultName": "categories",
+          "cachedResultUrl": "/projects/u17lnkYvJIZBGRhv/datatables/HDu4pYpH3dPWdr5P"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "name",
+              "keyValue": "={{ $json.Categories }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        0
+      ],
+      "id": "cbdf154b-031f-43e0-a6a3-6895086698cb",
+      "name": "Get category Ids from names"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "Categories",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        896,
+        0
+      ],
+      "id": "e8f3a2de-6e59-413b-bfe2-6dca3711728e",
+      "name": "Split Out categories"
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "binaryPropertyName": "=Workflow_Json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        1344,
+        192
+      ],
+      "id": "aff5c318-7f43-4c5c-aa1d-d19544d385a6",
+      "name": "Extract template from JSON",
+      "executeOnce": false,
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "b5wijZFrRQZfC2Qa",
+          "mode": "list",
+          "cachedResultName": "templates",
+          "cachedResultUrl": "/projects/u17lnkYvJIZBGRhv/datatables/b5wijZFrRQZfC2Qa"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "active": "={{ $json.data.active }}",
+            "name": "={{ $('On form submission').first().json.Title }}",
+            "nodes": "={{ $json.data.nodes.toJsonString() }}",
+            "pinData": "={{ $json.data.pinData.toJsonString() }}",
+            "connections": "={{ $json.data.connections.toJsonString() }}",
+            "settings": "={{ $json.data.settings.toJsonString() }}",
+            "meta": "={{ $json.data.meta.toJsonString() }}",
+            "description": "={{ $('On form submission').first().json.Description }}",
+            "versionId": "={{ $json.data.versionId }}",
+            "categories": "={{ $json.id.join(',') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "active",
+              "displayName": "active",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "boolean",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "versionId",
+              "displayName": "versionId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "template_id",
+              "displayName": "template_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": true
+            },
+            {
+              "id": "nodes",
+              "displayName": "nodes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "pinData",
+              "displayName": "pinData",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "connections",
+              "displayName": "connections",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "settings",
+              "displayName": "settings",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "meta",
+              "displayName": "meta",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "description",
+              "displayName": "description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "categories",
+              "displayName": "categories",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1792,
+        96
+      ],
+      "id": "a3287943-d15b-401c-8737-32e1be752c6c",
+      "name": "Insert new template in the DB"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "HDu4pYpH3dPWdr5P",
+          "mode": "list",
+          "cachedResultName": "categories",
+          "cachedResultUrl": "/projects/u17lnkYvJIZBGRhv/datatables/HDu4pYpH3dPWdr5P"
+        },
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        224,
+        96
+      ],
+      "id": "d1fa0a04-2b45-46f2-9f8a-5caba2c4f40f",
+      "name": "Get all categories"
+    },
+    {
+      "parameters": {
+        "jsCode": "let values = [];\n// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  values.push({option: item.json.name})\n}\n\nreturn {\"values\": values};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        96
+      ],
+      "id": "7387a503-90ac-40e2-b6b8-cea8697f38b4",
+      "name": "add categories in the correct format for the Form"
+    }
+  ],
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Get all categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form": {
+      "main": [
+        [
+          {
+            "node": "Split Out categories",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Extract template from JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get all categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Insert new template in the DB",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get category Ids from names": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out categories": {
+      "main": [
+        [
+          {
+            "node": "Get category Ids from names",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract template from JSON": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Get all categories": {
+      "main": [
+        [
+          {
+            "node": "add categories in the correct format for the Form",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "add categories in the correct format for the Form": {
+      "main": [
+        [
+          {
+            "node": "Form",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 1,
+  "versionId": "f5807850-dddd-4870-96be-ec7b1c2c0c17",
+  "owner": {
+    "type": "team",
+    "teamId": "u17lnkYvJIZBGRhv",
+    "teamName": "Enterprise Template Library"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

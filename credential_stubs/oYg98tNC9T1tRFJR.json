@@ -1,0 +1,16 @@
+{
+  "id": "oYg98tNC9T1tRFJR",
+  "name": "[solutions-team@n8n.io]Google Docs",
+  "type": "googleDocsOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  },
+  "isGlobal": true
+}

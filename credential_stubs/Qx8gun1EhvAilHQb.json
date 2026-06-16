@@ -1,0 +1,14 @@
+{
+  "id": "Qx8gun1EhvAilHQb",
+  "name": "CoinMarketcap API",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZJGwrF91mjaxSVle",
+    "teamName": "AI"
+  }
+}

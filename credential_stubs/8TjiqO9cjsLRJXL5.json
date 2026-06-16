@@ -1,0 +1,13 @@
+{
+  "id": "8TjiqO9cjsLRJXL5",
+  "name": "Firecrawl account 2",
+  "type": "firecrawlApi",
+  "data": {
+    "apiKey": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9EOfUONBAO50Fd6C",
+    "teamName": "Bunny Farm"
+  }
+}

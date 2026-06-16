@@ -1,0 +1,14 @@
+{
+  "id": "duoNDeWHYuYM7JJw",
+  "name": "test if it works",
+  "type": "httpHeaderAuth",
+  "data": {
+    "name": "",
+    "value": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "mgegojU6TjAZ0puh",
+    "teamName": "🏆 Customer Success"
+  }
+}

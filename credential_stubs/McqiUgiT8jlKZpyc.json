@@ -1,0 +1,16 @@
+{
+  "id": "McqiUgiT8jlKZpyc",
+  "name": "Azure Open AI account",
+  "type": "azureOpenAiApi",
+  "data": {
+    "apiKey": "",
+    "resourceName": "",
+    "apiVersion": "",
+    "endpoint": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}

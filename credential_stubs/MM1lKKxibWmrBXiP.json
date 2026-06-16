@@ -1,0 +1,12 @@
+{
+  "id": "MM1lKKxibWmrBXiP",
+  "name": "[solutions-team@n8n.io]Calendar",
+  "type": "googleCalendarOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  },
+  "isGlobal": true
+}

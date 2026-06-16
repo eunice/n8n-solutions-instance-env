@@ -12,5 +12,12 @@
     "teamId": "mgegojU6TjAZ0puh",
     "teamName": "🏆 Customer Success"
   },
-  "variableStubs": []
+  "variableStubs": [
+    {
+      "id": "oaQAqw0fxnuYEIkn",
+      "key": "EXAMPLE_ENV_VAR",
+      "type": "string",
+      "value": ""
+    }
+  ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "4rITNQpYBExwQGIL",
+  "name": "Chat account",
+  "type": "googleChatOAuth2Api",
+  "data": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "q4JiagnkOizWEqn0",
+    "teamName": "Customer Demos"
+  }
+}
