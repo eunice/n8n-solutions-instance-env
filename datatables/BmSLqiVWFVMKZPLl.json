@@ -1,0 +1,38 @@
+{
+  "id": "BmSLqiVWFVMKZPLl",
+  "name": "categories",
+  "columns": [
+    {
+      "id": "N7I3lzmRnszzLn4A",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "QYE3diVQlUtrQV21",
+      "name": "displayName",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "mncN46TiOfAXA6Gd",
+      "name": "parentId",
+      "type": "number",
+      "index": 2
+    },
+    {
+      "id": "RyTh6F5UdcMnzp5x",
+      "name": "icon",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2025-12-08T14:47:54.317Z",
+  "updatedAt": "2025-12-08T14:47:54.317Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "IILY3cdVa3emybdv",
+  "name": "TEST",
+  "columns": [
+    {
+      "id": "KtFLTMLNRVxCJ40I",
+      "name": "Name",
+      "type": "string",
+      "index": 0
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-27T15:42:51.424Z",
+  "updatedAt": "2026-04-27T15:43:05.948Z"
+}

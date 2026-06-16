@@ -1,0 +1,79 @@
+{
+  "id": "b5wijZFrRQZfC2Qa",
+  "name": "templates",
+  "columns": [
+    {
+      "id": "5jrf27LaooHflaho",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "CKA3HBtGM3OKIY6l",
+      "name": "active",
+      "type": "number",
+      "index": 1
+    },
+    {
+      "id": "sgn3qIQKwTY985S8",
+      "name": "versionId",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "20dh3w9aRkfvaCqQ",
+      "name": "template_id",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "JoijII2QtK02jcPg",
+      "name": "nodes",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "D4kkHAvv1fAR3qE9",
+      "name": "pinData",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "fnULX5FuwyeNko8V",
+      "name": "connections",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "zX2NZZ9AhMK2Cda7",
+      "name": "settings",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "3mfUg2e7cngYAnBc",
+      "name": "meta",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "J67OQhFmeZawlT58",
+      "name": "description",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "id": "p1ML7lYr0fBO6woc",
+      "name": "categories",
+      "type": "string",
+      "index": 10
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "u17lnkYvJIZBGRhv",
+    "teamName": "Enterprise Template Library"
+  },
+  "createdAt": "2025-12-16T10:05:00.564Z",
+  "updatedAt": "2026-05-07T14:38:02.865Z"
+}

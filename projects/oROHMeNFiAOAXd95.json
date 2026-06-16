@@ -1,0 +1,16 @@
+{
+  "id": "oROHMeNFiAOAXd95",
+  "name": "Events",
+  "icon": {
+    "type": "icon",
+    "value": "calendar"
+  },
+  "description": "Collection of demos used in events",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "oROHMeNFiAOAXd95",
+    "teamName": "Events"
+  },
+  "variableStubs": []
+}

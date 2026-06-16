@@ -1,0 +1,98 @@
+{
+  "id": "M4sThviRobl3OVag",
+  "name": "house_insurance_claim",
+  "columns": [
+    {
+      "id": "nyUUPcfSvuRygouH",
+      "name": "claimantName",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "DzJBCW2Zu57RaI58",
+      "name": "policyNumber",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "xVnNyKN1Jl6NLOeT",
+      "name": "claimType",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "DgtyGs10zhfjhH4R",
+      "name": "incidentDate",
+      "type": "date",
+      "index": 3
+    },
+    {
+      "id": "59qZfaqkqdgRsdsh",
+      "name": "Cause",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "4JSejzYfBApMiGFa",
+      "name": "Affected",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "E5Oc7OIJWh3i6sSR",
+      "name": "Description_of_Incident",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "J5ShQFfcJEtaErUt",
+      "name": "Supporting_Documents",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "T5DJk6zbBtiFPlYK",
+      "name": "Photos",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "spt4fSBfCPcO7JQe",
+      "name": "Estimated_Claim_Amount",
+      "type": "number",
+      "index": 9
+    },
+    {
+      "id": "VJSvk4Akp5F7x7xc",
+      "name": "approved",
+      "type": "boolean",
+      "index": 10
+    },
+    {
+      "id": "dzJ4dBvoFxQdUllx",
+      "name": "approval_action",
+      "type": "string",
+      "index": 11
+    },
+    {
+      "id": "9cW5ZKGczXvRJKyg",
+      "name": "fraud_score",
+      "type": "string",
+      "index": 12
+    },
+    {
+      "id": "DIaouUbbt3uFOP8m",
+      "name": "approved_amount",
+      "type": "string",
+      "index": 13
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-13T15:49:41.620Z",
+  "updatedAt": "2026-04-14T09:41:39.938Z"
+}

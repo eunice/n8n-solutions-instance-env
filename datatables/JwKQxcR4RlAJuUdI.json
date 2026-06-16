@@ -1,0 +1,37 @@
+{
+  "id": "JwKQxcR4RlAJuUdI",
+  "name": "n8n docs",
+  "columns": [
+    {
+      "id": "tMfrHHYXEPgwdyTO",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "cUWv6ZzIDC48B7uj",
+      "name": "type",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "KodboZL1teUsSkt2",
+      "name": "url",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "rmVupPkLJEDks5la",
+      "name": "content",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "ZGvTsbcHEOKmij7h",
+    "teamName": "n8n Docs Demo"
+  },
+  "createdAt": "2026-01-21T16:08:17.386Z",
+  "updatedAt": "2026-01-21T16:32:25.030Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "o9Y8oB9TU7T14X1m",
+  "name": "kpis",
+  "columns": [
+    {
+      "id": "gKQmTdun3EpnL5eS",
+      "name": "kpi_name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "uLPuxr0AJ48snhjl",
+      "name": "value",
+      "type": "number",
+      "index": 1
+    },
+    {
+      "id": "wUUu35qNfT9eamL1",
+      "name": "json",
+      "type": "string",
+      "index": 2
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "rH1ViT7fgbpovmUN",
+    "projectName": "Solutions Owner <solutions@n8n.io>",
+    "personalEmail": "solutions@n8n.io"
+  },
+  "createdAt": "2025-10-16T12:28:55.614Z",
+  "updatedAt": "2025-10-16T12:28:55.614Z"
+}

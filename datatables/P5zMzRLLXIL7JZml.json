@@ -1,0 +1,38 @@
+{
+  "id": "P5zMzRLLXIL7JZml",
+  "name": "AI Lead Analysis - Hot Leads",
+  "columns": [
+    {
+      "id": "SosIQPEVGbbSoW3V",
+      "name": "Name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "YMX5asVBAyzR726o",
+      "name": "Job_Title",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "0SyXo4ob9wMZtjcs",
+      "name": "Score",
+      "type": "number",
+      "index": 2
+    },
+    {
+      "id": "yDcKveqBICrttz8S",
+      "name": "AI_Message",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-29T09:25:09.883Z",
+  "updatedAt": "2026-04-29T09:31:17.826Z"
+}

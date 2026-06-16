@@ -1,0 +1,68 @@
+{
+  "id": "VLeQXuwGhsEb7usz",
+  "name": "api_service_current_status",
+  "columns": [
+    {
+      "id": "JiRlaR8rXkDMfoMm",
+      "name": "service_name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "YY7t0tsyz5SHsigv",
+      "name": "url",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "qPr767c4zyv6x5Fp",
+      "name": "last_status",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "vvr9BoED2zLS3mO4",
+      "name": "last_status_code",
+      "type": "number",
+      "index": 3
+    },
+    {
+      "id": "ZwnfpUXbmNvCzPn9",
+      "name": "last_message",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "0beYsCyj88ysQKih",
+      "name": "last_checked_at",
+      "type": "date",
+      "index": 5
+    },
+    {
+      "id": "5849sRynwSkVykVn",
+      "name": "last_changed_at",
+      "type": "date",
+      "index": 6
+    },
+    {
+      "id": "rL9eeAtqwVCrPpPz",
+      "name": "previous_status",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "3CJCnyEXF2h1zqMt",
+      "name": "change_count",
+      "type": "string",
+      "index": 8
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "XsMKpKkoByiirDZ7",
+    "projectName": "Bryan McSpadden <bryan.mcspadden@n8n.io>",
+    "personalEmail": "bryan.mcspadden@n8n.io"
+  },
+  "createdAt": "2026-05-15T09:28:55.236Z",
+  "updatedAt": "2026-05-15T10:12:00.768Z"
+}

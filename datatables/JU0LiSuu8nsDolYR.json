@@ -1,0 +1,38 @@
+{
+  "id": "JU0LiSuu8nsDolYR",
+  "name": "AI News Analysis - Good News",
+  "columns": [
+    {
+      "id": "atzH2AzMUhv2ITIS",
+      "name": "Headline",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "TZNG81i3MyxgvMbE",
+      "name": "Topic",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "8rreTJzDa9A6JlTf",
+      "name": "Summary",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "khB2fDdhpOo56xxn",
+      "name": "Sentiment",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-29T09:15:13.317Z",
+  "updatedAt": "2026-04-29T12:12:10.763Z"
+}

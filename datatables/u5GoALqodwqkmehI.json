@@ -1,0 +1,98 @@
+{
+  "id": "u5GoALqodwqkmehI",
+  "name": "LoanApplications",
+  "columns": [
+    {
+      "id": "XdXFjNeG7wEqtvH7",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "XgaKzwtKttsSZQoe",
+      "name": "email",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "AV8Etc2IzMTI032u",
+      "name": "phone",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "271zADGnTUUQWW6E",
+      "name": "address",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "eVreQgdL7esoV7cP",
+      "name": "postcode",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "EWoZzdLhwUpRONgs",
+      "name": "employment_status",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "KNjY7I918l5ER5F2",
+      "name": "annual_income",
+      "type": "number",
+      "index": 6
+    },
+    {
+      "id": "Ec0MU65dCujM2XCW",
+      "name": "monthly_expenses",
+      "type": "number",
+      "index": 7
+    },
+    {
+      "id": "0CLebkeduNjzTyGW",
+      "name": "loan_amount",
+      "type": "number",
+      "index": 8
+    },
+    {
+      "id": "YwD0vqazsKlLsUqk",
+      "name": "loan_purpose",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "id": "eq9pj65D67UHtWU1",
+      "name": "proof_of_identity",
+      "type": "string",
+      "index": 10
+    },
+    {
+      "id": "d3rIs2wLCsyCYJxE",
+      "name": "proof_of_address",
+      "type": "string",
+      "index": 11
+    },
+    {
+      "id": "dzSeSI1bLOmZlLow",
+      "name": "proof_of_income",
+      "type": "string",
+      "index": 12
+    },
+    {
+      "id": "J4Ej2h3ejwG0x4r9",
+      "name": "bank_statement",
+      "type": "string",
+      "index": 13
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-02-17T13:36:53.732Z",
+  "updatedAt": "2026-03-24T12:12:36.463Z"
+}

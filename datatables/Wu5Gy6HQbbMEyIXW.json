@@ -1,0 +1,61 @@
+{
+  "id": "Wu5Gy6HQbbMEyIXW",
+  "name": "Bunny Farm",
+  "columns": [
+    {
+      "id": "p07Zquu0hia8DpR0",
+      "name": "name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "VOPReN46Xj7ZvnLH",
+      "name": "totalBunnies",
+      "type": "number",
+      "index": 1
+    },
+    {
+      "id": "WGCxA9UBTGjcSVan",
+      "name": "year",
+      "type": "number",
+      "index": 2
+    },
+    {
+      "id": "F4ay1czLZMHFm3D4",
+      "name": "maleBunnies",
+      "type": "number",
+      "index": 3
+    },
+    {
+      "id": "7u0UFw6XaaSeHfw0",
+      "name": "femaleBunnies",
+      "type": "number",
+      "index": 4
+    },
+    {
+      "id": "H4FSS3K2KpkFeQYw",
+      "name": "avgAge",
+      "type": "number",
+      "index": 5
+    },
+    {
+      "id": "jfy5APgsc26LiYdE",
+      "name": "mutantBunnies",
+      "type": "number",
+      "index": 6
+    },
+    {
+      "id": "chLFy0AwTNF0loYt",
+      "name": "isActive",
+      "type": "boolean",
+      "index": 7
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9EOfUONBAO50Fd6C",
+    "teamName": "Bunny Farm"
+  },
+  "createdAt": "2025-11-26T16:24:59.567Z",
+  "updatedAt": "2025-11-26T16:24:59.567Z"
+}

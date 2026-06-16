@@ -1,16 +1,16 @@
 {
-  "id": "PhBmlsOFTxJd4WMv",
-  "name": "My project",
+  "id": "BV53nZqdBE8LXX6O",
+  "name": "Candidates",
   "icon": {
     "type": "icon",
     "value": "layers"
   },
-  "description": null,
+  "description": "",
   "type": "team",
   "owner": {
     "type": "team",
-    "teamId": "PhBmlsOFTxJd4WMv",
-    "teamName": "My project"
+    "teamId": "BV53nZqdBE8LXX6O",
+    "teamName": "Candidates"
   },
   "variableStubs": []
 }

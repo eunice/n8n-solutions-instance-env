@@ -1,0 +1,16 @@
+{
+  "id": "9IZnqAATAFu0xs6j",
+  "name": "What the Hell is happening here",
+  "icon": {
+    "type": "emoji",
+    "value": "🤷"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "9IZnqAATAFu0xs6j",
+    "teamName": "What the Hell is happening here"
+  },
+  "variableStubs": []
+}

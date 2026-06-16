@@ -1,0 +1,74 @@
+{
+  "id": "1KySdpujGAqiawFk",
+  "name": "users",
+  "columns": [
+    {
+      "id": "Z9DxDUy2VLWDLF5s",
+      "name": "first_name",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "84lcyaqnrGaE4wIn",
+      "name": "last_name",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "C4jMy5mKCJvAcuQ4",
+      "name": "email",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "VvlL9hpoyMZDyNF2",
+      "name": "phone",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "LZTnbmpm8jjDv96B",
+      "name": "date_of_birth",
+      "type": "date",
+      "index": 4
+    },
+    {
+      "id": "nAIHMqd6hiKl9rSR",
+      "name": "city",
+      "type": "string",
+      "index": 5
+    },
+    {
+      "id": "hk08Hcw8D7LCOXnK",
+      "name": "country",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "id": "KTB5IGLYOwxsmxNe",
+      "name": "job_title",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "id": "hyg1aQBcptJQ1sIV",
+      "name": "company",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "id": "PSU8MC32sKLHdZ15",
+      "name": "account_tier",
+      "type": "string",
+      "index": 9
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-03-06T10:27:13.249Z",
+  "updatedAt": "2026-06-01T07:45:01.523Z"
+}

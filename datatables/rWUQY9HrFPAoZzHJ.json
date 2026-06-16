@@ -1,0 +1,38 @@
+{
+  "id": "rWUQY9HrFPAoZzHJ",
+  "name": "AI News Analysis - Bad News",
+  "columns": [
+    {
+      "id": "fDZLJz0XFVU2Ua7U",
+      "name": "Headline",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "7Wm1Ld3p0zRLZXqy",
+      "name": "Topic",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "suePfeyHWUOuSZQN",
+      "name": "Summary",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "B1ONJ87Gtb2UFMPP",
+      "name": "Sentiment",
+      "type": "string",
+      "index": 3
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "ovnGbppBuiOQlf7m",
+    "projectName": "Stratos Tziallas <stratos.tziallas@n8n.io>",
+    "personalEmail": "stratos.tziallas@n8n.io"
+  },
+  "createdAt": "2026-04-29T09:15:48.214Z",
+  "updatedAt": "2026-04-29T12:12:10.840Z"
+}
