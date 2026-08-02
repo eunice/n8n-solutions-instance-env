@@ -356,6 +356,7 @@
   },
   "settings": {
     "executionOrder": "v1",
+    "errorWorkflow": "w1xL8iyvJgFFyGE32ZJZv",
     "availableInMCP": false
   },
   "triggerCount": 1,

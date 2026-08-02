@@ -1306,6 +1306,7 @@
   },
   "settings": {
     "executionOrder": "v1",
+    "errorWorkflow": "w1xL8iyvJgFFyGE32ZJZv",
     "callerPolicy": "workflowsFromSameOwner",
     "availableInMCP": false,
     "timeSavedPerExecution": 30
