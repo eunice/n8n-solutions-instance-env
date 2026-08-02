@@ -528,7 +528,7 @@
     },
     {
       "parameters": {
-        "jsCode": "let categoryList = [{category: ''}];\nif (Object.keys($input.first().json.query.category).length != 0) {\n  const categories = $input.first().json.query.category.replaceAll('%2C', ',');\n  if (categories.includes(',')){\n    categoryList = categories.split(',').map(item => ({ category: item.trim()}));\n  } else {\n    categoryList = [{category: categories}];\n  }\n}\n\nreturn categoryList;"
+        "jsCode": "const query = $input.first().json.query ?? {};\nconst raw = typeof query.category === 'string' ? query.category.trim() : '';\n\nif (!raw) {\n  return [{ category: '' }];\n}\n\nconst categoryList = raw\n  .replaceAll('%2C', ',')\n  .split(',')\n  .map(item => ({ category: item.trim() }))\n  .filter(item => item.category !== '');\n\nreturn categoryList.length ? categoryList : [{ category: '' }];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
