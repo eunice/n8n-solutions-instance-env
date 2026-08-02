@@ -1211,7 +1211,8 @@
     }
   },
   "settings": {
-    "executionOrder": "v1"
+    "executionOrder": "v1",
+    "errorWorkflow": "w1xL8iyvJgFFyGE32ZJZv"
   },
   "triggerCount": 3,
   "versionId": "ce017a7d-70d9-45d6-9511-56c67869528a",

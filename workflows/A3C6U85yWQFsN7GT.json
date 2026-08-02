@@ -479,7 +479,7 @@
     },
     {
       "parameters": {
-        "errorMessage": "error"
+        "errorMessage": "={{ 'Invoice AI Agent failed: ' + ($json.error?.message || $json.error || 'unknown error') }}"
       },
       "type": "n8n-nodes-base.stopAndError",
       "typeVersion": 1,

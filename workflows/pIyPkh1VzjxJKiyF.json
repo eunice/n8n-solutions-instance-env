@@ -307,7 +307,8 @@
     }
   },
   "settings": {
-    "executionOrder": "v1"
+    "executionOrder": "v1",
+    "errorWorkflow": "w1xL8iyvJgFFyGE32ZJZv"
   },
   "triggerCount": 2,
   "versionId": "88855932-a8b3-484d-a122-5bfc12371a88",
