@@ -297,9 +297,9 @@
     {
       "parameters": {
         "operation": "executeQuery",
-        "query": "SELECT COALESCE(\n  (SELECT has_support\n   FROM public.support_users\n   WHERE email = '{{$(\"Edit Fields\").item.json.customer_email}}'\n   LIMIT 1),\n  false\n) AS has_support;\n",
+        "query": "SELECT COALESCE(\n  (SELECT has_support\n   FROM public.support_users\n   WHERE email = $1\n   LIMIT 1),\n  false\n) AS has_support;\n",
         "options": {
-          "queryReplacement": "=email = {{$('Edit Fields').item.json.customer_email}}"
+          "queryReplacement": "={{ $('Edit Fields').item.json.customer_email }}"
         }
       },
       "type": "n8n-nodes-base.postgres",
