@@ -4,36 +4,6 @@
   "nodes": [
     {
       "parameters": {
-        "url": "=https://itunes.apple.com/rss/customerreviews/id={{ $json.appid }}/json?cc=gb",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        -1104,
-        976
-      ],
-      "id": "20e23f9c-051d-4d8b-a85a-d609a699593c",
-      "name": "UK RSS Feed",
-      "retryOnFail": true
-    },
-    {
-      "parameters": {
-        "url": "=https://itunes.apple.com/rss/customerreviews/id={{ $json.appid }}/json?cc=us",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        -1104,
-        800
-      ],
-      "id": "de815db8-8569-4989-9b2a-e644563c07f6",
-      "name": "US RSS Feed",
-      "retryOnFail": true
-    },
-    {
-      "parameters": {
         "inputSource": "passthrough"
       },
       "id": "32551b53-6fac-49aa-b24e-e0d2f0abfd4b",
@@ -44,45 +14,6 @@
         -1696,
         976
       ]
-    },
-    {
-      "parameters": {
-        "jsCode": "// TODO parametrize\nconst countryCode = \"us\"\n\n// Parse the JSON string from the HTTP Request\nconst jsonData = JSON.parse($input.first().json.data);\n\n// Extract the reviews array from the feed\nconst reviews = jsonData.feed.entry || [];\n\n// Calculate cutoff time (n days ago)\nconst cutoffTime = new Date();\ncutoffTime.setDate(cutoffTime.getDate() - Number.parseInt($('Configure AppID, LookbackWindow').first().json.lookbackDays));\n\n// Map each review to extract key fields and filter\nconst parsedReviews = reviews\n  .map(review => {\n    return {\n      // Author information\n      author_name: review.author?.name?.label || '',\n      author_uri: review.author?.uri?.label || '',\n      \n      // Review metadata\n      review_id: review.id?.label || '',\n      title: review.title?.label || '',\n      rating: review['im:rating']?.label || '',\n      version: review['im:version']?.label || '',\n      \n      // Review content\n      content: review.content?.label || '',\n      \n      // Timestamps\n      updated: review.updated?.label || '',\n      \n      // Engagement metrics\n      vote_sum: review['im:voteSum']?.label || '0',\n      vote_count: review['im:voteCount']?.label || '0',\n      \n      // Additional info\n      content_type: review['im:contentType']?.attributes?.label || '',\n      review_link: review.link?.attributes?.href || '',\n      \n      // New: country code from Configure node\n      country_code: countryCode\n    };\n  })\n  // Filter reviews updated within last n days\n  .filter(review => {\n    if (!review.updated) return false;\n    const updatedDate = new Date(review.updated);\n    return updatedDate >= cutoffTime;\n  });\n\n// Return the parsed reviews as separate items for n8n\nreturn parsedReviews.map(review => ({\n  json: review\n}));\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -912,
-        800
-      ],
-      "id": "b9f4ac13-9e05-4c87-bc0a-2d00a422c3ea",
-      "name": "ParseUS"
-    },
-    {
-      "parameters": {
-        "jsCode": "// TODO parametrize\nconst countryCode = \"uk\"\n\n// Parse the JSON string from the HTTP Request\nconst jsonData = JSON.parse($input.first().json.data);\n\n// Extract the reviews array from the feed\nconst reviews = jsonData.feed.entry || [];\n\n// Calculate cutoff time (n days ago)\nconst cutoffTime = new Date();\ncutoffTime.setDate(cutoffTime.getDate() - Number.parseInt($('Configure AppID, LookbackWindow').first().json.lookbackDays));\n\n// Map each review to extract key fields and filter\nconst parsedReviews = reviews\n  .map(review => {\n    return {\n      // Author information\n      author_name: review.author?.name?.label || '',\n      author_uri: review.author?.uri?.label || '',\n      \n      // Review metadata\n      review_id: review.id?.label || '',\n      title: review.title?.label || '',\n      rating: review['im:rating']?.label || '',\n      version: review['im:version']?.label || '',\n      \n      // Review content\n      content: review.content?.label || '',\n      \n      // Timestamps\n      updated: review.updated?.label || '',\n      \n      // Engagement metrics\n      vote_sum: review['im:voteSum']?.label || '0',\n      vote_count: review['im:voteCount']?.label || '0',\n      \n      // Additional info\n      content_type: review['im:contentType']?.attributes?.label || '',\n      review_link: review.link?.attributes?.href || '',\n      \n      // New: country code from Configure node\n      country_code: countryCode\n    };\n  })\n  // Filter reviews updated within last n days\n  .filter(review => {\n    if (!review.updated) return false;\n    const updatedDate = new Date(review.updated);\n    return updatedDate >= cutoffTime;\n  });\n\n// Return the parsed reviews as separate items for n8n\nreturn parsedReviews.map(review => ({\n  json: review\n}));\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -912,
-        976
-      ],
-      "id": "ad71968a-0acb-4ffe-8336-d62e37cda641",
-      "name": "ParseUK"
-    },
-    {
-      "parameters": {
-        "numberInputs": 3
-      },
-      "type": "n8n-nodes-base.merge",
-      "typeVersion": 3.2,
-      "position": [
-        -544,
-        960
-      ],
-      "id": "c77778c9-77a9-4a22-bb3a-0e305b4dd844",
-      "name": "Merge"
     },
     {
       "parameters": {
@@ -115,6 +46,12 @@
               "name": "lookbackDays",
               "value": "7",
               "type": "string"
+            },
+            {
+              "id": "8f0bd0f1-2c1c-4f6f-9d63-4b06f7b0f0a1",
+              "name": "countries",
+              "value": "us,gb",
+              "type": "string"
             }
           ]
         },
@@ -128,31 +65,50 @@
       ],
       "id": "5976bf97-142b-48e5-8f50-ef39b5189a9a",
       "name": "Configure AppID, LookbackWindow"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Fan out one item per target App Store country code\nreturn $input.first().json.countries\n  .split(',')\n  .map(code => code.trim())\n  .filter(code => code.length > 0)\n  .map(code => ({ json: { country_code: code } }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1280,
+        976
+      ],
+      "id": "1f2a3b4c-5d6e-4f70-8a91-b2c3d4e5f601",
+      "name": "Split Out Countries"
+    },
+    {
+      "parameters": {
+        "url": "=https://itunes.apple.com/rss/customerreviews/id={{ $('Configure AppID, LookbackWindow').first().json.appid }}/json?cc={{ $json.country_code }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1072,
+        976
+      ],
+      "id": "2f3a4b5c-6d7e-4f80-9ab1-c2d3e4f5a602",
+      "name": "App Store RSS Feed",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const cutoffTime = new Date();\ncutoffTime.setDate(cutoffTime.getDate() - Number.parseInt($('Configure AppID, LookbackWindow').first().json.lookbackDays));\n\nconst parsedReviews = [];\nconst feeds = $input.all();\n\nfor (let i = 0; i < feeds.length; i++) {\n  const countryCode = $('Split Out Countries').itemMatching(i).json.country_code;\n  const jsonData = JSON.parse(feeds[i].json.data);\n  const reviews = jsonData.feed.entry || [];\n\n  for (const review of reviews) {\n    const updated = review.updated?.label || '';\n    if (!updated || new Date(updated) < cutoffTime) continue;\n\n    parsedReviews.push({\n      json: {\n        // Author information\n        author_name: review.author?.name?.label || '',\n        author_uri: review.author?.uri?.label || '',\n\n        // Review metadata\n        review_id: review.id?.label || '',\n        title: review.title?.label || '',\n        rating: review['im:rating']?.label || '',\n        version: review['im:version']?.label || '',\n\n        // Review content\n        content: review.content?.label || '',\n\n        // Timestamps\n        updated: updated,\n\n        // Engagement metrics\n        vote_sum: review['im:voteSum']?.label || '0',\n        vote_count: review['im:voteCount']?.label || '0',\n\n        // Additional info\n        content_type: review['im:contentType']?.attributes?.label || '',\n        review_link: review.link?.attributes?.href || '',\n\n        country_code: countryCode\n      }\n    });\n  }\n}\n\nreturn parsedReviews;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -864,
+        976
+      ],
+      "id": "3f4a5b6c-7d8e-4f90-abc1-d2e3f4a5b603",
+      "name": "Parse Reviews"
     }
   ],
   "connections": {
-    "US RSS Feed": {
-      "main": [
-        [
-          {
-            "node": "ParseUS",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "UK RSS Feed": {
-      "main": [
-        [
-          {
-            "node": "ParseUK",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Start": {
       "main": [
         [
@@ -164,38 +120,33 @@
         ]
       ]
     },
-    "ParseUS": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "ParseUK": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 1
-          }
-        ]
-      ]
-    },
     "Configure AppID, LookbackWindow": {
       "main": [
         [
           {
-            "node": "US RSS Feed",
+            "node": "Split Out Countries",
             "type": "main",
             "index": 0
-          },
+          }
+        ]
+      ]
+    },
+    "Split Out Countries": {
+      "main": [
+        [
           {
-            "node": "UK RSS Feed",
+            "node": "App Store RSS Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "App Store RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Parse Reviews",
             "type": "main",
             "index": 0
           }
